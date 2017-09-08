@@ -20,7 +20,6 @@ cnf/aspark-starter.prd.host-name.cnf
 cnf/aspark-starter.tst.host-name.cnf
 cnf/readme.txt
 #----
-README.md
 .gitignore
 src/bash/aspark-starter/tests/rem-aspark-starter-actions.lst
 src/bash
