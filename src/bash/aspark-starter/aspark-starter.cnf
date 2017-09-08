@@ -1,0 +1,13 @@
+#file: /opt/csitea/aspark-starter/aspark-starter.0.0.7.dev.ysg/src/bash/aspark-starter/aspark-starter.cnf 
+[MAIN_SETTINGS]
+
+#use simple var_name=var_value syntax 
+
+#the name of this application 
+run_unit=aspark-starter
+
+#the name of this application's db
+db_name=dev_aspark-starter
+
+
+#eof file: /opt/csitea/aspark-starter/aspark-starter.0.0.7.dev.ysg/src/bash/aspark-starter/aspark-starter.cnf

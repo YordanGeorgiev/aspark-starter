@@ -1,0 +1,38 @@
+# doc/txt/aspark-starter/create-relative-package/create-relative-package.func.txt
+
+	doCreateRelativePackage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to create a relative zip package with the files specified
+   in the includd file
+
+	# Prequisites
+	# ------------------------------------------------------
+   gnu bash , zip , unzip , perl the include file to use, aspark-starter core
+
+	# Installation
+	# ------------------------------------------------------
+   install the gnu bash , zip , perl , unzip binaries
+
+	# Interdependancies
+	# ------------------------------------------------------
+   gnu bash , zip , unzip , perl the include file to use , aspark-starter core
+
+	# Usage:
+	# ------------------------------------------------------
+
+   # creates the relative package with the current env include file in met/.<<env>>.aspark-starter
+   bash src/bash/aspark-starter/aspark-starter.sh -a create-relative-package -i
+
+   # creates the relative package with different include file
+   bash src/bash/aspark-starter/aspark-starter.sh -a create-relative-package -i met/.tmp.aspark-starter	
+
+	# Developent
+	# ------------------------------------------------------
+
+	# Caveats:
+	# ------------------------------------------------------
+
+
+# eof file: doc/txt/aspark-starter/create-relative-package/create-relative-package.func.txt

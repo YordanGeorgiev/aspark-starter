@@ -1,0 +1,12 @@
+# file: cnf/aspark-starter.host-name.cnf
+# file: cnf/aspark-starter.host-name.cnf
+[MAIN_SETTINGS]
+
+
+Emails=yordan.georgiev@gmail.com
+
+# where to place the backups of the 
+network_backup_dir=/vagrant/csitea/aspark-starter/dat/zip
+
+foo=bar
+# eof file: cnf/aspark-starter.host-name.cnf
