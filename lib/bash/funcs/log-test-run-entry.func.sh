@@ -16,13 +16,13 @@ doLogTestRunEntry(){
    case "$1" in
      INIT)
          # cat doc/txt/aspark-starter/funcs/log-test-run-entry.func.txt
-         component_name=$run_unit
-         test -z "$component_name" && component_name="$run_unit_tester"
+         run_unit=$run_unit
+         test -z "$run_unit" && run_unit="$run_unit_tester"
          test -z "$test_run_report_line" && test_run_report_line='   '
          test -z "$test_run_report_file" \
-         && test_run_report_file="$product_instance_dir/dat/tests/$component_name"'.test-run-report.'`date "+%Y%m%d_%H%M%S"`'.txt'
+         && test_run_report_file="$product_instance_dir/dat/tests/$run_unit"'.test-run-report.'`date "+%Y%m%d_%H%M%S"`'.txt'
          echo -e "\n" > "$test_run_report_file"
-         echo -e `date "+%Y-%m-%d %H:%M:%S"`"\t START $component_name test run report \n" >> "$test_run_report_file"
+         echo -e `date "+%Y-%m-%d %H:%M:%S"`"\t START $run_unit test run report \n" >> "$test_run_report_file"
          echo "result  start-time  stop-time   action-name" >> "$test_run_report_file"
          shift;
          ;;
@@ -45,7 +45,7 @@ doLogTestRunEntry(){
      STATUS)
          echo -e "\n\n"
          echo -e "\n\n" >> "$test_run_report_file"
-         echo -e `date "+%Y-%m-%d %H:%M:%S"`"\t STOP  $component_name test run report" >> "$test_run_report_file"
+         echo -e `date "+%Y-%m-%d %H:%M:%S"`"\t STOP  $run_unit test run report" >> "$test_run_report_file"
          cat "$test_run_report_file"
          echo -e "\n\n"
          # doLog "product instance tests listing"

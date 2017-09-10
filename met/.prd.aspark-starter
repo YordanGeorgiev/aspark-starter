@@ -1,4 +1,37 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
+src/scala/aspark-starter/build.sbt
+src/scala/aspark-starter/project/plugins.sbt
+src/
+src/bash
+src/bash/aspark-starter
+src/bash/aspark-starter/funcs
+src/bash/aspark-starter/funcs/scala
+src/bash/aspark-starter/funcs/scala/sbt-compile-verbose.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
+src/bash/aspark-starter/funcs/scala/run-jar.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-run-verbose.func.sh
+src/bash/aspark-starter/funcs/scala/sbt-clean-compile-verbose.func.sh
+src/scala
+src/scala/aspark-starter
+src/scala/aspark-starter/conf
+src/scala/aspark-starter/conf/application.conf
+src/scala/aspark-starter/src
+src/scala/aspark-starter/src/universal
+src/scala/aspark-starter/src/universal/conf
+src/scala/aspark-starter/src/universal/conf/application.ini
+src/scala/aspark-starter/src/main
+src/scala/aspark-starter/src/main/resources
+src/scala/aspark-starter/src/main/resources/logback.xml
+src/scala/aspark-starter/src/main/scala
+src/scala/aspark-starter/src/main/scala/app
+src/scala/aspark-starter/src/main/scala/app/utils
+src/scala/aspark-starter/src/main/scala/app/utils/Configurator.scala
+src/scala/aspark-starter/src/main/scala/Main.scala
+src/scala/aspark-starter/project
+# ---
 src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
 src/bash/aspark-starter/bootstrap-aspark-starter.sh
 src/bash/aspark-starter/install-prerequisites-for-aspark-starter-on-ubuntu.sh
