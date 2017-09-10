@@ -1,6 +1,7 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 src/scala/aspark-starter/build.sbt
 src/scala/aspark-starter/project/plugins.sbt
+src/scala/aspark-starter/project/build.properties
 src/
 src/bash
 src/bash/aspark-starter
@@ -13,7 +14,6 @@ src/bash/aspark-starter/funcs/scala/run-jar.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-run-verbose.func.sh
-src/bash/aspark-starter/funcs/scala/sbt-clean-compile-verbose.func.sh
 src/scala
 src/scala/aspark-starter
 src/scala/aspark-starter/conf
@@ -265,17 +265,20 @@ doc/txt/aspark-starter/specs/remove-package-files.spec.txt
 doc/txt/aspark-starter/helps/remove-package-files.help.txt
 doc/txt/aspark-starter/funcs/remove-package-files.func.txt
 tags
+README.md
 doc/pdf
 doc/pdf/README.pdf
 doc/pdf/
 doc/xls
-doc/md
-doc/md/aspark-starter-features-and-functionalities.md
-doc/md/aspark-starter-requirements.md
-doc/md/aspark-starter-user-stories.md
 doc/pdf
 doc/pdf/README.pdf
 doc/pdf/aspark-starter-readme.pdf
 doc/pdf/aspark-starter-features-and-functionalities.pdf
+doc/pdf/aspark-starter-devops-guide.pdf
 doc/pdf/aspark-starter-user-stories.pdf
 doc/pdf/aspark-starter-requirements.pdf
+doc/md
+doc/md/aspark-starter-features-and-functionalities.md
+doc/md/aspark-starter-devops-guide.md
+doc/md/aspark-starter-requirements.md
+doc/md/aspark-starter-user-stories.md

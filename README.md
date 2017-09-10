@@ -107,10 +107,10 @@ Start hacking … or wait check at least the test call running all the functions
     vim meta/.dev.aspark-starter
     
     # Ctrl + Z , 
-    bash src/bash/aspark-starter/test-aspark-starter.sh 
+    bash sfw/bash/aspark-starter/test-aspark-starter.sh 
     
     # now clone your own instance
-    bash src/bash/aspark-starter/aspark-starter.sh -a to-app=my-tool
+    bash sfw/bash/aspark-starter/aspark-starter.sh -a to-app=my-tool
 
 ## 3. ADDITIONAL DOCS
 Additonal docs could be found in the doc/md dir. 
