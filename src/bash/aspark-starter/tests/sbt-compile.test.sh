@@ -2,18 +2,16 @@
 
 # v1.0.9
 # ---------------------------------------------------------
-# todo: add doTestSbtCompile comments ...
+# cat doc/txt/aspark-starter/tests/sbt-compile.test.txt
 # ---------------------------------------------------------
 doTestSbtCompile(){
 
 	doLog "DEBUG START doTestSbtCompile"
 	
-	cat doc/txt/aspark-starter/tests/sbt-compile.test.txt
 	
 	sleep "$sleep_interval"
-	# add your action implementation code here ... 
-	# Action !!!
 
+   src/bash/aspark-starter/aspark-starter.sh -a sbt-compile
 	doLog "DEBUG STOP  doTestSbtCompile"
 }
 # eof func doTestSbtCompile

@@ -1,37 +1,35 @@
-# doc/txt/aspark-starter/sbt-compile/sbt-compile.help.txt
+# doc/txt/aspark-starter/sbt-compile/sbt-compile.func.txt
 
-	doHelpSbtCompile
+	doSbtCompile
 	
 	# Purpose:
 	# ------------------------------------------------------
-	-- todo: what is the purpose of the doHelpSbtCompile function
+	to sbt compile the whole project
 
 	# Prequisites
 	# ------------------------------------------------------
-	-- todo: what are the prerequisites of the doHelpSbtCompile function
+	JDK 1.8 , sbt
 
 	# Installation
 	# ------------------------------------------------------
-	-- todo: what are the required installations for the  
-		doHelpSbtCompile function to execute without errors
+   nothing special ... 
 
 	# Interdependancies
 	# ------------------------------------------------------
-	-- todo: what are the interdependancies for the  
-		doHelpSbtCompile function to execute without errors
+	JDK 1.8 , sbt
 
 	# Usage:
 	# ------------------------------------------------------
-	-- todo: how can be the doHelpSbtCompile used 
+   bash $0 -a sbt-compile
 
 	# Developent
 	# ------------------------------------------------------
-	-- todo: what issues, todos could be pointed for development
+	-- more testing
 
 	# Caveats:
 	# ------------------------------------------------------
-	-- todo: what are the known caveats of the doHelpSbtCompile functions
+	none known so far 
 
 
 
-# eof file: doc/txt/aspark-starter/sbt-compile/sbt-compile.help.txt
+# eof file: doc/txt/aspark-starter/sbt-compile/sbt-compile.func.txt

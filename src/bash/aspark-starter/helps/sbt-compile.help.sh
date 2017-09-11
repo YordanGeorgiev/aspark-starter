@@ -11,8 +11,6 @@ doHelpSbtCompile(){
 	cat doc/txt/aspark-starter/helps/sbt-compile.help.txt
 	
 	sleep "$sleep_interval"
-	# add your action implementation code here ... 
-	# Action !!!
 
 	doLog "DEBUG STOP  doHelpSbtCompile"
 }

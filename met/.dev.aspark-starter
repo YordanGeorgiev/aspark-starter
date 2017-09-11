@@ -20,14 +20,11 @@ src/bash/aspark-starter/tests/sbt-compile-verbose.test.sh
 # ---
 src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh
 src/bash/aspark-starter/tests/sbt-compile.test.sh
-src/bash/aspark-starter/specs/sbt-compile.spec.sh
 src/bash/aspark-starter/helps/sbt-compile.help.sh
 doc/txt/aspark-starter/tests/sbt-compile.test.txt
-doc/txt/aspark-starter/specs/sbt-compile.spec.txt
 doc/txt/aspark-starter/helps/sbt-compile.help.txt
 doc/txt/aspark-starter/funcs/sbt-compile.func.txt
 # ---
-
 src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh

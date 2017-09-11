@@ -1,5 +1,8 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 src/scala/aspark-starter/build.sbt
+src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
 src/scala/aspark-starter/project/plugins.sbt
 src/scala/aspark-starter/project/build.properties
 src/
@@ -7,11 +10,24 @@ src/bash
 src/bash/aspark-starter
 src/bash/aspark-starter/funcs
 src/bash/aspark-starter/funcs/scala
+# ---
 src/bash/aspark-starter/funcs/scala/sbt-compile-verbose.func.sh
+doc/txt/aspark-starter/funcs/sbt-compile-verbose.func.txt
+doc/txt/aspark-starter/helps/sbt-compile-verbose.help.txt
+doc/txt/aspark-starter/tests/sbt-compile-verbose.test.txt
+src/bash/aspark-starter/helps/sbt-compile-verbose.help.sh
+src/bash/aspark-starter/tests/sbt-compile-verbose.test.sh
+# ---
+src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh
+src/bash/aspark-starter/tests/sbt-compile.test.sh
+src/bash/aspark-starter/helps/sbt-compile.help.sh
+doc/txt/aspark-starter/tests/sbt-compile.test.txt
+doc/txt/aspark-starter/helps/sbt-compile.help.txt
+doc/txt/aspark-starter/funcs/sbt-compile.func.txt
+# ---
 src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh
-src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-run-verbose.func.sh
 src/scala
@@ -37,7 +53,6 @@ src/bash/aspark-starter/bootstrap-aspark-starter.sh
 src/bash/aspark-starter/install-prerequisites-for-aspark-starter-on-ubuntu.sh
 src/bash/aspark-starter/aspark-starter.sh
 src/bash/aspark-starter/test-aspark-starter.sh
-src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
 src/bash/aspark-starter/tests/rem-aspark-starter-actions.lst
 #----
 cnf
@@ -282,3 +297,4 @@ doc/md/aspark-starter-features-and-functionalities.md
 doc/md/aspark-starter-devops-guide.md
 doc/md/aspark-starter-requirements.md
 doc/md/aspark-starter-user-stories.md
+src/bash/aspark-starter/test-aspark-starter.cnf

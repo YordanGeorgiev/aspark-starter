@@ -8,3 +8,4 @@ target/**
 src/scala/aspark-starter/target/**
 src/scala/aspark-starter/project/project/target/**
 src/scala/aspark-starter/project/target/**
+dat/tests/*.txt
