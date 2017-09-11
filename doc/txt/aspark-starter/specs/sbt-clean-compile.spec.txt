@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-clean-compile/sbt-clean-compile.spec.txt
+
+	doSpecSbtCleanCompile
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doSpecSbtCleanCompile function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doSpecSbtCleanCompile function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doSpecSbtCleanCompile function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doSpecSbtCleanCompile function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doSpecSbtCleanCompile used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doSpecSbtCleanCompile functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-clean-compile/sbt-clean-compile.spec.txt

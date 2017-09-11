@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-run-verbose/sbt-run-verbose.spec.txt
+
+	doSpecSbtRunVerbose
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doSpecSbtRunVerbose function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doSpecSbtRunVerbose function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doSpecSbtRunVerbose function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doSpecSbtRunVerbose function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doSpecSbtRunVerbose used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doSpecSbtRunVerbose functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-run-verbose/sbt-run-verbose.spec.txt

@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-stage/sbt-stage.help.txt
+
+	doHelpSbtStage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doHelpSbtStage function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doHelpSbtStage function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doHelpSbtStage function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doHelpSbtStage function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doHelpSbtStage used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doHelpSbtStage functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-stage/sbt-stage.help.txt

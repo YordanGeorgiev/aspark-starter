@@ -75,7 +75,7 @@ doGenerateActionFiles(){
 		doLog "DEBUG STOP  :: checking action: $act"
 		
 	); 
-	done< <(cat src/bash/$run_unit/tests/all-aspark-starter-tests.lst)
+	done< <(cat src/bash/$run_unit/tests/new-aspark-starter-tests.lst)
 	
 	doLog "DEBUG STOP  : doGenerateActionFiles"
 

@@ -1,0 +1,10 @@
+
+
+2017-09-11 14:31:06	 START test-aspark-starter test run report 
+
+result  start-time  stop-time   action-name
+   ok    14:31:06 14:31:54 sbt-compile-verbose
+
+
+
+2017-09-11 14:31:54	 STOP  test-aspark-starter test run report

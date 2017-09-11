@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-comprun-jar/sbt-comprun-jar.spec.txt
+
+	doSpecSbtComprunJar
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doSpecSbtComprunJar function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doSpecSbtComprunJar function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doSpecSbtComprunJar function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doSpecSbtComprunJar function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doSpecSbtComprunJar used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doSpecSbtComprunJar functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-comprun-jar/sbt-comprun-jar.spec.txt

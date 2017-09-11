@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-compile/sbt-compile.help.txt
+
+	doHelpSbtCompile
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doHelpSbtCompile function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doHelpSbtCompile function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doHelpSbtCompile function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doHelpSbtCompile function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doHelpSbtCompile used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doHelpSbtCompile functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-compile/sbt-compile.help.txt

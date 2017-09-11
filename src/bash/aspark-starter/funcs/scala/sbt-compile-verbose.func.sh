@@ -3,19 +3,13 @@
 
 umask 022    ;
 
-# print the commands
-# set -x
-# print each input line as well
-# set -v
-# exit the script if any statement returns a non-true return value. gotcha !!!
-# set -e
 trap 'doExit $LINENO $BASH_COMMAND; exit' SIGHUP SIGINT SIGQUIT
 
 
 
-#v0.1.8
+# v0.0.2
 #------------------------------------------------------------------------------
-# checks the perl syntax of the cgi perl modules
+# compile with sbt verbosely 
 #------------------------------------------------------------------------------
 doSbtCompileVerbose(){
 

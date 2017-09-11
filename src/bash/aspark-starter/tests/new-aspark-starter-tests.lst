@@ -1,0 +1,8 @@
+sbt-compile-verbose
+sbt-comprun-jar
+sbt-run
+sbt-stage
+run-jar
+sbt-compile
+sbt-clean-compile
+sbt-run-verbose

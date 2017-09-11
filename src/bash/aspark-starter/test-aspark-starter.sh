@@ -115,7 +115,7 @@ doInit(){
    my_name_ext=`basename $0`
    run_unit_tester=${my_name_ext%.*}
    host_name=$(hostname -s)
-   ${sleep_interval:=0}    # to enable slower execution export sleep_interval=3
+   export sleep_iterval=${sleep_interval:=0}    # to enable slower execution export sleep_interval=3
 }
 #eof doInit
 
@@ -255,7 +255,7 @@ doSetVars(){
    export product_instance_dir=`pwd`;
    
    # add the doLogTestRunEntry func
-   . "$product_instance_dir/src/bash/aspark-starter/funcs/log-test-run-entry.func.sh"
+   source "$product_instance_dir/lib/bash/aspark-starter/log-test-run-entry.sh"
 
 	# include all the func files to fetch their funcs 
 	while read -r test_file ; do . "$test_file" ; done < <(find . -name "*test.sh")

@@ -1,0 +1,34 @@
+# doc/txt/aspark-starter/sbt-compile-verbose/sbt-compile-verbose.func.txt
+
+	doSbtCompileVerbose
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to compile verbose the whole project
+
+	# Prequisites
+	# ------------------------------------------------------
+	sbt installed
+
+	# Installation
+	# ------------------------------------------------------
+
+	# Interdependancies
+	# ------------------------------------------------------
+	sbt , scala
+
+	# Usage:
+	# ------------------------------------------------------
+	bash $0 -a sbt-compile-verbose
+
+	# Developent
+	# ------------------------------------------------------
+	- todo : clean-up
+
+	# Caveats:
+	# ------------------------------------------------------
+	- none , known so far
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-compile-verbose/sbt-compile-verbose.func.txt

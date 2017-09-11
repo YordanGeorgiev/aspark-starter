@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/sbt-stage/sbt-stage.test.txt
+
+	doTestSbtStage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doTestSbtStage function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doTestSbtStage function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doTestSbtStage function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doTestSbtStage function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doTestSbtStage used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doTestSbtStage functions
+
+
+
+# eof file: doc/txt/aspark-starter/sbt-stage/sbt-stage.test.txt
