@@ -12,7 +12,11 @@ doTestGmailPackage(){
 	sleep "$sleep_interval"
 
 	bash src/bash/aspark-starter/aspark-starter.sh -a create-full-package -a gmail-package
-	sleep "$sleep_interval"
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
    printf "\033[2J";printf "\033[0;0H"
 
 	doLog "DEBUG STOP  doTestGmailPackage"

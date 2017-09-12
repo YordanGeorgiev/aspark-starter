@@ -1,4 +1,4 @@
-# src/bash/lp_nettilaskuri/funcs/generate-action-files.test.sh
+# src/bash/aspark-starter/funcs/generate-action-files.test.sh
 
 # v1.0.9
 # ---------------------------------------------------------
@@ -8,13 +8,13 @@ doTestGenerateActionFiles(){
 
 	doLog "DEBUG START doTestGenerateActionFiles"
 	
-	cat doc/txt/lp_nettilaskuri/tests/generate-action-files.test.txt
-	
-	doSpecGenerateActionFiles
+	# Action !!!	
+	bash src/bash/aspark-starter/aspark-starter.sh -a generate-action-files
 
-	doHelpGenerateActionFiles
-	
-	bash src/bash/lp_nettilaskuri/lp_nettilaskuri.sh -a generate-action-files
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
 
 	doLog "DEBUG STOP  doTestGenerateActionFiles"
 	
@@ -25,4 +25,4 @@ doTestGenerateActionFiles(){
 # eof func doTestGenerateActionFiles
 
 
-# eof file: src/bash/lp_nettilaskuri/funcs/generate-action-files.test.sh
+# eof file: src/bash/aspark-starter/funcs/generate-action-files.test.sh

@@ -2,17 +2,21 @@
 
 # v1.0.9
 # ---------------------------------------------------------
-# todo: add doTestSbtCleanCompile comments ...
+# cat doc/txt/aspark-starter/tests/sbt-clean-compile.test.txt
 # ---------------------------------------------------------
 doTestSbtCleanCompile(){
 
 	doLog "DEBUG START doTestSbtCleanCompile"
 	
-	cat doc/txt/aspark-starter/tests/sbt-clean-compile.test.txt
 	
 	sleep "$sleep_interval"
 	# add your action implementation code here ... 
 	# Action !!!
+   src/bash/aspark-starter/aspark-starter.sh -a sbt-clean-compile
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
 
 	doLog "DEBUG STOP  doTestSbtCleanCompile"
 }

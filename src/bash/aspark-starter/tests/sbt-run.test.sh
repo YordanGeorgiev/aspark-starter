@@ -13,6 +13,11 @@ doTestSbtRun(){
 	# Action !!!
    bash src/bash/aspark-starter/aspark-starter.sh -a sbt-run
 
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
+
 	doLog "DEBUG STOP  doTestSbtRun"
 }
 # eof func doTestSbtRun

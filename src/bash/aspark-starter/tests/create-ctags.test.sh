@@ -2,13 +2,18 @@
 
 # v1.0.9
 # ---------------------------------------------------------
-# todo: add doTestCreateCtags comments ...
+# cat doc/txt/aspark-starter/tests/create-ctags.test.txt
 # ---------------------------------------------------------
 doTestCreateCtags(){
 
 	doLog "DEBUG START doTestCreateCtags"
-	
-	cat doc/txt/aspark-starter/tests/create-ctags.test.txt
+
+	bash src/bash/aspark-starter/aspark-starter.sh -a create-ctags	
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
 	
 	sleep "$sleep_interval"
 	# add your action implementation code here ... 

@@ -11,6 +11,13 @@ src/bash/aspark-starter
 src/bash/aspark-starter/funcs
 src/bash/aspark-starter/funcs/scala
 # ---
+src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
+src/bash/aspark-starter/tests/sbt-clean-compile.test.sh
+src/bash/aspark-starter/helps/sbt-clean-compile.help.sh
+doc/txt/aspark-starter/tests/sbt-clean-compile.test.txt
+doc/txt/aspark-starter/helps/sbt-clean-compile.help.txt
+doc/txt/aspark-starter/funcs/sbt-clean-compile.func.txt
+# ---
 src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
 src/bash/aspark-starter/tests/sbt-run.test.sh
 src/bash/aspark-starter/specs/sbt-run.spec.sh
@@ -43,7 +50,6 @@ doc/txt/aspark-starter/funcs/sbt-compile.func.txt
 # ---
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
-src/bash/aspark-starter/funcs/scala/sbt-run-verbose.func.sh
 src/scala
 src/scala/aspark-starter
 src/scala/aspark-starter/conf

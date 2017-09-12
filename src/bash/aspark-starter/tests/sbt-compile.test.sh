@@ -8,10 +8,13 @@ doTestSbtCompile(){
 
 	doLog "DEBUG START doTestSbtCompile"
 	
-	
 	sleep "$sleep_interval"
-
    src/bash/aspark-starter/aspark-starter.sh -a sbt-compile
+
+   export exit_code=$?
+	sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
 	doLog "DEBUG STOP  doTestSbtCompile"
 }
 # eof func doTestSbtCompile

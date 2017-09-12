@@ -12,7 +12,10 @@ doTestSbtStage(){
 	
 	sleep "$sleep_interval"
    src/bash/aspark-starter/aspark-starter.sh -a sbt-stage
-	# Action !!!
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
 
 	doLog "DEBUG STOP  doTestSbtStage"
 }

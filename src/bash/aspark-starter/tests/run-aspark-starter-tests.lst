@@ -1,3 +1,4 @@
-sbt-stage
+sbt-clean-compile
+# sbt-stage
 # sbt-compile-verbose
 # sbt-compile

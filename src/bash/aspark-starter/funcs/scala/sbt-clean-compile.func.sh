@@ -27,10 +27,10 @@ doSbtCleanCompile(){
 	cd $product_instance_dir
 
 	cd $product_instance_dir/src/scala/$run_unit
-	doLog "running sbt clean"
+	doLog "INFO running sbt clean"
 	sbt clean
 
-	doLog "running sbt compile"
+	doLog "INFO running sbt compile"
 	sbt compile
 	ret=$?
 	test $ret -ne 0 && sleep 1 && doExit 4 "Scala syntax error" ; 

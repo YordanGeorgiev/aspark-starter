@@ -22,6 +22,11 @@ doTestMorphDir(){
 	export to_srch=aspark-starter
 	export to_repl=new-app
 	bash src/bash/aspark-starter/aspark-starter.sh -a morph-dir
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
 	
 	echo "and check the produced dir"
 	find /tmp/src/bash/new-app -type f

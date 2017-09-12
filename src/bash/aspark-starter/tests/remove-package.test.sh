@@ -9,7 +9,11 @@ doTestRemovePackage(){
 	doLog "DEBUG START doTestRemovePackage"
 	
 	cat doc/txt/aspark-starter/tmpl/remove-package.test.txt
-	sleep 2
+
+   export exit_code=$?
+   sleep "$sleep_interval"
+   test $exit_code -ne 0 && return
+
 	# add your action implementation code here ... 
 
 	doLog "DEBUG STOP  doTestRemovePackage"

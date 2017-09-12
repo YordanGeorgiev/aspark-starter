@@ -1,5 +1,8 @@
 sbt-compile-verbose
-# increase-date
+sbt-clean-compile
+# sbt-stage
+# sbt-compile-verbose
+# sbt-compile
 # create-full-7z-package
 # create-full-package
 # create-relative-7z-package
@@ -21,5 +24,3 @@ sbt-compile-verbose
 # print-help
 # print-usage
 # action-to-remove
-# log-test-run-entry
-# do-something
