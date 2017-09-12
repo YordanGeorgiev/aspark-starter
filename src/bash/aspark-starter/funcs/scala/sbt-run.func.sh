@@ -32,7 +32,7 @@ doSbtRun(){
 	ret=$?
 	test $ret -ne 0 && sleep 1 && doExit 4 "Scala run error" ; 
 
-	doLog " check also the scala log file"$(find $product_instance_dir/data/log/scala -name '*.log')
+	doLog "INFO check also the scala log file"$(find $product_instance_dir/data/log/scala -name '*.log')
 
 	test $ret -eq 0 && doLog "INFO == STOP  == sbt-run NO Errors !!!"
 	cd $product_instance_dir

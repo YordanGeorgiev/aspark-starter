@@ -28,7 +28,7 @@ doSbtStage(){
 
 	#remove all the autosplit.ix files 
 	cd $product_instance_dir/src/scala/$run_unit
-	doLog "running sbt stage"
+	doLog " INFO running sbt stage"
 
 	sbt stage
 	ret=$?

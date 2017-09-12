@@ -11,6 +11,22 @@ src/bash/aspark-starter
 src/bash/aspark-starter/funcs
 src/bash/aspark-starter/funcs/scala
 # ---
+src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
+src/bash/aspark-starter/tests/sbt-run.test.sh
+src/bash/aspark-starter/specs/sbt-run.spec.sh
+src/bash/aspark-starter/helps/sbt-run.help.sh
+doc/txt/aspark-starter/tests/sbt-run.test.txt
+doc/txt/aspark-starter/specs/sbt-run.spec.txt
+doc/txt/aspark-starter/helps/sbt-run.help.txt
+doc/txt/aspark-starter/funcs/sbt-run.func.txt
+# --- 
+src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
+src/bash/aspark-starter/tests/sbt-stage.test.sh
+src/bash/aspark-starter/helps/sbt-stage.help.sh
+doc/txt/aspark-starter/funcs/sbt-stage.func.txt
+doc/txt/aspark-starter/tests/sbt-stage.test.txt
+doc/txt/aspark-starter/helps/sbt-stage.help.txt
+# ---
 src/bash/aspark-starter/funcs/scala/sbt-compile-verbose.func.sh
 doc/txt/aspark-starter/funcs/sbt-compile-verbose.func.txt
 doc/txt/aspark-starter/helps/sbt-compile-verbose.help.txt
@@ -25,8 +41,6 @@ doc/txt/aspark-starter/tests/sbt-compile.test.txt
 doc/txt/aspark-starter/helps/sbt-compile.help.txt
 doc/txt/aspark-starter/funcs/sbt-compile.func.txt
 # ---
-src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
-src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-run-verbose.func.sh

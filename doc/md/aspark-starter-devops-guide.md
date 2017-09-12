@@ -13,7 +13,7 @@ Table of Contents
     * [2.4. Scala code naming conventions](#24-scala-code-naming-conventions)
   * [3. INSTALLATIONS AND CONFIGURATIONS](#3-installations-and-configurations)
     * [3.1. Install Java Development Kit 1.9](#31-install-java-development-kit-19)
-      * [3.1.1. verify the java installation](#311-verify-the-java-installation)
+      * [3.1.1. verify the JDK installation and configuration](#311-verify-the-jdk-installation-and-configuration)
       * [3.1.2. configure java_home](#312-configure-java_home)
     * [3.2. Install Scala](#32-install-scala)
       * [3.2.1. Install sbt](#321-install-sbt)
@@ -81,10 +81,9 @@ Install Java Development Kit 1.9 as follows:
     # update your Ubuntu repositories
     sudo apt-get update
     # install the open jdk
-    sudo apt-get install -y openjdk-9-jdk
-    
+    sudo apt-get install -y openjdk-8-jdk
 
-#### 3.1.1. verify the java installation
+#### 3.1.1. verify the JDK installation and configuration
 
 
     
@@ -99,7 +98,7 @@ Install Java Development Kit 1.9 as follows:
 #### 3.1.2. configure java_home
 
 
-    echo 'export JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64' >> ~/.java_opts.host-name
+    echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.java_opts.host-name
 
 ### 3.2. Install Scala
 The scala libs will be installed with the sbt build tool. 

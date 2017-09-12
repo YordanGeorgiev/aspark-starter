@@ -8,7 +8,7 @@
   	</appender>
 
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>${product_instance_dir}/data/log/scala/mysql-to-csv.log</file>
+    <file>${product_instance_dir}/data/log/scala/aspark-starter.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <!-- daily rollover -->
       <fileNamePattern>mysql-to-csv.%d{yyyy-MM-dd}.log</fileNamePattern>

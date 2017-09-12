@@ -11,7 +11,7 @@ doTestSbtStage(){
 	cat doc/txt/aspark-starter/tests/sbt-stage.test.txt
 	
 	sleep "$sleep_interval"
-	# add your action implementation code here ... 
+   src/bash/aspark-starter/aspark-starter.sh -a sbt-stage
 	# Action !!!
 
 	doLog "DEBUG STOP  doTestSbtStage"

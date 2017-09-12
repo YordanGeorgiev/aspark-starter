@@ -1,22 +1,20 @@
 # src/bash/aspark-starter/funcs/sbt-run.test.sh
 
-# v1.0.9
+# v0.0.2
 # ---------------------------------------------------------
-# todo: add doTestSbtRun comments ...
+# cat doc/txt/aspark-starter/tests/sbt-run.test.txt
 # ---------------------------------------------------------
 doTestSbtRun(){
 
 	doLog "DEBUG START doTestSbtRun"
 	
-	cat doc/txt/aspark-starter/tests/sbt-run.test.txt
 	
 	sleep "$sleep_interval"
-	# add your action implementation code here ... 
 	# Action !!!
+   bash src/bash/aspark-starter/aspark-starter.sh -a sbt-run
 
 	doLog "DEBUG STOP  doTestSbtRun"
 }
 # eof func doTestSbtRun
-
 
 # eof file: src/bash/aspark-starter/funcs/sbt-run.test.sh
