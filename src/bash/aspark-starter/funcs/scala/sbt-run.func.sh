@@ -26,7 +26,7 @@ doSbtRun(){
 	doLog "INFO == START == doSbtRun"
 
 	cd $product_instance_dir/src/scala/$run_unit
-	doLog "running: sbt run"
+	doLog "INFO running: sbt run"
 	sbt run
 
 	ret=$?
