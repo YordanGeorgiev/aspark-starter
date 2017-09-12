@@ -82,10 +82,12 @@ Start hacking … or wait check at least the test call running all the functions
     # opionally if you are in the vim camp open the "project relative files list file"
     vim meta/.dev.aspark-starter
     
-    # Ctrl + Z , 
-    bash sfw/bash/aspark-starter/test-aspark-starter.sh 
+    # Ctrl + Z , to put it on the backgound
+    # check the actions to test ( uncoment line in include in test run ) 
+    less src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
     
-    # now run the tests
+    # Ctrl + Z to put in the background
+    # Action  !!! - aka now run the tests
     bash src/bash/aspark-starter/test-aspar-starter.sh
 
 ## 3. PROJECT STATUS

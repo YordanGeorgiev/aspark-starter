@@ -11,6 +11,7 @@ Table of Contents
     * [2.1. Logging](#21-logging)
   * [3. PERFORMANCE](#3-performance)
   * [4. SCALABILITY](#4-scalability)
+    * [4.1. Feature scalabiity](#41-feature-scalabiity)
 
 
     
@@ -42,7 +43,7 @@ The demo must have a small bunch of Python code.
     
 
 ### 2.1. Logging
-
+The console app should demonstrate proper logging to STDOUT and file
 
     
 
@@ -53,6 +54,11 @@ The demo must have a small bunch of Python code.
 
 ## 4. SCALABILITY
 
+
+    
+
+### 4.1. Feature scalabiity
+The app should be written so that new features could be added easily. 
 
     
 

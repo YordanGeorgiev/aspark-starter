@@ -1,9 +1,0 @@
-
-
-2017-09-11 14:24:30	 START test-aspark-starter test run report 
-
-result  start-time  stop-time   action-name
-
-
-
-2017-09-11 14:24:30	 STOP  test-aspark-starter test run report
