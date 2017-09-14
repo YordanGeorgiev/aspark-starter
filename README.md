@@ -10,7 +10,8 @@ Table of Contents
     * [2.3. Ensure you have all the prerequisite binaries](#23-ensure-you-have-all-the-prerequisite-binaries)
     * [2.4. Build the first aspark-starter instance](#24-build-the-first-aspark-starter-instance)
     * [2.5. Check the runnable actions](#25-check-the-runnable-actions)
-    * [2.6. Start hacking](#26-start-hacking)
+    * [2.6. Run the examples](#26-run-the-examples)
+    * [2.7. Start hacking](#27-start-hacking)
   * [3. PROJECT STATUS](#3-project-status)
 
 
@@ -76,7 +77,33 @@ You could check the functions which could be run - aka "actions" by issuing the 
     # check the runnable with the -a cmd arg actions 
     find . -name '*.func.sh' | sort
 
-### 2.6. Start hacking
+### 2.6. Run the examples
+You can run all the examples by first checking which actions are configured for the next test run and perform the actual test run as follows:
+
+    # check the actions to run
+      cat src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+    
+    # STDUOT
+    # sbt-compile-verbose
+    # sbt-clean-compile
+    # sbt-compile
+    # sbt-stage
+    # sbt-run
+    
+    bash src/bash/aspark-starter/test-aspark-starter.sh
+    
+    # now the tool will start producing output
+    
+    # 2017-09-14 08:26:11      START test-aspark-starter test run report
+    # 
+    # result  start-time  stop-time   action-name
+    #    ok    08:26:11 08:26:59 sbt-compile-verbose
+    #    ok    08:27:00 08:27:25 sbt-clean-compile
+    #    ok    08:27:25 08:27:34 sbt-compile
+    #    ok    08:27:35 08:27:49 sbt-stage
+    #    ok    08:27:49 08:27:59 sbt-run
+
+### 2.7. Start hacking
 Start hacking … or wait check at least the test call running all the functions of the tool … 
 
     # opionally if you are in the vim camp open the "project relative files list file"

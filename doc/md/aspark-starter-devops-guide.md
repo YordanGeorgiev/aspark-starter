@@ -11,17 +11,17 @@ Table of Contents
     * [2.2. Root Dirs naming conventions](#22-root-dirs-naming-conventions)
     * [2.3. Bash scripts naming conventions](#23-bash-scripts-naming-conventions)
     * [2.4. Scala code naming conventions](#24-scala-code-naming-conventions)
-  * [3. INSTALLATIONS AND CONFIGURATIONS](#3-installations-and-configurations)
-    * [3.1. Install Java Development Kit 1.8](#31-install-java-development-kit-18)
-      * [3.1.1. Configure java_home](#311-configure-java_home)
-      * [3.1.2. Verify the JDK installation and configuration](#312-verify-the-jdk-installation-and-configuration)
-    * [3.2. Install Scala](#32-install-scala)
-    * [3.3. Install sbt](#33-install-sbt)
-    * [3.4. Install apache spark](#34-install-apache-spark)
-      * [3.4.1. Download the latest stable Apache Spak package](#341-download-the-latest-stable-apache-spak-package)
-      * [3.4.2. Unpack and deploy](#342-unpack-and-deploy)
-      * [3.4.3. Add env vars](#343-add-env-vars)
-      * [3.4.4. Verify the installation](#344-verify-the-installation)
+      * [2.4.1. Configure java_home](#241-configure-java_home)
+      * [2.4.2. Verify the JDK installation and configuration](#242-verify-the-jdk-installation-and-configuration)
+    * [2.5. Install Scala](#25-install-scala)
+    * [2.6. Install sbt](#26-install-sbt)
+    * [2.7. Install apache spark](#27-install-apache-spark)
+      * [2.7.1. Download the latest stable Apache Spak package](#271-download-the-latest-stable-apache-spak-package)
+      * [2.7.2. Unpack and deploy](#272-unpack-and-deploy)
+      * [2.7.3. Add env vars](#273-add-env-vars)
+      * [2.7.4. Verify the installation](#274-verify-the-installation)
+  * [3. OPERATIONS](#3-operations)
+    * [3.1. Run the examples](#31-run-the-examples)
 
 
     
@@ -74,25 +74,12 @@ Do not use capital letters - they are too noisy.
 
     
 
-## 3. INSTALLATIONS AND CONFIGURATIONS
-
-
-     
-
-### 3.1. Install Java Development Kit 1.8
-Install Java Development Kit 1.8 as follows:
-
-    # update your Ubuntu repositories
-    sudo apt-get update
-    # install the open jdk
-    sudo apt-get install -y openjdk-8-jdk
-
-#### 3.1.1. Configure java_home
+#### 2.4.1. Configure java_home
 Configure java_home env var to the the java_opts file. 
 
     echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.java_opts.host-name
 
-#### 3.1.2. Verify the JDK installation and configuration
+#### 2.4.2. Verify the JDK installation and configuration
 Verify the JDK installation and configuration as follows:
 
     # and verify 
@@ -101,12 +88,12 @@ Verify the JDK installation and configuration as follows:
     Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
     Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
 
-### 3.2. Install Scala
+### 2.5. Install Scala
 The scala libs will be installed with the sbt build tool. 
 
     
 
-### 3.3. Install sbt
+### 2.6. Install sbt
 Install sbt scala build tool by following the instructions in the following url:
 http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
 
@@ -117,12 +104,12 @@ http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
     which sbt
     
 
-### 3.4. Install apache spark
+### 2.7. Install apache spark
 
 
     
 
-#### 3.4.1. Download the latest stable Apache Spak package
+#### 2.7.1. Download the latest stable Apache Spak package
 Download the spak package with curl as follows:
 
     export dir=/vagrant/pckgs/apache
@@ -130,7 +117,7 @@ Download the spak package with curl as follows:
     curl -O https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
     
 
-#### 3.4.2. Unpack and deploy
+#### 2.7.2. Unpack and deploy
 Download the spak package with curl as follows:
 
     mv -v spark-2.2.0-bin-hadoop2.7/ spark
@@ -138,7 +125,7 @@ Download the spak package with curl as follows:
     sudo mv -v spark /usr/lib/
     
 
-#### 3.4.3. Add env vars
+#### 2.7.3. Add env vars
 Add the following env vars
 
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -148,7 +135,7 @@ Add the following env vars
     # reload the env vars
     source ~/.profile_opts
 
-#### 3.4.4. Verify the installation
+#### 2.7.4. Verify the installation
 Verify the installation by startin the spark shell
 
     spark-shell
@@ -168,4 +155,35 @@ Verify the installation by startin the spark shell
     
     scala>
     
+
+## 3. OPERATIONS
+
+
+     
+
+### 3.1. Run the examples
+You can run all the examples as follows:
+
+    # check the actions to run
+      cat src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+    
+    # STDUOT
+    # sbt-compile-verbose
+    # sbt-clean-compile
+    # sbt-compile
+    # sbt-stage
+    # sbt-run
+    
+    bash src/bash/aspark-starter/test-aspark-starter.sh
+    
+    # now the tool will start producing output
+    
+    # 2017-09-14 08:26:11      START test-aspark-starter test run report
+    # 
+    # result  start-time  stop-time   action-name
+    #    ok    08:26:11 08:26:59 sbt-compile-verbose
+    #    ok    08:27:00 08:27:25 sbt-clean-compile
+    #    ok    08:27:25 08:27:34 sbt-compile
+    #    ok    08:27:35 08:27:49 sbt-stage
+    #    ok    08:27:49 08:27:59 sbt-run
 
