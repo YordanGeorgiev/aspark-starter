@@ -35,8 +35,12 @@ perl -nle '$o=$_;s#'"$to_srch"'#'"$to_repl"'#g;$n=$_;rename($o,$n) unless -e $n 
 find "$dir/" -not -path "./.git/*" -type f -exec perl -pi -e "s#$to_srch#$to_repl#g" {} \;
 find "$dir/" -not -path "./.git/*" -type f -name '*.bak' | xargs rm -f
 
+# copy all the configuration files
+cp -v "$product_instance_dir"'/cnf/hosts/'"$(hostname -s)"'/home/ysg/'.* ~/
+
 echo "GO TO YOUR product_instance_dir by"
 echo "cd $product_instance_dir"
 cd $product_instance_dir
 
+echo "source the  ~/.profile_opts.$(hostname -s) to your .bashrc file"
 # eof file src/bash/aspark-starter/bootstrap-aspark-starter.sh

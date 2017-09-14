@@ -7,6 +7,7 @@
 # and includes them bothh ito the include file 
 # ---------------------------------------------------------
 doBackupFile(){
+   set -x
 	cd $product_instance_dir
 
 	doLog "START doBackupFile"
@@ -21,8 +22,7 @@ doBackupFile(){
 		backup_root_dir=$product_instance_dir/cnf/hosts/`hostname -s` && \
 			mkdir -p "$backup_root_dir"
 
-	cmd="test -f $file_to_backup"
- 	set -e ; doRunCmdOrExit "$cmd" ; set +e
+	test -f $file_to_backup || doExit 1 "the backup_file $backup_file does not exist !!!"
 
 	#define the version
 	file_version=$(grep 'export version' $file_to_backup | cut -d= -f2)

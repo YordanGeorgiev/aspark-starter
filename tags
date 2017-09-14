@@ -4,7 +4,201 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$.extend.fn.datepicker	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+$.fn.layout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	932;"	function	language:JavaScript
+$.layout.transformData	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	802;"	function	language:JavaScript
+$N	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4658;"	variable	language:JavaScript
+37	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4500;"	property	language:JavaScript	class:PANE
+38	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4497;"	property	language:JavaScript	class:PANE
+39	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4501;"	property	language:JavaScript	class:PANE
+40	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4499;"	property	language:JavaScript	class:PANE
+CFG_OPTS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	22;"	variable	language:DosBatch
+CFG_OPTS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	28;"	variable	language:DosBatch
+CFG_OPTS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	22;"	variable	language:DosBatch
+CFG_OPTS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	28;"	variable	language:DosBatch
+CSS	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	484;"	variable	language:JavaScript
+CUSTOM_MAIN_CLASS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	117;"	variable	language:DosBatch
+CUSTOM_MAIN_CLASS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	117;"	variable	language:DosBatch
+DOUBLECLICKED	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	18;"	variable	language:DosBatch
+DOUBLECLICKED	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	18;"	variable	language:DosBatch
+DO_NOT_REUSE_ME	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	25;"	variable	language:DosBatch
+DO_NOT_REUSE_ME	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	25;"	variable	language:DosBatch
+JAVAINSTALLED	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	45;"	variable	language:DosBatch
+JAVAINSTALLED	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	46;"	variable	language:DosBatch
+JAVAINSTALLED	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	45;"	variable	language:DosBatch
+JAVAINSTALLED	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	46;"	variable	language:DosBatch
+JAVAOK	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	50;"	variable	language:DosBatch
+JAVAOK	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	51;"	variable	language:DosBatch
+JAVAOK	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	50;"	variable	language:DosBatch
+JAVAOK	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	51;"	variable	language:DosBatch
+MAIN_CLASS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	134;"	variable	language:DosBatch
+MAIN_CLASS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	136;"	variable	language:DosBatch
+MAIN_CLASS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	134;"	variable	language:DosBatch
+MAIN_CLASS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	136;"	variable	language:DosBatch
+PROP_NAME	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	variable	language:JavaScript
+Scheduler	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	4;"	class	language:JavaScript
+Widget	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+_APP_ARGS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	120;"	variable	language:DosBatch
+_APP_ARGS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	80;"	variable	language:DosBatch
+_APP_ARGS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	91;"	variable	language:DosBatch
+_APP_ARGS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	120;"	variable	language:DosBatch
+_APP_ARGS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	80;"	variable	language:DosBatch
+_APP_ARGS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	91;"	variable	language:DosBatch
+_JAVACMD	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	33;"	variable	language:DosBatch
+_JAVACMD	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	41;"	variable	language:DosBatch
+_JAVACMD	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	33;"	variable	language:DosBatch
+_JAVACMD	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	41;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	127;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	74;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	75;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	127;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	74;"	variable	language:DosBatch
+_JAVA_OPTS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	75;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	107;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	111;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	79;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	98;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	107;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	111;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	79;"	variable	language:DosBatch
+_JAVA_PARAMS	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	98;"	variable	language:DosBatch
+_PARAM1	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	110;"	variable	language:DosBatch
+_PARAM1	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	83;"	variable	language:DosBatch
+_PARAM1	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	110;"	variable	language:DosBatch
+_PARAM1	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	83;"	variable	language:DosBatch
+_init	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5421;"	method	language:JavaScript	class:$.layout.browserZoom
+_load	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5358;"	method	language:JavaScript	class:$.layout.buttons
+_root_	src/scala/aspark-starter/target/scala-2.11/api/index/index-a.html	15;"	anchor	language:HTML
+_setTimer	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5429;"	method	language:JavaScript	class:$.layout.browserZoom
+_sizePane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4702;"	property	language:JavaScript	class:Instance
+_unload	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5382;"	method	language:JavaScript	class:$.layout.buttons
+acceptsCookies	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4811;"	property	language:JavaScript	class:$.ui.cookie
+add	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	42;"	method	language:JavaScript	class:Scheduler
+addApp	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	142;"	function	language:Sh
+addApp	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	142;"	function	language:Sh
+addClose	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5268;"	method	language:JavaScript	class:$.layout.buttons
+addDebugger	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	150;"	function	language:Sh
+addDebugger	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	150;"	function	language:Sh
+addJava	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	138;"	function	language:Sh
+addJava	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	138;"	function	language:Sh
+addLabel	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	19;"	method	language:JavaScript	class:Scheduler
+addOpen	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5251;"	method	language:JavaScript	class:$.layout.buttons
+addPane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4710;"	property	language:JavaScript	class:Instance
+addPin	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5292;"	method	language:JavaScript	class:$.layout.buttons
+addResidual	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	146;"	function	language:Sh
+addResidual	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	146;"	function	language:Sh
+addToggle	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5234;"	method	language:JavaScript	class:$.layout.buttons
 add_window	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	27;"	function	language:Sh
+allowOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4549;"	function	language:JavaScript
+allowOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4721;"	property	language:JavaScript	class:Instance
+app	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	32;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	34;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/app/utils/Configurator.html	32;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/app/utils/package.html	32;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/index.js	1;"	property	language:JavaScript	class:Index.PACKAGES
+app	src/scala/aspark-starter/target/scala-2.11/api/index/index-m.html	15;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/index/index-u.html	15;"	anchor	language:HTML
+app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-m.html	18;"	anchor	language:HTML
+app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	15;"	anchor	language:HTML
+app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	21;"	anchor	language:HTML
+app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-s.html	18;"	anchor	language:HTML
+app.utils	src/scala/aspark-starter/target/scala-2.11/api/app/utils/Configurator.html	34;"	anchor	language:HTML
+app.utils	src/scala/aspark-starter/target/scala-2.11/api/index/index-c.html	15;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	442;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-c.html	18;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	15;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	18;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	21;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-g.html	15;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-g.html	18;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-g.html	21;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-g.html	24;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-m.html	21;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	18;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-p.html	15;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-s.html	15;"	anchor	language:HTML
+autoLoad	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4883;"	property	language:JavaScript	class:$.layout.defaults.stateManagement
+autoSave	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4882;"	property	language:JavaScript	class:$.layout.defaults.stateManagement
+b	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript	function:y
+b	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	493;"	variable	language:JavaScript
+b$	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bZ
+bC	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bj
+bG	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bF
+bY	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bF
+b_	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:function
+ba	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:K
+bb	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:K
+bi	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bh
+bind	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5213;"	method	language:JavaScript	class:$.layout.buttons
+bind	src/scala/aspark-starter/target/scala-2.11/api/lib/modernizr.custom.js	4;"	method	language:JavaScript
+bindHover	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+bk	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bj
+byte	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript
+c	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	class	language:JavaScript
+c$	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cY.cZ
+cA	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cc
+cB	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cc
+cC	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cc
+cD	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cc
+cL	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bZ
+cM	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:bZ
+cV	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cU
+cW	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cU
+ca	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:function
+calc	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5477;"	function	language:JavaScript	function:ratio
+cancelMouseOut	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3493;"	function	language:JavaScript
+cb	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:function
+cc	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:cb
+center	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4736;"	property	language:JavaScript	class:Instance
+center	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	986;"	property	language:JavaScript
+children	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4731;"	property	language:JavaScript	class:Instance
+ci	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:function
+clear	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	64;"	method	language:JavaScript	class:Scheduler
+clearLabel	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	25;"	method	language:JavaScript	class:Scheduler
+close	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2037;"	property	language:JavaScript	class:paneMethods
+close	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4696;"	property	language:JavaScript	class:Instance
+close_2	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3024;"	function	language:JavaScript
+conf	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	property	language:JavaScript	class:c.tools.tooltip
+container	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4686;"	property	language:JavaScript	class:Instance
+containerClass	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	600;"	property	language:JavaScript	class:$.layout.defaults
+containerSelector	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	599;"	property	language:JavaScript	class:$.layout.defaults
+contents	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4688;"	property	language:JavaScript	class:Instance
+copy	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4385;"	function	language:JavaScript
+count	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3710;"	property	language:JavaScript	class:thisTry
+createChildLayout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2057;"	property	language:JavaScript	class:paneMethods
+createChildLayout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4712;"	property	language:JavaScript	class:Instance
+createFxOptions	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1855;"	function	language:JavaScript
+createLog	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	576;"	function	language:JavaScript
+current	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:ui.ddmanager
+cygwinpath	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	58;"	function	language:Sh
+cygwinpath	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	58;"	function	language:Sh
+cz	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	function	language:JavaScript	function:function
+d	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+data	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	998;"	property	language:JavaScript
+deleteCookie	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4928;"	method	language:JavaScript	class:$.layout.state
+destroy	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1652;"	property	language:JavaScript	class:layoutMethods
+destroy	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4724;"	property	language:JavaScript	class:Instance
+detect_terminal_for_ui	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	168;"	function	language:Sh
+detect_terminal_for_ui	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	168;"	function	language:Sh
+diagrams	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	7;"	variable	language:JavaScript
+diagrams.addClass	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	301;"	function	language:JavaScript
+diagrams.initHighlighting	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	99;"	function	language:JavaScript
+diagrams.initPopup	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	65;"	function	language:JavaScript
+diagrams.popup	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	250;"	function	language:JavaScript
+diagrams.redirectFromPopup	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	293;"	function	language:JavaScript
+diagrams.removeClass	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	313;"	function	language:JavaScript
+diagrams.resize	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	180;"	function	language:JavaScript
+diagrams.toggle	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	218;"	function	language:JavaScript
+die	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	7;"	function	language:Sh
+die	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	7;"	function	language:Sh
+disableClosable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2047;"	property	language:JavaScript	class:paneMethods
+disableClosable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4715;"	property	language:JavaScript	class:Instance
+disableResizable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2051;"	property	language:JavaScript	class:paneMethods
+disableResizable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4719;"	property	language:JavaScript	class:Instance
+disableSlidable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4717;"	property	language:JavaScript	class:Instance
+disableSlideable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2049;"	property	language:JavaScript	class:paneMethods
+dlog	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	119;"	function	language:Sh
+dlog	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	119;"	function	language:Sh
 doActionToRemove	src/bash/aspark-starter/funcs/action-to-remove.func.sh	7;"	function	language:Sh
 doBackupFile	doc/txt/aspark-starter/helps/sys/backup-file.help.txt	9;"	function	language:Sh
 doBackupFile	src/bash/aspark-starter/funcs/sys/backup-file.func.sh	9;"	function	language:Sh
@@ -46,7 +240,6 @@ doHelpRemovePackageFiles	src/bash/aspark-starter/helps/remove-package-files.help
 doHelpSbtCleanCompile	src/bash/aspark-starter/helps/sbt-clean-compile.help.sh	7;"	function	language:Sh
 doHelpSbtCompile	src/bash/aspark-starter/helps/sbt-compile.help.sh	7;"	function	language:Sh
 doHelpSbtCompileVerbose	src/bash/aspark-starter/helps/sbt-compile-verbose.help.sh	7;"	function	language:Sh
-doHelpSbtComprunJar	src/bash/aspark-starter/helps/sbt-comprun-jar.help.sh	7;"	function	language:Sh
 doHelpSbtRun	src/bash/aspark-starter/helps/sbt-run.help.sh	7;"	function	language:Sh
 doHelpSbtStage	src/bash/aspark-starter/helps/sbt-stage.help.sh	7;"	function	language:Sh
 doInit	src/bash/aspark-starter/aspark-starter.sh	115;"	function	language:Sh
@@ -78,7 +271,6 @@ doSaveTmuxSession	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	12;"	fun
 doSbtCleanCompile	src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh	20;"	function	language:Sh
 doSbtCompile	src/bash/aspark-starter/funcs/scala/sbt-compile.func.sh	11;"	function	language:Sh
 doSbtCompileVerbose	src/bash/aspark-starter/funcs/scala/sbt-compile-verbose.func.sh	14;"	function	language:Sh
-doSbtComprunJar	src/bash/aspark-starter/funcs/sbt-comprun-jar.func.sh	7;"	function	language:Sh
 doSbtRun	src/bash/aspark-starter/funcs/scala/sbt-run.func.sh	20;"	function	language:Sh
 doSbtStage	src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh	20;"	function	language:Sh
 doSetUndefinedShellVarsFromCnfFile	src/bash/aspark-starter/aspark-starter.sh	412;"	function	language:Sh
@@ -103,9 +295,7 @@ doSpecRemoveActionFiles	src/bash/aspark-starter/specs/remove-action-files.spec.s
 doSpecRemovePackage	src/bash/aspark-starter/specs/pckg/remove-package.spec.sh	8;"	function	language:Sh
 doSpecRemovePackage	src/bash/aspark-starter/specs/remove-package.spec.sh	7;"	function	language:Sh
 doSpecRemovePackageFiles	src/bash/aspark-starter/specs/remove-package-files.spec.sh	7;"	function	language:Sh
-doSpecSbtComprunJar	src/bash/aspark-starter/specs/sbt-comprun-jar.spec.sh	7;"	function	language:Sh
 doSpecSbtRun	src/bash/aspark-starter/specs/sbt-run.spec.sh	7;"	function	language:Sh
-doSpecSbtStage	src/bash/aspark-starter/specs/sbt-stage.spec.sh	7;"	function	language:Sh
 doTestActionToRemove	src/bash/aspark-starter/tests/action-to-remove.test.sh	7;"	function	language:Sh
 doTestBackupFile	src/bash/aspark-starter/tests/sys/backup-file.test.sh	7;"	function	language:Sh
 doTestChangeEnvType	src/bash/aspark-starter/tests/change-env-type.test.sh	7;"	function	language:Sh
@@ -130,11 +320,241 @@ doTestSbtCompile	src/bash/aspark-starter/tests/sbt-compile.test.sh	7;"	function	
 doTestSbtCompileVerbose	src/bash/aspark-starter/tests/sbt-compile-verbose.test.sh	7;"	function	language:Sh
 doTestSbtRun	src/bash/aspark-starter/tests/sbt-run.test.sh	7;"	function	language:Sh
 doTestSbtStage	src/bash/aspark-starter/tests/sbt-stage.test.sh	7;"	function	language:Sh
+doWork	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	43;"	function	language:JavaScript	function:Scheduler.add
+droppables	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:ui.ddmanager
 dump_tmux_session	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	6;"	function	language:Sh
+e.cleanData	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+e.each.effects.animateClass	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+e.effects.effect.blind	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+e.fn	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+e.fn.position	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+east	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4735;"	property	language:JavaScript	class:Instance
+east	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	984;"	property	language:JavaScript
+echoerr	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	113;"	function	language:Sh
+echoerr	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	113;"	function	language:Sh
+effect	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:e.effects
+effect	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:isPlainObject
+effects.effect.bounce	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.clip	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.drop	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.explode	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.fade	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.fold	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.highlight	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.puff	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.pulsate	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.scale	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.shake	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.size	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.slide	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+effects.effect.transfer	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+enableClosable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2046;"	property	language:JavaScript	class:paneMethods
+enableClosable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4714;"	property	language:JavaScript	class:Instance
+enableResizable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2050;"	property	language:JavaScript	class:paneMethods
+enableResizable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4718;"	property	language:JavaScript	class:Instance
+enableSlidable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4716;"	property	language:JavaScript	class:Instance
+enableSlideable	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2048;"	property	language:JavaScript	class:paneMethods
+enabled	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4880;"	property	language:JavaScript	class:$.layout.defaults.stateManagement
+end	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	145;"	label	language:DosBatch
+end	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	145;"	label	language:DosBatch
+execRunner	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	122;"	function	language:Sh
+execRunner	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	122;"	function	language:Sh
+expand	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	method	language:JavaScript	class:cssHooks.borderColor
+extendRemove	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+extractLoc	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	74;"	function	language:JavaScript	function:setFrameSrcFromUrlFragment
+extractMemberSig	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	82;"	function	language:JavaScript	function:setFrameSrcFromUrlFragment
+fit	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:ui.position
+fixCygwinClasspath	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	80;"	function	language:Sh
+fixCygwinClasspath	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	80;"	function	language:Sh
+fix_classpath	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	96;"	function	language:Sh
+fix_classpath	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	96;"	function	language:Sh
+fn.position	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+focusFilterState	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	10;"	variable	language:JavaScript
+get	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5184;"	method	language:JavaScript	class:$.layout.buttons
+getBranch	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	889;"	function	language:JavaScript
 get_function_list	src/bash/aspark-starter/aspark-starter.sh	52;"	function	language:Sh
 get_function_list	src/bash/aspark-starter/test-aspark-starter.sh	34;"	function	language:Sh
+get_java_cmd	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	105;"	function	language:Sh
+get_java_cmd	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	105;"	function	language:Sh
+hasParentLayout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4730;"	property	language:JavaScript	class:Instance
+height	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	property	language:JavaScript	class:cY.cZ.c$.c
+hide	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2033;"	property	language:JavaScript	class:paneMethods
+hide	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4692;"	property	language:JavaScript	class:Instance
+hideMasks	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4707;"	property	language:JavaScript	class:Instance
+hover	src/scala/aspark-starter/target/scala-2.11/api/lib/diagrams.js	108;"	function	language:JavaScript	function:diagrams.initHighlighting
+hsla.from	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+init	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	method	language:JavaScript	class:cY.return
+init	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5142;"	method	language:JavaScript	class:$.layout.buttons
+initContent	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4709;"	property	language:JavaScript	class:Instance
+initPanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1654;"	property	language:JavaScript	class:layoutMethods
+initPanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4725;"	property	language:JavaScript	class:Instance
+initPanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	611;"	property	language:JavaScript	class:$.layout.defaults
+isClosed	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5006;"	property	language:JavaScript
+isHidden	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5006;"	property	language:JavaScript
+is_cygwin	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	48;"	function	language:Sh
+is_cygwin	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	48;"	function	language:Sh
+is_function_defined	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	162;"	function	language:Sh
+is_function_defined	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	162;"	function	language:Sh
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	207;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	281;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/utils/Configurator.html	202;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/utils/Configurator.html	311;"	anchor	language:HTML
+java_version_check	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	271;"	function	language:Sh
+java_version_check	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	271;"	function	language:Sh
+keyDown	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4491;"	function	language:JavaScript
+kindFilterState	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	9;"	variable	language:JavaScript
+label	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	10;"	method	language:JavaScript	class:Scheduler
+lastFragment	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	14;"	variable	language:JavaScript
+layout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	788;"	property	language:JavaScript	class:$.layout.optionsMap
+loadConfigFile	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	265;"	function	language:Sh
+loadConfigFile	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	265;"	function	language:Sh
 main	src/bash/aspark-starter/aspark-starter.sh	19;"	function	language:Sh
 main	src/bash/aspark-starter/test-aspark-starter.sh	20;"	function	language:Sh
+make_url	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	68;"	function	language:Sh
+make_url	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	68;"	function	language:Sh
+map	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	841;"	property	language:JavaScript	class:$.layout.backwardCompatibility
+maxHeight	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript
+move	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2054;"	property	language:JavaScript	class:paneMethods
+move	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4399;"	function	language:JavaScript
+n	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+n	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	variable	language:JavaScript
+name	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2018;"	property	language:JavaScript	class:Instance
+name	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	593;"	property	language:JavaScript	class:$.layout.defaults
 new_tmux_session	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	32;"	function	language:Sh
+nextWork	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	33;"	method	language:JavaScript	class:Scheduler
+north	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4732;"	property	language:JavaScript	class:Instance
+north	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	981;"	property	language:JavaScript
+oS	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5085;"	variable	language:JavaScript
+onBeforeShow	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	property	language:JavaScript	class:e
+onload_end	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	608;"	property	language:JavaScript	class:$.layout.defaults
+onload_start	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	607;"	property	language:JavaScript	class:$.layout.defaults
+onresizeall_end	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	606;"	property	language:JavaScript	class:$.layout.defaults
+onresizeall_start	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	605;"	property	language:JavaScript	class:$.layout.defaults
+onunload_end	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	610;"	property	language:JavaScript	class:$.layout.defaults
+onunload_start	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	609;"	property	language:JavaScript	class:$.layout.defaults
+open	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2038;"	property	language:JavaScript	class:paneMethods
+open	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4695;"	property	language:JavaScript	class:Instance
+open_2	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3203;"	function	language:JavaScript
+options	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4681;"	property	language:JavaScript	class:Instance
+overflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1721;"	property	language:JavaScript	class:CSS
+overflowX	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1721;"	property	language:JavaScript	class:CSS
+overflowY	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1721;"	property	language:JavaScript	class:CSS
+p	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+pane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2018;"	property	language:JavaScript	class:Instance
+pane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3710;"	property	language:JavaScript	class:thisTry
+panes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4687;"	property	language:JavaScript	class:Instance
+panes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	813;"	property	language:JavaScript	class:$.layout.transformData.json
+param_afterloop	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	125;"	label	language:DosBatch
+param_afterloop	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	125;"	label	language:DosBatch
+param_java_check	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	95;"	label	language:DosBatch
+param_java_check	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	95;"	label	language:DosBatch
+param_loop	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	82;"	label	language:DosBatch
+param_loop	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	82;"	label	language:DosBatch
+parse	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5035;"	function	language:JavaScript
+process_args	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	179;"	function	language:Sh
+process_args	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	179;"	function	language:Sh
+ratio	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5452;"	method	language:JavaScript	class:$.layout.browserZoom
+readCookie	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4938;"	method	language:JavaScript	class:$.layout.state
+realpath	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	12;"	function	language:Sh
+realpath	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	12;"	function	language:Sh
+remove	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2056;"	property	language:JavaScript	class:paneMethods
+removePane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2055;"	property	language:JavaScript	class:paneMethods
+removePane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4711;"	property	language:JavaScript	class:Instance
+removed	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2781;"	property	language:JavaScript	class:s
+require_arg	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	154;"	function	language:Sh
+require_arg	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	154;"	function	language:Sh
+resetOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4618;"	function	language:JavaScript
+resetOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4722;"	property	language:JavaScript	class:Instance
+resize	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1656;"	property	language:JavaScript	class:layoutMethods
+resizeAll	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1655;"	property	language:JavaScript	class:layoutMethods
+resizeAll	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2059;"	property	language:JavaScript	class:paneMethods
+resizeAll	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4726;"	property	language:JavaScript	class:Instance
+resizeChildLayout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2058;"	property	language:JavaScript	class:paneMethods
+resizeLayout	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2060;"	property	language:JavaScript	class:paneMethods
+resizePanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2458;"	function	language:JavaScript
+resizeWithWindow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	602;"	property	language:JavaScript	class:$.layout.defaults
+resizeWithWindowDelay	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	603;"	property	language:JavaScript	class:$.layout.defaults
+resizeWithWindowMaxDelay	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	604;"	property	language:JavaScript	class:$.layout.defaults
+resizers	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4689;"	property	language:JavaScript	class:Instance
+return	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.js	2;"	class	language:JavaScript	class:cY
+revision	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	62;"	property	language:JavaScript	class:$.layout
+rgba	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript
+run	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	217;"	function	language:Sh
+run	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter.bat	128;"	label	language:DosBatch
+run	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	217;"	function	language:Sh
+run	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter.bat	128;"	label	language:DosBatch
+runCallbacks	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4728;"	property	language:JavaScript	class:Instance
+s	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+saveCookie	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4902;"	method	language:JavaScript	class:$.layout.state
+scheduler	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	7;"	variable	language:JavaScript
+scrollToBookmarkOnLoad	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	601;"	property	language:JavaScript	class:$.layout.defaults
+scrollbarWidth	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	method	language:JavaScript	class:e.position
 session_exists	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	22;"	function	language:Sh
+setFrameSrcFromUrlFragment	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	72;"	function	language:JavaScript
+setPinState	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5322;"	method	language:JavaScript	class:$.layout.buttons
+setSizeLimits	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4701;"	property	language:JavaScript	class:Instance
+show	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2035;"	property	language:JavaScript	class:paneMethods
+show	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4693;"	property	language:JavaScript	class:Instance
+showAnim	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:_defaults
+showDebugMessages	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	613;"	property	language:JavaScript	class:$.layout.defaults
+showErrorMessages	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	612;"	property	language:JavaScript	class:$.layout.defaults
+showMasks	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4706;"	property	language:JavaScript	class:Instance
+showOn	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:_defaults
+showOptions	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript	class:_defaults
+size	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2042;"	property	language:JavaScript	class:paneMethods
+sizeContent	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2044;"	property	language:JavaScript	class:paneMethods
+sizeContent	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4704;"	property	language:JavaScript	class:Instance
+sizeHandles	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2045;"	property	language:JavaScript	class:paneMethods
+sizePane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2043;"	property	language:JavaScript	class:paneMethods
+sizePane	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4703;"	property	language:JavaScript	class:Instance
+sizePane_2	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	3691;"	function	language:JavaScript
+slideClose	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2040;"	property	language:JavaScript	class:paneMethods
+slideClose	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4698;"	property	language:JavaScript	class:Instance
+slideOpen	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2039;"	property	language:JavaScript	class:paneMethods
+slideOpen	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4697;"	property	language:JavaScript	class:Instance
+slideToggle	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2041;"	property	language:JavaScript	class:paneMethods
+slideToggle	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4699;"	property	language:JavaScript	class:Instance
+south	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4733;"	property	language:JavaScript	class:Instance
+south	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	983;"	property	language:JavaScript
+state	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4684;"	property	language:JavaScript	class:Instance
+stateKeys	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4885;"	property	language:JavaScript	class:$.layout.defaults.stateManagement
+svg	src/scala/aspark-starter/target/scala-2.11/api/lib/modernizr.custom.js	4;"	property	language:JavaScript
+swap	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2053;"	property	language:JavaScript	class:paneMethods
+swapPanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2052;"	property	language:JavaScript	class:paneMethods
+swapPanes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4705;"	property	language:JavaScript	class:Instance
+syncPinBtns	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	5350;"	method	language:JavaScript	class:$.layout.buttons
+t	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	557;"	variable	language:JavaScript
 terminal_size	src/bash/aspark-starter/funcs/sys/tmux/tmux-common.sh	18;"	function	language:Sh
+tip	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	property	language:JavaScript	class:e
+title	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	12;"	variable	language:JavaScript
+toggle	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	2036;"	property	language:JavaScript	class:paneMethods
+toggle	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4694;"	property	language:JavaScript	class:Instance
+toggle	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	property	language:JavaScript	class:b
+togglers	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4690;"	property	language:JavaScript	class:Instance
+tooltip	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	method	language:JavaScript	class:c
+top	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	1335;"	property	language:JavaScript	class:d
+topLevelPackages	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	5;"	variable	language:JavaScript
+topLevelTemplates	src/scala/aspark-starter/target/scala-2.11/api/lib/index.js	4;"	variable	language:JavaScript
+usage	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	295;"	function	language:Sh
+usage	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	295;"	function	language:Sh
+v	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript	function:d
+v	src/scala/aspark-starter/target/scala-2.11/api/lib/modernizr.custom.js	4;"	function	language:JavaScript	function:u
+version	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	59;"	property	language:JavaScript	class:$.layout
+version	src/scala/aspark-starter/target/scala-2.11/api/lib/tools.tooltip.js	14;"	property	language:JavaScript	class:c.tools.tooltip
+vlog	src/scala/aspark-starter/target/universal/scripts/scripts/aspark-starter	116;"	function	language:Sh
+vlog	src/scala/aspark-starter/target/universal/stage/bin/aspark-starter	116;"	function	language:Sh
+west	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4734;"	property	language:JavaScript	class:Instance
+west	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	985;"	property	language:JavaScript
+widget	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+widget.bridge	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+widget.extend	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+widget.ui.intersect	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript
+width	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	324;"	property	language:JavaScript	class:d
+work	src/scala/aspark-starter/target/scala-2.11/api/lib/scheduler.js	14;"	method	language:JavaScript	class:Scheduler
+x	src/scala/aspark-starter/target/scala-2.11/api/lib/modernizr.custom.js	4;"	function	language:JavaScript	function:w
+y	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	function	language:JavaScript	function:effects.effect.explode
+y	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery-ui.js	6;"	property	language:JavaScript
+y	src/scala/aspark-starter/target/scala-2.11/api/lib/modernizr.custom.js	4;"	function	language:JavaScript	function:w
+zIndex	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4583;"	property	language:JavaScript	class:newCSS
+zIndex	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	615;"	property	language:JavaScript	class:$.layout.defaults
+zIndexes	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	617;"	property	language:JavaScript	class:$.layout.defaults

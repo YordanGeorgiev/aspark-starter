@@ -9,3 +9,8 @@ src/scala/aspark-starter/target/**
 src/scala/aspark-starter/project/project/target/**
 src/scala/aspark-starter/project/target/**
 dat/tests/*.txt
+cnf/hosts/host-name/home/ysg/.spark_opts.host-name.*
+cnf/hosts/host-name/home/ysg/.profile_opts.host-name.*
+cnf/hosts/host-name/home/ysg/.java_opts.host-name.*
+cnf/hosts/host-name/home/ysg/.bash_opts.host-name.*
+metastore_db/**

@@ -334,14 +334,13 @@ doRunCmdAndLog(){
 # set -e ; doRunCmdOrExit "$cmd" ; set +e
 #------------------------------------------------------------------------------
 doRunCmdOrExit(){
-   cmd="$*" ;
-
+   cmd=$*
+   export exit_code=0
    doLog "DEBUG running cmd or exit: \"$cmd\""
-   msg=$($cmd 2>&1)
-   export exit_code=$?
+   msg=$($cmd 2>&1;exit_code=$?)
    # if occured during the execution exit with error
    error_msg=": FATAL : Failed to run the command \"$cmd\" with the output \"$msg\" !!!"
-   test exit_code -ne 0 || doExit "$exit_code" "$error_msg" && exit $exit_code
+   test $exit_code -ne 0 || doExit "$exit_code" "$error_msg" && exit $exit_code
 
    #if no occured just log the message
    doLog "DEBUG : cmdoutput : \"$msg\""
@@ -500,7 +499,7 @@ doParseConfFile(){
    echo -e "$cmd"
    echo -e "$cmd" >> $log_file
    echo -e "\n\n"
-   sleep 1; printf "\033[2J";printf "\033[0;0H" # and clear the screen
+   printf "\033[2J";printf "\033[0;0H" # and clear the screen
 }
 #eof func doParseConfFile
 

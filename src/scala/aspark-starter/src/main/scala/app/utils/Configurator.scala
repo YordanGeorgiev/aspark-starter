@@ -17,41 +17,44 @@ import com.typesafe.config.{ Config, ConfigFactory }
  */
 case class Configurator ( scalaProjKickOffDir: String) {
 	
-	val scalaProjDir: String = 			getScalaProjDir ( scalaProjKickOffDir )
-	val product_instance_dir: String = 	getProductVersionDir ( scalaProjDir )
+  val scalaProjDir: String = 			doGetScalaProjDir ( scalaProjKickOffDir )
+  val product_instance_dir: String = 	doGetProductInstanceDir ( scalaProjDir )
+  def getProductInstanceDir = product_instance_dir    //a getter 
 
-	// src: https://www.mkyong.com/logging/logback-set-log-file-name-programmatically/
-	System.setProperty("product_instance_dir", product_instance_dir);
+  // src: https://www.mkyong.com/logging/logback-set-log-file-name-programmatically/
+  System.setProperty("product_instance_dir", product_instance_dir);
 
-	// src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
-  	val objLogger = LoggerFactory.getLogger(classOf[Configurator])
+  // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
+  val objLogger = LoggerFactory.getLogger(classOf[Configurator])
 
-	val confDir = scalaProjDir + "/conf" 
-	val dataDir = product_instance_dir + "/data/aspark-starter" 
-	val dbDataDir = dataDir + "/db" 
-	val mySqlDataDir = dbDataDir + "/mysql" 
-	doLogDirs
+  val confDir = scalaProjDir + "/conf" 
+  val dataDir = product_instance_dir + "/dat/aspark-starter" 
+  val dataCsvDir = product_instance_dir + "/dat/aspark-starter/csv"
+  def getDataCsvDir = dataCsvDir
+  val dbDataDir = dataDir + "/db" 
+  val mySqlDataDir = dbDataDir + "/mysql" 
+  doLogDirs
 
-	val objGlobalAppConf = getGlobalAppConf
-	objLogger.debug ( objGlobalAppConf.toString )
+  val objGlobalAppConf = doGetGlobalAppConfFile
+  objLogger.debug ( objGlobalAppConf.toString )
   
 
   /**
    * Resolve the scala project dir by utilizing the src/scala/proj_name naming convention
    * @param scalaProjKickOffDir 	the dir resolved via reflection from the Main class file
    */
-	def getScalaProjDir ( scalaProjKickOffDir: String ) :String = {
+	def doGetScalaProjDir ( scalaProjKickOffDir: String ) :String = {
 		val regex = "(.*)(/src/scala/aspark-starter)(.*)".r
 		regex.replaceAllIn ( scalaProjKickOffDir , "$1$2")
 	}
-	//eof def getScalaProjDir
+	//eof def doGetScalaProjDir
 
 
   /**
    * Resolve the product version dir hosting one or many scala projects by naming convention
    * @param scalaProjDir 	the dir resolved via reflection from the Main class file
    */
-	def getProductVersionDir ( scalaProjDir: String ) :String = {
+	def doGetProductInstanceDir ( scalaProjDir: String ) :String = {
 		val regex = "/src/scala/aspark-starter".r
 		regex.replaceAllIn ( scalaProjDir , "")
 	}
@@ -65,7 +68,7 @@ case class Configurator ( scalaProjKickOffDir: String) {
   /**
   	* 
    */
-	def getGlobalAppConf = {
+	def doGetGlobalAppConfFile = {
 		ConfigFactory.parseFile(new File(confDir + "/" + "application.conf"))
 	}
 
@@ -73,7 +76,7 @@ case class Configurator ( scalaProjKickOffDir: String) {
   /**
    * @param file 	the file to get the custom config object for
    */
-	def getCustomConfig ( file : String ) = {
+	def doGetCustomConfFile ( file : String ) = {
 		ConfigFactory.parseFile( new File ( file ) )
 	}
 

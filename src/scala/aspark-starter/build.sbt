@@ -1,5 +1,4 @@
 // file: src/scala/aspark-starter/build.sbt
-// http://alvinalexander.com/bookmarks/scala/how-get-anorm-working-without-play-play-framework
 
 // the owner org
 organization := "Oranisation Ltd."
@@ -8,14 +7,10 @@ organization := "Oranisation Ltd."
 name := "aspark-starter" 
 
 // the version of this proj
-version := "0.0.2"
+version := "0.0.4"
 
 scalaVersion := "2.11.8"
 
-
-
-// ?!
-//lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 // src: http://www.scala-sbt.org/sbt-native-packager/gettingstarted.html
 enablePlugins(JavaAppPackaging)
@@ -25,30 +20,21 @@ enablePlugins(JavaAppPackaging)
 resolvers ++= Seq(
 "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/")
 
-// for apache spark check:
-// src: https://stackoverflow.com/a/44644342/65706
-libraryDependencies += "com.typesafe" % "config" % "1.3.0"
-
-// resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
-// resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/ivy-releases"
-
-
-
-
-
-// obs - use comma space <<lib>> syntax for easier copy paste !!!
-libraryDependencies ++= Seq ( 
-	//logging libs
-	  "ch.qos.logback" %  "logback-classic" % "1.1.7"
-	, "commons-lang" % "commons-lang" % "2.6"
- 	// lib for read and write to csv file files  
+libraryDependencies ++= Seq (
+    "ch.qos.logback" %  "logback-classic" % "1.1.7"
+  , "commons-lang" % "commons-lang" % "2.6"
+  , "com.typesafe" % "config" % "1.3.0"
+  , "org.apache.spark" %% "spark-core" % "2.2.0"
 )
-//eof lib dependancies list 
+
+
+// ?! iss: eval
+//lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 
 // Purpose : 
 // --------------------------------------------------------
-// the sbt build filee for the nettilaskuri maintenance project
+// the sbt build filee for the aspark-starter project
 
 // --------------------------------------------------------
 // eof file: src/scala/aspark-starter/build.sbt
