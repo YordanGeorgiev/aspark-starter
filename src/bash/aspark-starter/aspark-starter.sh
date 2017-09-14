@@ -513,6 +513,8 @@ main "$@"
 # Purpose:
 # a simplistic app stub with simplistic source control and 
 # cloning or morphing functionalities ...
+# on naming conventions consider:
+# https://unix.stackexchange.com/a/42849/37428
 #----------------------------------------------------------
 #
 #----------------------------------------------------------
