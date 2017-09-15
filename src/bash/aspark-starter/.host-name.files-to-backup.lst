@@ -2,3 +2,4 @@
 /home/ysg/.profile_opts.host-name
 /home/ysg/.java_opts.host-name
 /home/ysg/.bash_opts.host-name
+/usr/lib/spark/conf/log4j.properties

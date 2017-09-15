@@ -8,7 +8,8 @@ import ch.qos.logback.core.util.StatusPrinter
 import ch.qos.logback.classic.LoggerContext
 
 import java.io.File
-import com.typesafe.config.{ Config, ConfigFactory }
+import com.typesafe.config.Config
+import com.typesafe.config.ConfigFactory
 
 
 /**

@@ -14,7 +14,7 @@ product_dump_dir=$(cd $unit_run_dir/../../..; echo `pwd`)
 product_dir="$product_base_dir/csitea/$run_unit" 
 product_tmp_install_dir="$product_base_dir"/"$run_unit"'-tmp-install'
 cd "$product_dump_dir"
-run_unit_ver=$(git tag|sort -nr|head -n 1) || run_unit_ver='0.1.9'
+run_unit_ver=$(git tag|sort -nr|head -n 1) || run_unit_ver='0.0.5'
 product_instance_dir="$product_dir"'/'"$run_unit"'.'"$run_unit_ver"'.'"$run_unit_type"'.'"$run_unit_owner"
 
 mkdir -p "$product_dir" ; cd $_

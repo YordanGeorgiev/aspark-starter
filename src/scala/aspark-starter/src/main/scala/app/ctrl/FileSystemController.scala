@@ -4,18 +4,23 @@ import ch.qos.logback.core._
 import org.slf4j.LoggerFactory
 
 import java.io.File
+import java.time._
+
 import app.utils.Configurator
 import app.utils.io.FileHandler
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 
+import org.apache.log4j.{Level, Logger}
+
+
 /**
 * Purpose: the main entry of the console app
 */
 case class FileSystemController ( objConfigurator: Configurator ) {
 
-    // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
+  // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
   val objLogger = LoggerFactory.getLogger(classOf[FileSystemController])
 
 
@@ -34,7 +39,12 @@ case class FileSystemController ( objConfigurator: Configurator ) {
 
     val conf = new SparkConf().setMaster("local[*]").setAppName("AsparkStarter")
     val sc = new SparkContext(conf)
-
+   
+    // nope see issue: a57da15a-f466-48bb-b986-be4e5845f3ef
+    // nope Logger.getLogger("org").setLevel(Level.ERROR)
+    // nope Logger.getLogger("akka").setLevel(Level.ERROR)
+    // nope Logger.getLogger("org.apache.spark.*").setLevel(Level.ERROR)
+    // nope ... sc.setLogLevel("OFF")
 
     val objFileHandler = new FileHandler () 
     objFileHandler.getFileTree( new File ( dataCsvDir ) )
@@ -48,7 +58,11 @@ case class FileSystemController ( objConfigurator: Configurator ) {
             val line_lengths = lines.map(s => s.length)
             val total_length = line_lengths.reduce((a, b) => a + b)
             objLogger.debug ( "total_length: " + total_length )  
-          } //eof foreach
+
+          } 
+
+    
+    Thread.sleep(150000)
 
     sc.stop()
 

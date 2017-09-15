@@ -1,36 +1,41 @@
 // file: src/scala/aspark-starter/build.sbt
 
 // the owner org
-organization := "Oranisation Ltd."
+organization := "com.csitea"
 
 // the name of this proj
 name := "aspark-starter" 
 
 // the version of this proj
-version := "0.0.4"
+version := "0.0.5"
 
 scalaVersion := "2.11.8"
 
+val sparkVersion = "2.2.0"
 
 // src: http://www.scala-sbt.org/sbt-native-packager/gettingstarted.html
 enablePlugins(JavaAppPackaging)
 // enablePlugins(UniversalPlugin)
 
-//src: http://stackoverflow.com/a/25534129/65706
-resolvers ++= Seq(
-"Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/")
+// src: http://www.scala-sbt.org/0.13/docs/Resolvers.html
+//resolvers += Resolver.url("main Maven repository", url("https://mvnrepository.com/artifact/com.typesafe/config"))
+//resolvers += Resolver.url("Scalaz Bintray Repo", url("http://dl.bintray.com/scalaz/releases"))
+
+resolvers += Resolver.url("Central Maven Repository", url("http://central.maven.org/maven2/"))
+resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
+
+
+
 
 libraryDependencies ++= Seq (
-    "ch.qos.logback" %  "logback-classic" % "1.1.7"
-  , "commons-lang" % "commons-lang" % "2.6"
-  , "com.typesafe" % "config" % "1.3.0"
-  , "org.apache.spark" %% "spark-core" % "2.2.0"
+    "ch.qos.logback" % "logback-classic" % "1.2.3"
+  , "com.typesafe" % "config" % "1.3.1"
+  , "org.apache.spark" %% "spark-core" % sparkVersion
+  , "org.apache.spark" %% "spark-sql" % sparkVersion
 )
-
 
 // ?! iss: eval
 //lazy val root = (project in file(".")).enablePlugins(PlayScala)
-
 
 // Purpose : 
 // --------------------------------------------------------

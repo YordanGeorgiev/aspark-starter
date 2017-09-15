@@ -7,21 +7,26 @@ Table of Contents
     * [1.1. Issues handling](#11-issues-handling)
     * [1.2. Documentation](#12-documentation)
   * [2. NAMING CONVENTIONS](#2-naming-conventions)
-    * [2.1. Dirs naming conventions](#21-dirs-naming-conventions)
-    * [2.2. Root Dirs naming conventions](#22-root-dirs-naming-conventions)
-    * [2.3. Bash scripts naming conventions](#23-bash-scripts-naming-conventions)
-    * [2.4. Scala code naming conventions](#24-scala-code-naming-conventions)
-      * [2.4.1. Configure java_home](#241-configure-java_home)
-      * [2.4.2. Verify the JDK installation and configuration](#242-verify-the-jdk-installation-and-configuration)
-    * [2.5. Install Scala](#25-install-scala)
-    * [2.6. Install sbt](#26-install-sbt)
-    * [2.7. Install apache spark](#27-install-apache-spark)
-      * [2.7.1. Download the latest stable Apache Spak package](#271-download-the-latest-stable-apache-spak-package)
-      * [2.7.2. Unpack and deploy](#272-unpack-and-deploy)
-      * [2.7.3. Add env vars](#273-add-env-vars)
-      * [2.7.4. Verify the installation](#274-verify-the-installation)
-  * [3. OPERATIONS](#3-operations)
-    * [3.1. Run the examples](#31-run-the-examples)
+    * [2.1. Bash scripts](#21-bash-scripts)
+      * [2.1.1. Dirs naming conventions](#211-dirs-naming-conventions)
+      * [2.1.2. Root Dirs naming conventions](#212-root-dirs-naming-conventions)
+      * [2.1.3. Bash scripts naming conventions](#213-bash-scripts-naming-conventions)
+    * [2.2. Scala code capitalization styles and naming conventions](#22-scala-code-capitalization-styles-and-naming-conventions)
+          * [2.2.1. Pascal case usage](#221-pascal-case-usage)
+          * [2.2.2. s](#222-s)
+  * [3. INSTALLATIONS AND CONFIGURATIONS](#3-installations-and-configurations)
+    * [3.1. Install Java Development Kit 1.8](#31-install-java-development-kit-18)
+      * [3.1.1. Configure java_home](#311-configure-java_home)
+      * [3.1.2. Verify the JDK installation and configuration](#312-verify-the-jdk-installation-and-configuration)
+    * [3.2. Install Scala](#32-install-scala)
+    * [3.3. Install sbt](#33-install-sbt)
+    * [3.4. Install apache spark](#34-install-apache-spark)
+      * [3.4.1. Download the latest stable Apache Spak package](#341-download-the-latest-stable-apache-spak-package)
+      * [3.4.2. Unpack and deploy](#342-unpack-and-deploy)
+      * [3.4.3. Add env vars](#343-add-env-vars)
+      * [3.4.4. Verify the installation](#344-verify-the-installation)
+  * [4. OPERATIONS](#4-operations)
+    * [4.1. Run the examples](#41-run-the-examples)
 
 
     
@@ -49,12 +54,17 @@ The purpose of the tool is to "grasp the concept of apache spark", thus a proper
 
      
 
-### 2.1. Dirs naming conventions
+### 2.1. Bash scripts
+
+
+    
+
+#### 2.1.1. Dirs naming conventions
 The dir structure should be logical and a person navigating to a dir should almost understand what is to be find in thre by its name .. 
 
     
 
-### 2.2. Root Dirs naming conventions
+#### 2.1.2. Root Dirs naming conventions
 The root dirs and named as follows:
 bin - contains the produced binaries for th project
 cnf - for the configuration
@@ -64,22 +74,45 @@ src - for the source code of the actual projects and subprojects
 
     
 
-### 2.3. Bash scripts naming conventions
+#### 2.1.3. Bash scripts naming conventions
 Do not use capital letters - they are too noisy.
 
     
 
-### 2.4. Scala code naming conventions
+### 2.2. Scala code capitalization styles and naming conventions
 
 
     
 
-#### 2.4.1. Configure java_home
+##### 2.2.1. Pascal case usage
+Use in application wide global variables 
+
+    val ProductInstanceDir
+
+##### 2.2.2. s
+
+
+    
+
+## 3. INSTALLATIONS AND CONFIGURATIONS
+
+
+     
+
+### 3.1. Install Java Development Kit 1.8
+Install Java Development Kit 1.8 as follows:
+
+    # update your Ubuntu repositories
+    sudo apt-get update
+    # install the open jdk
+    sudo apt-get install -y openjdk-8-jdk
+
+#### 3.1.1. Configure java_home
 Configure java_home env var to the the java_opts file. 
 
     echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.java_opts.host-name
 
-#### 2.4.2. Verify the JDK installation and configuration
+#### 3.1.2. Verify the JDK installation and configuration
 Verify the JDK installation and configuration as follows:
 
     # and verify 
@@ -88,12 +121,12 @@ Verify the JDK installation and configuration as follows:
     Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
     Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
 
-### 2.5. Install Scala
+### 3.2. Install Scala
 The scala libs will be installed with the sbt build tool. 
 
     
 
-### 2.6. Install sbt
+### 3.3. Install sbt
 Install sbt scala build tool by following the instructions in the following url:
 http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
 
@@ -104,12 +137,12 @@ http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
     which sbt
     
 
-### 2.7. Install apache spark
+### 3.4. Install apache spark
 
 
     
 
-#### 2.7.1. Download the latest stable Apache Spak package
+#### 3.4.1. Download the latest stable Apache Spak package
 Download the spak package with curl as follows:
 
     export dir=/vagrant/pckgs/apache
@@ -117,7 +150,7 @@ Download the spak package with curl as follows:
     curl -O https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
     
 
-#### 2.7.2. Unpack and deploy
+#### 3.4.2. Unpack and deploy
 Download the spak package with curl as follows:
 
     mv -v spark-2.2.0-bin-hadoop2.7/ spark
@@ -125,7 +158,7 @@ Download the spak package with curl as follows:
     sudo mv -v spark /usr/lib/
     
 
-#### 2.7.3. Add env vars
+#### 3.4.3. Add env vars
 Add the following env vars
 
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -135,7 +168,7 @@ Add the following env vars
     # reload the env vars
     source ~/.profile_opts
 
-#### 2.7.4. Verify the installation
+#### 3.4.4. Verify the installation
 Verify the installation by startin the spark shell
 
     spark-shell
@@ -156,12 +189,12 @@ Verify the installation by startin the spark shell
     scala>
     
 
-## 3. OPERATIONS
+## 4. OPERATIONS
 
 
      
 
-### 3.1. Run the examples
+### 4.1. Run the examples
 You can run all the examples as follows:
 
     # check the actions to run

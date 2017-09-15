@@ -1,5 +1,19 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 # ---
+src/scala/aspark-starter/build.sbt
+src/scala/aspark-starter/project/plugins.sbt
+src/scala/aspark-starter/project/build.properties
+src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
+src/
+# ---
+src/bash/aspark-starter/funcs/run-local-app.func.sh
+src/bash/aspark-starter/helps/run-local-app.help.sh
+src/bash/aspark-starter/tests/run-local-app.test.sh
+doc/txt/aspark-starter/funcs/run-local-app.func.txt
+doc/txt/aspark-starter/tests/run-local-app.test.txt
+doc/txt/aspark-starter/helps/run-local-app.help.txt
 src/scala/aspark-starter/src/main/scala/app/ctrl/FileSystemController.scala
 src/scala/aspark-starter/src/main/scala/app/io
 src/scala/aspark-starter/src/main/scala/app/io/in
@@ -31,14 +45,6 @@ dat
 dat/aspark-starter
 dat/aspark-starter/csv
 dat/aspark-starter/csv/monthly_issues.csv
-# ---
-src/scala/aspark-starter/build.sbt
-src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
-src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
-src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
-src/scala/aspark-starter/project/plugins.sbt
-src/scala/aspark-starter/project/build.properties
-src/
 src/bash
 src/bash/aspark-starter
 src/bash/aspark-starter/funcs
@@ -339,3 +345,4 @@ cnf/hosts/host-name/home/ysg/.java_opts.host-name
 cnf/hosts/host-name/home/ysg/.bash_opts.host-name
 cnf/hosts/host-name/home/ysg/.tmux-session
 cnf/hosts/host-name/home/ysg/.spark_opts.host-name
+cnf/hosts/host-name/usr/lib/spark/conf/log4j.properties

@@ -1,0 +1,37 @@
+# doc/txt/aspark-starter/run-local-app/run-local-app.help.txt
+
+	doHelpRunLocalApp
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doHelpRunLocalApp function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doHelpRunLocalApp function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doHelpRunLocalApp function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doHelpRunLocalApp function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doHelpRunLocalApp used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doHelpRunLocalApp functions
+
+
+
+# eof file: doc/txt/aspark-starter/run-local-app/run-local-app.help.txt

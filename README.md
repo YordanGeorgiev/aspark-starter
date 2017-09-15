@@ -5,13 +5,15 @@ Table of Contents
 
   * [1. WHAT IS IT ?!](#1-what-is-it-)
   * [2. INSTALLATION AND CONFIGURATION](#2-installation-and-configuration)
-    * [2.1. Fetch the source](#21-fetch-the-source)
-    * [2.2. Prerequisites](#22-prerequisites)
+    * [2.1. Ensure you have the following prerequisite binaries](#21-ensure-you-have-the-following-prerequisite-binaries)
+    * [2.2. Fetch the source - option 1](#22-fetch-the-source--option-1)
     * [2.3. Ensure you have all the prerequisite binaries](#23-ensure-you-have-all-the-prerequisite-binaries)
     * [2.4. Build the first aspark-starter instance](#24-build-the-first-aspark-starter-instance)
     * [2.5. Check the runnable actions](#25-check-the-runnable-actions)
     * [2.6. Run the examples](#26-run-the-examples)
     * [2.7. Start hacking](#27-start-hacking)
+      * [2.7.1. Build and compile](#271-build-and-compile)
+      * [2.7.2. Run the example](#272-run-the-example)
   * [3. PROJECT STATUS](#3-project-status)
 
 
@@ -27,19 +29,7 @@ This section presents the steps needed to perform to deploy the aspark-starter t
 
     
 
-### 2.1. Fetch the source
-Fetch the source from git hub as follows:
-
-    # create your product dir:
-    mkdir -p /opt/csitea/
-    cd /opt/csitea/
-    
-    # fetch the source
-    git clone git@github.com:YordanGeorgiev/aspark-starter.git
-    
-    # DO NOT CD into the new dir !!!!
-
-### 2.2. Prerequisites
+### 2.1. Ensure you have the following prerequisite binaries
 The must have binaries are:
  bash, perl, zip
 
@@ -51,11 +41,22 @@ The examples are for Ubuntu - use you OS package manager …
     apt-get autoclean
     apt-get install --only-upgrade bash
     sudo apt-get install -y perl
-    
-    
+    sudo apt-get install -y zip
     apt-get upgrade
     
     
+
+### 2.2. Fetch the source - option 1
+Fetch the source from git hub as follows:
+
+    # create your product dir:
+    mkdir -p /opt/csitea/
+    cd /opt/csitea/
+    
+    # fetch the source
+    git clone git@github.com:YordanGeorgiev/aspark-starter.git
+    
+    # DO NOT CD into the new dir !!!!
 
 ### 2.3. Ensure you have all the prerequisite binaries
 Ensure you have all the prerequisite binaries by issuing the following command
@@ -83,7 +84,7 @@ You can run all the examples by first checking which actions are configured for 
     # check the actions to run
       cat src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
     
-    # STDUOT
+    # STDOUT
     # sbt-compile-verbose
     # sbt-clean-compile
     # sbt-compile
@@ -117,10 +118,21 @@ Start hacking … or wait check at least the test call running all the functions
     # Action  !!! - aka now run the tests
     bash src/bash/aspark-starter/test-aspar-starter.sh
 
+#### 2.7.1. Build and compile
+Build and compile
+
+    bash src/bash/aspark-starter/aspark-starter.sh -a sbt-compile
+
+#### 2.7.2. Run the example
+Run the example
+
+    bash src/bash/aspark-starter/aspark-starter.sh -a run-local-app
+
 ## 3. PROJECT STATUS
 You could track the advancement of the project from the following url:
 https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wo5N32EpubwxBfeFxi6X-eOmXwOPg4WSyA4qBSz1Yu0EyU34jl0xICgWzrFUSeEA_aC4RF7LRqx9/pubhtml
-Note that the content on the url is updated on project actual status update ( i.e. meaningful work , milestones achieve ) 
+
+Note that the content on the url is updated on project actual status update ( i.e. meaningful work or milestones &amp; tasks comppletion ) 
 
     
 

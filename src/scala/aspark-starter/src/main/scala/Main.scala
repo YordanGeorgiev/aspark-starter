@@ -7,6 +7,7 @@ import app.utils.Configurator
 import app.utils.io.FileHandler
 import app.ctrl.FileSystemController
 
+
 /**
 * Purpose: the main entry of the console app
 */

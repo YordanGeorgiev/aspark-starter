@@ -1,0 +1,32 @@
+# doc/txt/aspark-starter/run-local-app/run-local-app.spec.txt
+
+	doSpecRunLocalApp
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to implement the run- local app deploymment described in 
+   https://spark.apache.org/docs/latest/submitting-applications.html
+
+	# Prequisites
+	# ------------------------------------------------------
+   installed and configured spark, jvm , sbt
+
+
+	# Interdependancies
+	# ------------------------------------------------------
+   spark, jvm , sbt
+    
+	# Usage:
+	# ------------------------------------------------------
+	$0 -a run-local-app
+
+	# Developent
+	# ------------------------------------------------------
+
+	# Caveats:
+	# ------------------------------------------------------
+   you have to read the following source to understand what is happening
+   https://spark.apache.org/docs/latest/submitting-applications.html#advanced-dependency-management
+
+
+# eof file: doc/txt/aspark-starter/run-local-app/run-local-app.spec.txt
