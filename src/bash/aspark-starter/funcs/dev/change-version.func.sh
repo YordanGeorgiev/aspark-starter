@@ -37,6 +37,9 @@ doChangeVersion(){
 	);
 	done < <(cat $include_file)
 
+   # change the product version dir in the scala code as well ...
+   perl -pi -e "s/$product_version/$tgt_version/g" \
+      "$tgt_product_instance_dir/src/scala/$run_unit/build.sbt"
 }
 #eof doChangeVersion
 

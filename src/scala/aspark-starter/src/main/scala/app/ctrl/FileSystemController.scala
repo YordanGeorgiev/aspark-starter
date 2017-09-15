@@ -60,9 +60,8 @@ case class FileSystemController ( objConfigurator: Configurator ) {
             objLogger.debug ( "total_length: " + total_length )  
 
           } 
-
     
-    Thread.sleep(150000)
+    //Thread.sleep(150000)
 
     sc.stop()
 

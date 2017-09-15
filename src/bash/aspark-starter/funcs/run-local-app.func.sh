@@ -10,7 +10,7 @@ doRunLocalApp(){
 	sleep "$sleep_interval"
 	cd "$product_instance_dir"'/src/scala/'"$run_unit"
 
-   # jar_file="$jar_file/src/scala/aspark-starter/target/universal/stage/lib/com.csitea.aspark-starter-0.0.5.jar"
+   # jar_file="$jar_file/src/scala/aspark-starter/target/universal/stage/lib/com.csitea.aspark-starter-0.0.6.jar"
 	jar_file="$product_instance_dir/src/scala/$run_unit/target/universal"
 	jar_file="$jar_file/stage/lib/com.csitea.$run_unit"'-'"$product_version.jar"
 
@@ -18,6 +18,8 @@ doRunLocalApp(){
    doLog "INFO $jar_file"
 
 	test -f "$jar_file" && doLog "INFO using the following jar_file: $jar_file"
+   # force each time usage of the newest version
+	test -f "$jar_file" && rm -fv "$jar_file"
 	test -f "$jar_file" || sbt stage
 
    # src:
@@ -28,9 +30,8 @@ doRunLocalApp(){
 
    doLog "INFO using the following jars_list"
    doLog "INFO $jars_list"
-   cp -vf "$jar_file" "$jars_dir/"
-
-	# Run application locally on all the cores
+	
+   # Run application locally on all the cores
 	# src: https://spark.apache.org/docs/latest/submitting-applications.html
 	$SPARK_HOME/bin/spark-submit \
 		--class app.Main \

@@ -4,33 +4,11 @@
 	
 	# Purpose:
 	# ------------------------------------------------------
-	-- todo: what is the purpose of the doTestRunLocalApp function
-
-	# Prequisites
-	# ------------------------------------------------------
-	-- todo: what are the prerequisites of the doTestRunLocalApp function
-
-	# Installation
-	# ------------------------------------------------------
-	-- todo: what are the required installations for the  
-		doTestRunLocalApp function to execute without errors
-
-	# Interdependancies
-	# ------------------------------------------------------
-	-- todo: what are the interdependancies for the  
-		doTestRunLocalApp function to execute without errors
-
-	# Usage:
-	# ------------------------------------------------------
-	-- todo: how can be the doTestRunLocalApp used 
-
-	# Developent
-	# ------------------------------------------------------
-	-- todo: what issues, todos could be pointed for development
+	to test the execution of the run-loal-app action
 
 	# Caveats:
 	# ------------------------------------------------------
-	-- todo: what are the known caveats of the doTestRunLocalApp functions
+	none
 
 
 

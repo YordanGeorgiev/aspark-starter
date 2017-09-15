@@ -7,13 +7,6 @@ src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
 src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
 src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
 src/
-# ---
-src/bash/aspark-starter/funcs/run-local-app.func.sh
-src/bash/aspark-starter/helps/run-local-app.help.sh
-src/bash/aspark-starter/tests/run-local-app.test.sh
-doc/txt/aspark-starter/funcs/run-local-app.func.txt
-doc/txt/aspark-starter/tests/run-local-app.test.txt
-doc/txt/aspark-starter/helps/run-local-app.help.txt
 src/scala/aspark-starter/src/main/scala/app/ctrl/FileSystemController.scala
 src/scala/aspark-starter/src/main/scala/app/io
 src/scala/aspark-starter/src/main/scala/app/io/in
@@ -26,6 +19,14 @@ src/scala/aspark-starter/src/main/scala/app/utils/io/FileHandler.scala
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
 src/scala
+# ---
+src/bash/aspark-starter/funcs/run-local-app.func.sh
+src/bash/aspark-starter/helps/run-local-app.help.sh
+src/bash/aspark-starter/tests/run-local-app.test.sh
+doc/txt/aspark-starter/funcs/run-local-app.func.txt
+doc/txt/aspark-starter/tests/run-local-app.test.txt
+doc/txt/aspark-starter/helps/run-local-app.help.txt
+# ---
 src/scala/aspark-starter
 src/scala/aspark-starter/conf
 src/scala/aspark-starter/conf/application.conf

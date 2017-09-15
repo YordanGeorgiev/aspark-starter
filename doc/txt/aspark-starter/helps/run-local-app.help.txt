@@ -1,37 +1,32 @@
-# doc/txt/aspark-starter/run-local-app/run-local-app.help.txt
+# doc/txt/aspark-starter/run-local-app/run-local-app.spec.txt
 
-	doHelpRunLocalApp
+	doSpecRunLocalApp
 	
 	# Purpose:
 	# ------------------------------------------------------
-	-- todo: what is the purpose of the doHelpRunLocalApp function
+	to implement the run- local app deploymment described in 
+   https://spark.apache.org/docs/latest/submitting-applications.html
 
 	# Prequisites
 	# ------------------------------------------------------
-	-- todo: what are the prerequisites of the doHelpRunLocalApp function
+   installed and configured spark, jvm , sbt
 
-	# Installation
-	# ------------------------------------------------------
-	-- todo: what are the required installations for the  
-		doHelpRunLocalApp function to execute without errors
 
 	# Interdependancies
 	# ------------------------------------------------------
-	-- todo: what are the interdependancies for the  
-		doHelpRunLocalApp function to execute without errors
-
+   spark, jvm , sbt
+    
 	# Usage:
 	# ------------------------------------------------------
-	-- todo: how can be the doHelpRunLocalApp used 
+	$0 -a run-local-app
 
 	# Developent
 	# ------------------------------------------------------
-	-- todo: what issues, todos could be pointed for development
 
 	# Caveats:
 	# ------------------------------------------------------
-	-- todo: what are the known caveats of the doHelpRunLocalApp functions
+   you have to read the following source to understand what is happening
+   https://spark.apache.org/docs/latest/submitting-applications.html#advanced-dependency-management
 
 
-
-# eof file: doc/txt/aspark-starter/run-local-app/run-local-app.help.txt
+# eof file: doc/txt/aspark-starter/run-local-app/run-local-app.spec.txt
