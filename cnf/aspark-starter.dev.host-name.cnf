@@ -33,6 +33,9 @@ DbType 	=         postgres
 # the log file
 LogFile=%LogDir%/%ProductName%.%YYYY%.%MM%.%DD%.log
 
+# the run log file
+RunLogFile=%LogDir%/%ProductName%.%YYYY%.%MM%.%DD%.run.log
+
 # the host on which the mariadb is running 
 db_host = host-name
 
@@ -41,6 +44,8 @@ db_port = 13306
 
 # OBS ! dev , tst , prd product instances to own db !
 db_name   = dev_aspark_starter
+
+aspark_starter_project = aspark-starter
 
 # the mariadb user name
 db_user = csitea

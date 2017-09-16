@@ -26,6 +26,7 @@ done < <(cat << "EOF"
    mutt
    libxml-atom-perl
    postgresql-9.6
+   libpq-dev
    libdbd-pgsql
    curl
    wget

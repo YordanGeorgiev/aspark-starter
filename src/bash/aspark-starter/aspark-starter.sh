@@ -122,6 +122,7 @@ doInit(){
    run_unit=${my_name_ext%.*}
    host_name=$(hostname -s)
    sleep_interval="${sleep_interval:=0}"
+   exit_code="${exit_code:=1}"      # assume unexpected error
 }
 #eof doInit
 
@@ -134,7 +135,7 @@ doInit(){
 doParseCmdArgs(){
 
    # traverse all the possible cmd args
-   while getopts ":a:c:i:h:" opt; do
+   while getopts ":a:c:i:h:t:" opt; do
      case $opt in
       a)
          actions="$actions$OPTARG "
@@ -147,6 +148,9 @@ doParseCmdArgs(){
          ;;
       h)
          doPrintHelp
+         ;;
+      t)
+         export tables="$OPTARG "
          ;;
       \?)
          doExit 2 "Invalid option: -$OPTARG"
@@ -222,8 +226,9 @@ doExit(){
 
    doCleanAfterRun
    cd $call_start_dir
-
-   if (( $exit_code != 0 )); then
+   
+   if [ $exit_code -ne 0 ]
+   then
       exit_msg=" ERROR --- exit_code $exit_code --- exit_msg : $exit_msg"
       >&2 echo "$exit_msg"
       # doSendReport

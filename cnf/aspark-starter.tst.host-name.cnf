@@ -18,6 +18,9 @@ LogDir = %ProductInstanceDir%/dat/log
 # the default Log file
 LogFile =         %LogDir%/%ProductName%.log
 
+# the run log file
+RunLogFile=%LogDir%/%ProductName%.%YYYY%.%MM%.%DD%.run.log
+
 # the default chars separating the time from the txt
 LogTimeToTextSeparator = ###
 
