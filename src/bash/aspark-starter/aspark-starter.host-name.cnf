@@ -6,7 +6,7 @@
 #the name of this application 
 app_name=aspark-starter
 
-db=issue_tracker
+db=aspark_starter
 
 # to whom to send e-mails - use space as delimiter
 Emails=yordan.georgiev@gmail.com

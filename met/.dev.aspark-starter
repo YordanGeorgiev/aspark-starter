@@ -1,5 +1,6 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 # ---
+src/perl/aspark_starter/script/aspark_starter_preq_checker.pl
 src/scala/aspark-starter/build.sbt
 src/scala/aspark-starter/project/plugins.sbt
 src/scala/aspark-starter/project/build.properties
@@ -102,9 +103,9 @@ cnf/hosts/host-name/home/ysg
 cnf/hosts/host-name/home/ysg/.muttrc
 cnf/hosts/host-name/home/ysg/.tmux-session
 cnf/aspark-starter.dev.host-name.cnf
-cnf/aspark-starter.host-name.cnf
-cnf/aspark-starter.prd.host-name.cnf
 cnf/aspark-starter.tst.host-name.cnf
+cnf/aspark-starter.prd.host-name.cnf
+cnf/aspark-starter.host-name.cnf
 cnf/readme.txt
 #----
 .gitignore

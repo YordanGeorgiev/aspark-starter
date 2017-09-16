@@ -1,7 +1,6 @@
 #!/bin/bash
-
 # file: src/bash/aspark-starter/install-prerequisites-for-aspark-starter.sh
-
+# caveat package names are for Ubuntu !!!
 set -eu -o pipefail # fail on error , debug all lines
 
 # run as root
@@ -11,7 +10,16 @@ echo "=== $BASH_SOURCE on $(hostname -f) at $(date)" >&2
 
 
 echo installing the must-have pre-requisites
-while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
+while read -r p ; do 
+   if [ "" == "`which $p`" ]; 
+   then echo "$p Not Found"; 
+      if [ -n "`which apt-get`" ]; 
+      then apt-get install -y $p ; 
+      elif [ -n "`which yum`" ]; 
+      then yum -y install $p ; 
+      fi ; 
+   fi
+done < <(cat << "EOF"
    perl
    zip unzip
    exuberant-ctags
@@ -32,6 +40,19 @@ echo hit Ctrl+C to quit
 echo -e "\n"
 sleep 6
 
-sudo apt-get install -y tig
+echo installing the nice to-have pre-requisites
+while read -r p ; do 
+   if [ "" == "`which $p`" ]; 
+   then echo "$p Not Found"; 
+      if [ -n "`which apt-get`" ]; 
+      then apt-get install -y $p ; 
+      elif [ -n "`which yum`" ]; 
+      then yum -y install $p ; 
+      fi ; 
+   fi
+done < <(cat << "EOF"
+   tig
+EOF
+)
 
 # eof file src/bash/aspark-starter/install-prerequisites-for-aspark-starter.sh

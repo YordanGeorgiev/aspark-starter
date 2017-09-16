@@ -1,10 +1,16 @@
-# file: cnf/aspark-starter.host-name.cnf
+# file: cnf/aspark-starter.prd.host-name.cnf
+[MAIN_SETTINGS]
+
+# the id from the url of the google spread sheet
+google_spread_sheet_id = 1-oYPtBM8PG_FUogk40RDmcM_Xzq91Tb81Zlyi0cMwYQ
 
 # multiple projects support
-issue_tracker_project = aspark-starter
+issue_tracker_project = csitea
 
-# where to get the DDL's for the db from
-sql_dir=/opt/csitea/aspark-starter/aspark-starter.0.1.8.prd.ysg/src/sql/pgsql/prd_issue_tracker
+sql_dir = $product_instance_dir/src/sql/pgsql/tst_aspark_starter
+
+# where are stored the txt issues files
+proj_daily_data_root_dir = /vagrant/csitea/aspark-starter/data/txt/issues
 
 # The logging directory 
 LogDir = %ProductInstanceDir%/dat/log
@@ -19,13 +25,13 @@ LogTimeToTextSeparator = ###
 LogToFile =          1
 
 # the time format of the logging 
-TimeFormat =         YYYY-MM-DD hh:mm:ss
+TimeFormat =         YYYY.MM.DD - hh:mm:ss
 
 # the time format of the logging 
-DbType 	=         mariadb
+DbType 	=         postgres
 
 # the log file
-LogFile=%LogDir%/%ProductName%.%YYYY%-%MM%-%DD%.log
+LogFile=%LogDir%/%ProductName%.%YYYY%.%MM%.%DD%.log
 
 # the host on which the mariadb is running 
 db_host = host-name
@@ -33,11 +39,11 @@ db_host = host-name
 # the pgsql port
 db_port = 13306
 
-# OBS ! dev , tst , prd product instances to own db !
-db_name   = %ProductType%_issue_tracker
+# OBS ! prd , tst , prd product instances to own db !
+db_name   = prd_aspark_starter
 
 # the mariadb user name
-db_user = ysg
+db_user = csitea
 
 # Whether or not to print messages to STDOUT and / or STDERR
 PrintConsoleMsgs =               1
@@ -57,4 +63,13 @@ PrintDebugMsgs =                 1
 # Whether or not to pring TRACE messages
 PrintTraceMsgs =                 1 
 
-# eof file: cnf/aspark-starter.host-name.cnf
+# to whom to send e-mail whenever bad things happen ...
+Emails=yordan.georgiev@gmail.com
+
+# where to place the backups of the 
+network_backup_dir=/vagrant/csitea/aspark-starter/dat/zip
+
+# the last one is fake .... because well a bug
+foo=bar
+
+# eof file: cnf/aspark-starter.prd.host-name.cnf

@@ -3,4 +3,3 @@ sbt-clean-compile
 sbt-compile
 sbt-stage
 sbt-run
-run-local-app

@@ -4,7 +4,7 @@
 # source ./lib/bash/funcs/parse-cnf-env-vars.sh
 # call by: doParseCnfEnvVars cnf/aspark-starter.dev.host-name.cnf
 # verify by: 
-# echo $issue_tracker_project 
+# echo $aspark_starter_project 
 # should echo:
 # ysg-issues
 # ---------------------------------------------------------
