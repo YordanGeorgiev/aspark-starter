@@ -3,3 +3,4 @@
 /home/ysg/.java_opts.host-name
 /home/ysg/.bash_opts.host-name
 /usr/lib/spark/conf/log4j.properties
+/etc/postgresql/9.6/main/postgresql.conf

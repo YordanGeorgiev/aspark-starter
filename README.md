@@ -89,7 +89,7 @@ You can run all the examples by first checking which actions are configured for 
     # sbt-clean-compile
     # sbt-compile
     # sbt-stage
-    # sbt-run
+    # run-local-app
     
     bash src/bash/aspark-starter/test-aspark-starter.sh
     
@@ -102,7 +102,7 @@ You can run all the examples by first checking which actions are configured for 
     #    ok    08:27:00 08:27:25 sbt-clean-compile
     #    ok    08:27:25 08:27:34 sbt-compile
     #    ok    08:27:35 08:27:49 sbt-stage
-    #    ok    08:27:49 08:27:59 sbt-run
+    #    ok    08:27:49 08:27:59 run-local-app
 
 ### 2.7. Start hacking
 Start hacking … or wait check at least the test call running all the functions of the tool … 

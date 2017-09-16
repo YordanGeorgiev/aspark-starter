@@ -37,6 +37,7 @@ doRunLocalApp(){
 		--class app.Main \
 		--master 'local[*]' \
 		--deploy-mode 'client' \
+      --driver-class-path "$jars_dir/org.postgresql.postgresql-42.1.1.jar" \
 		--jars "$jars_list" \
 		"$jar_file"
 

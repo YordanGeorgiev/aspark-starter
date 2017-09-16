@@ -7,7 +7,7 @@ organization := "com.csitea"
 name := "aspark-starter" 
 
 // the version of this proj
-version := "0.0.6"
+version := "0.0.7"
 
 scalaVersion := "2.11.8"
 
@@ -32,6 +32,7 @@ libraryDependencies ++= Seq (
   , "com.typesafe" % "config" % "1.3.1"
   , "org.apache.spark" %% "spark-core" % sparkVersion
   , "org.apache.spark" %% "spark-sql" % sparkVersion
+  , "org.postgresql" % "postgresql" % "42.1.1"
 )
 
 // ?! iss: eval

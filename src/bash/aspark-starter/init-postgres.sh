@@ -9,30 +9,33 @@ sudo passwd postgres
 echo start the postgres 
 sudo /etc/init.d/postgresql start
 
-echo Create the pgsql user
-sudo su - postgres  -c "psql -c 'CREATE USER '$USER' ;'"
 
-echo grant him the priviledges
-sudo su - postgres  -c \
-"psql -c 'grant all privileges on database postgres to '$USER' ;'"
-sudo su - postgres  -c \
-"psql -c 'ALTER USER '$USER' CREATEDB;'"
-sudo su - postgres  -c \
-'psql -c "select * from information_schema.role_table_grants 
-where grantee='"'"$USER"'"';"'
+sudo su - postgres -c "psql <<__END__
 
-echo install extensions
-sudo su - postgres  -c \
-"psql template1 -c 'CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";'"
-sudo su - postgres  -c \
-"psql template1 -c 'CREATE EXTENSION IF NOT EXISTS \"pgcrypto\";'"
-sudo su - postgres  -c \
-"psql template1 -c 'CREATE EXTENSION IF NOT EXISTS \"dblink\";'"
+SELECT 'crate the same user' ; 
+   CREATE USER $USER ;
+   ALTER USER $USER CREATEDB;
+
+SELECT 'grant him the priviledges' ; 
+   grant all privileges on database postgres to $USER ;
+   alter user postgres password 'secret';
+
+SELECT 'AND VERIFY' ; 
+   select * from information_schema.role_table_grants 
+   where grantee='""$USER""' ;
+
+SELECT 'INSTALL EXTENSIONS' ; 
+   CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";
+   CREATE EXTENSION IF NOT EXISTS \"pgcrypto\";
+   CREATE EXTENSION IF NOT EXISTS \"dblink\";
+
+SELECT 'on which port the postgres server is listening' ;
+SELECT * FROM pg_settings WHERE name = 'port';
+__END__
+"
 
 sudo /etc/init.d/postgresql status
 sudo netstat -tulntp | grep -i postgres
 
-# issues:
-# chk: https://stackoverflow.com/a/32409065/65706
 
 # eof file: src/bash/aspark-starter/init-postgres.sh

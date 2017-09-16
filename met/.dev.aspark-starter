@@ -60,15 +60,6 @@ doc/txt/aspark-starter/tests/sbt-clean-compile.test.txt
 doc/txt/aspark-starter/helps/sbt-clean-compile.help.txt
 doc/txt/aspark-starter/funcs/sbt-clean-compile.func.txt
 # ---
-src/bash/aspark-starter/funcs/scala/sbt-run.func.sh
-src/bash/aspark-starter/tests/sbt-run.test.sh
-src/bash/aspark-starter/specs/sbt-run.spec.sh
-src/bash/aspark-starter/helps/sbt-run.help.sh
-doc/txt/aspark-starter/tests/sbt-run.test.txt
-doc/txt/aspark-starter/specs/sbt-run.spec.txt
-doc/txt/aspark-starter/helps/sbt-run.help.txt
-doc/txt/aspark-starter/funcs/sbt-run.func.txt
-# --- 
 src/bash/aspark-starter/funcs/scala/sbt-stage.func.sh
 src/bash/aspark-starter/tests/sbt-stage.test.sh
 src/bash/aspark-starter/helps/sbt-stage.help.sh
@@ -518,3 +509,4 @@ src/perl/aspark_starter/t/TestCtrlFileToDb.pm
 src/perl/aspark_starter/t/TestInitiator.pm
 src/perl/aspark_starter/t/TestLogger.pl
 tags
+cnf/hosts/host-name/etc/postgresql/9.6/main/postgresql.conf

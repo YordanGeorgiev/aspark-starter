@@ -22,11 +22,17 @@ main(){
    test -z "${1+x}" && arg='print-usage'
 
 	case $arg in
+		'-u')
+		actions="print-usage "
+		;;
 		'-usage')
 		actions="print-usage "
 		;;
 		'--usage')
 		actions="print-usage "
+		;;
+		'-h')
+		actions="print-help "
 		;;
 		'-help')
 		actions="print-help "
@@ -44,6 +50,7 @@ main(){
 	doExit 0 "# = STOP  MAIN = $run_unit "
 }
 #eof main
+
 
 # v1.2.5 
 #------------------------------------------------------------------------------
@@ -102,8 +109,6 @@ doRunActions(){
 	);
 	done < <(echo "$actions")
 
-
-
 }
 #eof func doRunActions
 
@@ -135,7 +140,7 @@ doInit(){
 doParseCmdArgs(){
 
    # traverse all the possible cmd args
-   while getopts ":a:c:i:h:t:" opt; do
+   while getopts ":a:c:i:t:" opt; do
      case $opt in
       a)
          actions="$actions$OPTARG "
@@ -145,9 +150,6 @@ doParseCmdArgs(){
          ;;
       i)
          include_file="$OPTARG"
-         ;;
-      h)
-         doPrintHelp
          ;;
       t)
          export tables="$OPTARG "

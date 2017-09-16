@@ -40,12 +40,11 @@ doPrintUsage(){
 		# those are eventually aspark-starterers for the correspondent sbt commands
       bash $0 -a sbt-clean-compile
       bash $0 -a sbt-compile
-      bash $0 -a sbt-run
+      bash $0 -a run-local-app
      	
 		# should you have any errors it might be good idea to run those verbose also
 		bash $0 -a sbt-clean-compile-verbose
       bash $0 -a sbt-compile-verbose
-      bash $0 -a sbt-run-verbose
 
 		# you could run the correspondent calls for the play2 projects
       bash $0 -a activator-clean-compile
