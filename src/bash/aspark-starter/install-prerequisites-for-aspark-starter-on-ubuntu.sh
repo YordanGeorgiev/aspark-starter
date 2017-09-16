@@ -4,14 +4,26 @@
 
 set -eu -o pipefail # fail on error , debug all lines
 
-sudo -n true
-test $? -eq 0 || exit 1 "you should have sudo priveledge to run this script"
+# run as root
+[ "$USER" = "root" ] || exec sudo "$0" "$@"
+
+echo "=== $BASH_SOURCE on $(hostname -f) at $(date)" >&2
+
 
 echo installing the must-have pre-requisites
-sudo apt-get install -y perl
-sudo apt-get install -y zip unzip
-sudo apt-get install -y exuberant-ctags
-sudo apt-get install -y mutt
+while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
+   perl
+   zip unzip
+   exuberant-ctags
+   mutt
+   libxml-atom-perl
+   postgresql-9.6
+   libdbd-pgsql
+   curl
+   wget
+   libwww-curl-perl
+EOF
+)
 
 echo installing the nice-to-have pre-requisites
 echo you have 5 seconds to proceed ...
