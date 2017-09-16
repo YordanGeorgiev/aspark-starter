@@ -5,7 +5,7 @@
 google_spread_sheet_id = 1-oYPtBM8PG_FUogk40RDmcM_Xzq91Tb81Zlyi0cMwYQ
 
 # multiple projects support
-issue_tracker_project = csitea
+aspark_starter_project = aspark_starter
 
 sql_dir = $product_instance_dir/src/sql/pgsql/tst_aspark_starter
 
