@@ -1,7 +1,9 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 # ---
 src/
+src/scala/aspark-starter/src/main/scala/app/io/tr/DataFrameTransformer.scala
 src/scala/aspark-starter/src/main/scala/app/io/in/RDbReader.scala
+src/scala/aspark-starter/src/main/scala/app/io/out/FileWriter.scala
 src/scala/aspark-starter/conf/application.conf
 src/scala/aspark-starter/src/main/scala/app/ctrl/RdbToFSController.scala
 src/scala/aspark-starter/src/main/scala/app/ctrl/FileSystemController.scala

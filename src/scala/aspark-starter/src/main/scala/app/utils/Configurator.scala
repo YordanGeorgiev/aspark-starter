@@ -32,6 +32,13 @@ case class Configurator ( scalaProjKickOffDir: String) {
   val dataDir = product_instance_dir + "/dat/aspark-starter" 
   val dataCsvDir = product_instance_dir + "/dat/aspark-starter/csv"
   def getDataCsvDir = dataCsvDir
+
+  val csvDirOut = product_instance_dir + "/dat/out"
+  def getCsvDirOut = csvDirOut
+
+  val csvDirIn = product_instance_dir + "/dat/in"
+  def getCsvDirIn = csvDirIn
+
   val dbDataDir = dataDir + "/db" 
   val mySqlDataDir = dbDataDir + "/mysql" 
   doLogDirs

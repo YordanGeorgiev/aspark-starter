@@ -14,3 +14,4 @@ cnf/hosts/host-name/home/ysg/.profile_opts.host-name.*
 cnf/hosts/host-name/home/ysg/.java_opts.host-name.*
 cnf/hosts/host-name/home/ysg/.bash_opts.host-name.*
 metastore_db/**
+dat/out/**
