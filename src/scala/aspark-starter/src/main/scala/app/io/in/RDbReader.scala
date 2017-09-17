@@ -7,19 +7,26 @@ import java.util.Properties
 import org.apache.spark.sql.SparkSession
 
 import app.utils.Configurator
+import com.typesafe.config._
 
 /**
 * Purpose: the main entry of the console app
 */
 case class RDbReader ( objConfigurator: Configurator ) {
 
-  // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
   val objLogger = LoggerFactory.getLogger(classOf[RDbReader])
 
 
   def doReadDb () {
     var msg = " START: doProcessData"
     objLogger.info ( msg )
+    
+    val objGlobalAppConf = objConfigurator.doGetGlobalAppConfFile
+    objLogger.debug ( objGlobalAppConf.toString )
+
+    val url = objGlobalAppConf.getString("dev.db.url" )
+    val user = objGlobalAppConf.getString("dev.db.user" )
+    val user_pw = objGlobalAppConf.getString("dev.db.user_pw" )
 
 	val spark = SparkSession
 	 .builder()
@@ -29,18 +36,18 @@ case class RDbReader ( objConfigurator: Configurator ) {
 
 	spark.read
 	 .format("jdbc")
-	 .option("url", "jdbc:postgresql:dev_aspark_starter")
+	 .option("url", url )
 	 .option("dbtable", "daily_issues")
-	 .option("user", "postgres")
-	 .option("password", "secret")
+	 .option("user", user )
+	 .option("password", user_pw )
 	 .load()
 
     val connectionProperties = new Properties()
-    connectionProperties.put("user", "postgres")
-    connectionProperties.put("password", "secret")
+    connectionProperties.put("user", user )
+    connectionProperties.put("password", user_pw )
 
     val jdbcDF2 = spark.read
-      .jdbc("jdbc:postgresql:dev_aspark_starter", "daily_issues", connectionProperties)
+      .jdbc(url, "daily_issues", connectionProperties)
 
     msg = "  STOP: doReadDb"
     objLogger.info ( msg )

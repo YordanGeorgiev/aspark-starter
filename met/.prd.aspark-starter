@@ -1,18 +1,10 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 # ---
-src/perl/aspark_starter/script/aspark_starter_preq_checker.pl
-src/scala/aspark-starter/build.sbt
-src/scala/aspark-starter/project/plugins.sbt
-src/scala/aspark-starter/project/build.properties
-src/scala/aspark-starter/project/sbt-updates.sbt
-src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
-src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
-src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
 src/
-src/scala/aspark-starter/src/main/resources/application.conf
+src/scala/aspark-starter/src/main/scala/app/io/in/RDbReader.scala
+src/scala/aspark-starter/conf/application.conf
 src/scala/aspark-starter/src/main/scala/app/ctrl/RdbToFSController.scala
 src/scala/aspark-starter/src/main/scala/app/ctrl/FileSystemController.scala
-src/scala/aspark-starter/src/main/scala/app/io/in/RDbReader.scala
 src/scala/aspark-starter/src/main/scala/app/io
 src/scala/aspark-starter/src/main/scala/app/io/in
 src/scala/aspark-starter/src/main/scala/app/io/in/FileSystemReader.scala
@@ -23,7 +15,16 @@ src/scala/aspark-starter/src/main/scala/app/utils/Configurator.scala
 src/scala/aspark-starter/src/main/scala/app/utils/io/FileHandler.scala
 src/bash/aspark-starter/funcs/scala/run-jar.func.sh
 src/bash/aspark-starter/funcs/scala/sbt-clean-compile.func.sh
+# ---
 src/scala
+src/scala/aspark-starter/build.sbt
+src/scala/aspark-starter/project/plugins.sbt
+src/scala/aspark-starter/project/build.properties
+src/scala/aspark-starter/project/sbt-updates.sbt
+# ---
+src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
 # ---
 src/bash/aspark-starter/funcs/run-local-app.func.sh
 src/bash/aspark-starter/helps/run-local-app.help.sh
@@ -46,6 +47,7 @@ src/scala/aspark-starter/src/main/scala/app
 src/scala/aspark-starter/src/main/scala/app/utils
 src/scala/aspark-starter/project
 # ---
+src/perl/aspark_starter/script/aspark_starter_preq_checker.pl
 dat
 dat/aspark-starter
 dat/aspark-starter/csv

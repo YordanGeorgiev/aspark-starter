@@ -36,9 +36,7 @@ case class Configurator ( scalaProjKickOffDir: String) {
   val mySqlDataDir = dbDataDir + "/mysql" 
   doLogDirs
 
-  val objGlobalAppConf = doGetGlobalAppConfFile
-  objLogger.debug ( objGlobalAppConf.toString )
-  
+
 
   /**
    * Resolve the scala project dir by utilizing the src/scala/proj_name naming convention
@@ -61,10 +59,6 @@ case class Configurator ( scalaProjKickOffDir: String) {
 	}
 	//eof def getScalaProductVersionDir
 	
-
-	// load the configuration object  - only if explicitly
-	// objGlobalAppConf = ConfigFactory.load
-
 
   /**
   	* 
