@@ -6,9 +6,8 @@ import org.slf4j.LoggerFactory
 import app.utils.Configurator
 import app.utils.io.FileHandler
 import app.ctrl.FileSystemController
+import app.ctrl.RdbToFSController
 
-import org.apache.spark.sql.SparkSession
-import java.util.Properties
 
 /**
 * Purpose: the main entry of the console app
@@ -28,34 +27,16 @@ object Main extends App {
   objLogger.info ( msg )
 
 
-	val spark = SparkSession
-	 .builder()
-	 .appName("Spark SQL basic example")
-	 .config("spark.some.config.option", "some-value")
-	 .getOrCreate()
-
-	spark.read
-	 .format("jdbc")
-	 .option("url", "jdbc:postgresql:dev_aspark_starter")
-	 .option("dbtable", "daily_issues")
-	 .option("user", "postgres")
-	 .option("password", "secret")
-	 .load()
-
-    val connectionProperties = new Properties()
-
-	 //connectionProperties.put("driver", "org.postgresql.Driver") 
-    connectionProperties.put("user", "postgres")
-    connectionProperties.put("password", "secret")
-
-    val jdbcDF2 = spark.read
-      .jdbc("jdbc:postgresql:dev_aspark_starter", "daily_issues", connectionProperties)
-
   //val objFileSystemController = new FileSystemController ( objConfigurator )
   // objFileSystemController.doProcessFiles
 
+  val objRdbToFSController = new RdbToFSController ( objConfigurator ) 
+  objRdbToFSController.doProcessData()
+
   msg = "  STOP: aspark-starter App"
   objLogger.info ( msg )
+  
+  //Thread.sleep(150000)
 
 }
 //eof obj Main

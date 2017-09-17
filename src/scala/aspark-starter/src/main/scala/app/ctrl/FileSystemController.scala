@@ -40,12 +40,6 @@ case class FileSystemController ( objConfigurator: Configurator ) {
     val conf = new SparkConf().setMaster("local[*]").setAppName("AsparkStarter")
     val sc = new SparkContext(conf)
    
-    // nope see issue: a57da15a-f466-48bb-b986-be4e5845f3ef
-    // nope Logger.getLogger("org").setLevel(Level.ERROR)
-    // nope Logger.getLogger("akka").setLevel(Level.ERROR)
-    // nope Logger.getLogger("org.apache.spark.*").setLevel(Level.ERROR)
-    // nope ... sc.setLogLevel("OFF")
-
     val objFileHandler = new FileHandler () 
     objFileHandler.getFileTree( new File ( dataCsvDir ) )
         .filter(_.getName.endsWith(".csv"))
@@ -61,7 +55,6 @@ case class FileSystemController ( objConfigurator: Configurator ) {
 
           } 
     
-    //Thread.sleep(150000)
 
     sc.stop()
 
@@ -69,5 +62,6 @@ case class FileSystemController ( objConfigurator: Configurator ) {
     objLogger.info ( msg )
   }
 
+
 }
-//eof obj Main
+//eof class FileSystemController

@@ -9,7 +9,10 @@ src/bash/aspark-starter/tests/all-aspark-starter-tests.lst
 src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
 src/bash/aspark-starter/tests/new-aspark-starter-tests.lst
 src/
+src/scala/aspark-starter/src/main/resources/application.conf
+src/scala/aspark-starter/src/main/scala/app/ctrl/RdbToFSController.scala
 src/scala/aspark-starter/src/main/scala/app/ctrl/FileSystemController.scala
+src/scala/aspark-starter/src/main/scala/app/io/in/RDbReader.scala
 src/scala/aspark-starter/src/main/scala/app/io
 src/scala/aspark-starter/src/main/scala/app/io/in
 src/scala/aspark-starter/src/main/scala/app/io/in/FileSystemReader.scala
@@ -31,7 +34,6 @@ doc/txt/aspark-starter/helps/run-local-app.help.txt
 # ---
 src/scala/aspark-starter
 src/scala/aspark-starter/conf
-src/scala/aspark-starter/conf/application.conf
 src/scala/aspark-starter/src
 src/scala/aspark-starter/src/universal
 src/scala/aspark-starter/src/universal/conf
@@ -509,3 +511,4 @@ src/perl/aspark_starter/t/TestCtrlFileToDb.pm
 src/perl/aspark_starter/t/TestInitiator.pm
 src/perl/aspark_starter/t/TestLogger.pl
 tags
+cnf/hosts/host-name/etc/postgresql/9.6/main/postgresql.conf
