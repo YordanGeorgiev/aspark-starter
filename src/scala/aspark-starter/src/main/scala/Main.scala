@@ -7,6 +7,7 @@ import app.utils.Configurator
 import app.utils.io.FileHandler
 import app.ctrl.FileSystemController
 import app.ctrl.RdbToFSController
+import app.ctrl.RDbToHDFSController
 
 
 /**
@@ -18,7 +19,6 @@ object Main extends App {
   val scalaProjKickOffDir = 
   getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath().toString()
 
-  // doc: START :: foreach db 
   val objConfigurator = new Configurator ( scalaProjKickOffDir ) 
 	
   // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
@@ -27,8 +27,11 @@ object Main extends App {
   objLogger.info ( msg )
 
 
-  //val objFileSystemController = new FileSystemController ( objConfigurator )
-  // objFileSystemController.doProcessFiles
+  val objFileSystemController = new FileSystemController ( objConfigurator )
+  objFileSystemController.doProcessData
+
+  val objRDbToHDFSController = new RDbToHDFSController ( objConfigurator )
+  objRDbToHDFSController.doProcessData()
 
   val objRdbToFSController = new RdbToFSController ( objConfigurator ) 
   objRdbToFSController.doProcessData()
@@ -36,7 +39,7 @@ object Main extends App {
   msg = "  STOP: aspark-starter App"
   objLogger.info ( msg )
   
-  //Thread.sleep(150000)
+  // Thread.sleep(150000)
 
 }
 //eof obj Main
