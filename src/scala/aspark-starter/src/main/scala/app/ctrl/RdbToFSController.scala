@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory
 import app.utils.Configurator
 import app.io.in.RDbReader
 import app.io.out.FileWriter
+import app.io.out.HDFSWriter
 
 import org.apache.log4j.{Level, Logger}
 
@@ -23,13 +24,14 @@ case class RdbToFSController ( objConfigurator: Configurator ) {
     objLogger.info ( msg )
 
     val objRDbReader = new RDbReader ( objConfigurator ) 
-    val objFileWriter = new FileWriter ( objConfigurator ) 
+    //val objFileWriter = new FileWriter ( objConfigurator ) 
+    val objHDFSWriter = new HDFSWriter ( objConfigurator ) 
 
     val arr = Array("daily_issues", "monthly_issues", "weekly_issues")
     arr.foreach{
       x => var item = x; 
       val df = objRDbReader.doReadDb( item )
-      objFileWriter.doWriteFile( df , item )
+      objHDFSWriter.doWriteFile( df , item )
     }
 
     msg = "  STOP: doProcessData"
