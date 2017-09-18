@@ -15,6 +15,7 @@ Table of Contents
       * [2.7.1. Build and compile](#271-build-and-compile)
       * [2.7.2. Run the example](#272-run-the-example)
   * [3. PROJECT STATUS](#3-project-status)
+  * [4. ADDITIONAL DOCUMENTATION](#4-additional-documentation)
 
 
     
@@ -89,7 +90,7 @@ You can run all the examples by first checking which actions are configured for 
     # sbt-clean-compile
     # sbt-compile
     # sbt-stage
-    # run-local-app
+    # sbt-run
     
     bash src/bash/aspark-starter/test-aspark-starter.sh
     
@@ -102,7 +103,7 @@ You can run all the examples by first checking which actions are configured for 
     #    ok    08:27:00 08:27:25 sbt-clean-compile
     #    ok    08:27:25 08:27:34 sbt-compile
     #    ok    08:27:35 08:27:49 sbt-stage
-    #    ok    08:27:49 08:27:59 run-local-app
+    #    ok    08:27:49 08:27:59 sbt-run
 
 ### 2.7. Start hacking
 Start hacking … or wait check at least the test call running all the functions of the tool … 
@@ -135,4 +136,16 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wo5N32EpubwxBfeFxi6X-eOmXwOPg
 Note that the content on the url is updated on project actual status update ( i.e. meaningful work or milestones &amp; tasks comppletion ) 
 
     
+
+## 4. ADDITIONAL DOCUMENTATION
+You can find the full installation and operations instructions in the docs/md dir of the project:
+
+    The UserStories:
+    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-user-stories.md
+    The Requirements:
+    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-requirements.md
+    The DevOps Guide:
+    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-devops-guide.md
+    The Features and Functionalities Description:
+    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-features-and-functionalities.md
 
