@@ -33,7 +33,7 @@ case class FileWriter ( objConfigurator: Configurator ) {
     df.coalesce(1).write
     .option("header", "true")
     .mode("overwrite")
-    .csv("file://" + file )
+    .csv("hdfs://" + file )
 
     msg = " STOP : doWriteFile"
     objLogger.info ( msg )

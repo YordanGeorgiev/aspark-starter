@@ -36,6 +36,18 @@ Table of Contents
       * [3.8.4. add the uuid generation capability enabling extension](#384-add-the-uuid-generation-capability-enabling-extension)
       * [3.8.5. Install the dblink extension as follows](#385-install-the-dblink-extension-as-follows)
     * [3.9. Install the perl modules ( optional)](#39-install-the-perl-modules-(-optional))
+    * [3.10. Install and configure Hadoop](#310-install-and-configure-hadoop)
+      * [3.10.1. Add the hadoo group](#3101-add-the-hadoo-group)
+      * [3.10.2. Add the hadoo user](#3102-add-the-hadoo-user)
+      * [3.10.3. Configure the ssh keys for the hduser](#3103-configure-the-ssh-keys-for-the-hduser)
+      * [3.10.4. Fetch and install hadoop](#3104-fetch-and-install-hadoop)
+      * [3.10.5. Edit the hadoop-env.sh file](#3105-edit-the-hadoop-envsh-file)
+      * [3.10.6. create the hadoop data dir](#3106-create-the-hadoop-data-dir)
+      * [3.10.7. copy the map-reg.site.template file ](#3107-copy-the-map-regsitetemplate-file-)
+      * [3.10.8. Edit the hdfs-site.xml ](#3108-edit-the-hdfs-sitexml-)
+      * [3.10.9. format the hadoop file system](#3109-format-the-hadoop-file-system)
+      * [3.10.10. start the single node cluster](#31010-start-the-single-node-cluster)
+      * [3.10.11. Verify that the everything is up-and-running](#31011-verify-that-the-everything-is-up-and-running)
   * [4. OPERATIONS](#4-operations)
   * [5. RUN THE EXAMPLES](#5-run-the-examples)
   * [6. INFORMATION SOURCES](#6-information-sources)
@@ -307,6 +319,164 @@ Install the perl module by first installing the server development package
     sudo perl -MCPAN -e 'install DBD::Pg'
     
     sudo perl -MCPAN -e 'Tie::Hash::DBD'
+
+### 3.10. Install and configure Hadoop
+This section has been created largely by following this tutorial:
+http://www.bogotobogo.com/Hadoop/BigData_hadoop_Install_on_ubuntu_16_04_single_node_cluster.php
+
+
+     
+
+#### 3.10.1. Add the hadoo group
+Add the hadoop Linux group as follows:
+
+    export group=hadoop
+    export gid=1001
+    sudo groupadd -g "$gid" "$group"
+    sudo cat /etc/group | grep --color "$group"
+
+#### 3.10.2. Add the hadoo user
+Add the hduser Linux user as follows:
+
+    export user=hduser
+    export uid=1001
+    export home_dir=/home/$user
+    export desc="the hadoop group"
+    #how-to add an user
+    sudo useradd --uid "$uid" --home-dir "$home_dir" --gid "$group" \
+    --create-home --shell /bin/bash "$user" \
+    --comment "$desc"
+    sudo cat /etc/passwd | grep --color "$user"
+    groups "$user"
+
+#### 3.10.3. Configure the ssh keys for the hduser
+Hadoop requires SSH access to manage its nodes, i.e. remote machines plus this local machine. 
+
+    sudo su - hduser
+    
+    # create the ssh keys of rsa type
+    ssh-keygen -t rsa
+    
+    # add localhost to the trusted hosts
+    cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+    
+    # verify that ssh works
+    ssh localhost
+
+#### 3.10.4. Fetch and install hadoop
+Fetch and install hadoop as follows:
+
+    pckgs_dir=/var/pckgs/apache
+    sudo mkdir -p "$pckgs_dir" ; cd "$pckgs_dir"
+    
+    install_dir=/usr/local/hadoop
+    sudo mkdir -p "$install_dir" ; cd "$install_dir"
+    
+    # download the hadoop package
+    curl -O 'http://mirror.netinch.com/pub/apache/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz'
+    
+    # uncompress it
+    sudo gzip -dc hadoop-2.7.4.tar.gz | tar -C "$install_dir" -xvf -
+    
+    # go back to the starting dir
+    cd -
+    
+    echo "created the following dir"
+    sudo find $install_dir/hadoop-2.7.4/ -type d -maxdepth 2
+    
+    sudo chown -Rv hduser:hadoop /usr/local/hadoop/
+    
+
+#### 3.10.5. Edit the hadoop-env.sh file
+Edit the hadoop-env.sh file
+
+    cd $product_instance_dir
+    
+    # edit the hadoop-env.sh file as follows:
+    diff /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hadoop-env.sh cnf/hosts/host-name/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hadoop-env.sh
+    
+    sudo vim -o `find /usr/local/hadoop -name hadoop-env.sh`
+    
+
+#### 3.10.6. create the hadoop data dir
+create the hadoop data dir
+
+    hadoop_tmp_data_dir=/var/hadoop/tmp
+    sudo mkdir -p "$hadoop_tmp_data_dir"  
+    sudo chown -Rv hduser:hadoop $hadoop_tmp_data_dir
+    ls -al $hadoop_tmp_data_dir
+
+#### 3.10.7. copy the map-reg.site.template file 
+copy the mapred-site.xml.template file 
+
+    sudo cp -v /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/mapred-site.xml.template /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/mapred-site.xml
+
+#### 3.10.8. Edit the hdfs-site.xml 
+edit the hdfs-site.xml as follows
+
+    sudo mkdir -p /var/hadoop/dat/hdfs/name_node
+    sudo mkdir -p /var/hadoop/dat/hdfs/data_node
+    sudo chown -Rv hduser:hadoop /var/hadoop/
+    find /var/hadoop
+    
+    sudo diff /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hdfs-site.xml cnf/hosts/host-name/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hdfs-site.xml
+    
+    
+
+#### 3.10.9. format the hadoop file system
+format the hadoop file system as follows. 
+Note that hadoop namenode -format command should be executed once before we start using Hadoop, otherwise all the data will be destroyed … 
+
+    sudo cp -v /home/ysg/.hadoop_opts.host-name /home/hduser/
+    sudo cp -v /home/ysg/.profile_opts.host-name /home/hduser/
+    sudo su - root -c "echo 'source ~/.profile_opts.host-name ' >> /home/hduser/.bashrc"
+    
+    sudo su - hduser -c "/usr/local/hadoop/hadoop-2.7.4/bin/hdfs namenode -format"
+    
+    # SDOUT
+    # 17/09/18 14:46:48 INFO util.ExitUtil: Exiting with status 0
+    # 17/09/18 14:46:48 INFO namenode.NameNode: SHUTDOWN_MSG:
+    # /************************************************************
+    # SHUTDOWN_MSG: Shutting down NameNode at host-name/127.0.1.1
+    # ************************************************************/
+
+#### 3.10.10. start the single node cluster
+After running the commands bellow point to the following url:
+http://host-name:50070/dfshealth.html#tab-overview
+
+    cd /usr/local/hadoop/hadoop-2.7.4/sbin
+    bash start-dfs.sh
+    
+    # 17/09/18 15:00:35 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes
+    # where applicable
+    # Starting namenodes on [localhost]
+    # localhost: namenode running as process 23006. Stop it first.
+    # localhost: datanode running as process 23169. Stop it first.
+    # Starting secondary namenodes [0.0.0.0]
+    # The authenticity of host '0.0.0.0 (0.0.0.0)' can't be established.
+    # ECDSA key fingerprint is SHA256:2FhGsEKZO07xN4MPVcSVmSW0Clx9PKDtfANEqo3iHqg.
+    # Are you sure you want to continue connecting (yes/no)? yes
+    # 0.0.0.0: Warning: Permanently added '0.0.0.0' (ECDSA) to the list of known hosts.
+    # 0.0.0.0: starting secondarynamenode, logging to /usr/local/hadoop/hadoop-2.7.4/logs/hadoop-hduser-secondarynamenode-host-name.out
+    # 17/09/18 15:00:51 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes
+    # where applicable
+    # 
+    
+    start-yarn.sh
+
+#### 3.10.11. Verify that the everything is up-and-running
+We can check if it's really up and running:
+
+hduser@laptop:/usr/local/hadoop/sbin$ 
+
+    jps
+    23169 DataNode
+    24194 SecondaryNameNode
+    25306 ResourceManager
+    26429 NodeManager
+    23006 NameNode
+    26543 Jps
+    
 
 ## 4. OPERATIONS
 

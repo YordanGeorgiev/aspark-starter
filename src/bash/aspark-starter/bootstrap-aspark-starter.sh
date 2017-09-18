@@ -42,5 +42,10 @@ echo "GO TO YOUR product_instance_dir by"
 echo "cd $product_instance_dir"
 cd $product_instance_dir
 
+
+
 echo "source the  ~/.profile_opts.$(hostname -s) to your .bashrc file"
+
+
+
 # eof file src/bash/aspark-starter/bootstrap-aspark-starter.sh

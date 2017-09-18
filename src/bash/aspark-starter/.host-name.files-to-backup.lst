@@ -4,3 +4,8 @@
 /home/ysg/.bash_opts.host-name
 /usr/lib/spark/conf/log4j.properties
 /etc/postgresql/9.6/main/postgresql.conf
+/home/ysg/.hadoop_opts.host-name
+/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hadoop-env.sh
+/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/core-site.xml
+/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/mapred-site.xml
+/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hdfs-site.xml
