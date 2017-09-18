@@ -53,6 +53,7 @@ while read -r p ; do
    fi
 done < <(cat << "EOF"
    tig
+   pv
 EOF
 )
 
