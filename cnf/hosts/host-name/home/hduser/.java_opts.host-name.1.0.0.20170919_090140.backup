@@ -1,3 +1,0 @@
-# set a global java_home
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export CLASS_PATH=/usr/lib/spark/jars
