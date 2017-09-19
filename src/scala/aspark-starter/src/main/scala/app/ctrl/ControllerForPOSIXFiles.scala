@@ -5,24 +5,24 @@ import org.slf4j.LoggerFactory
 import org.apache.log4j.{Level, Logger}
 
 import app.utils.Configurator
-import app.io.in.FileReader
+import app.io.in.ReaderForPOSIXfiles
 
 /**
 * Purpose: 
 * a controller for the rdbms -> fs file etl action
 */
-case class FileSystemController ( objConfigurator: Configurator ) {
+case class ControllerForPOSIXFiles ( objConfigurator: Configurator ) {
 
   // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
-  val objLogger = LoggerFactory.getLogger(classOf[FileSystemController])
+  val objLogger = LoggerFactory.getLogger(classOf[ControllerForPOSIXFiles])
 
 
   def doProcessData {
     var msg = " START: doProcessData"
     objLogger.info ( msg )
 
-    val objFileReader = new FileReader ( objConfigurator ) 
-    objFileReader.doProcessFiles
+    val objReaderForPOSIXfiles = new ReaderForPOSIXfiles ( objConfigurator ) 
+    objReaderForPOSIXfiles.doProcessFiles
 
     msg = " STOP: doProcessData"
     objLogger.info ( msg )
@@ -30,4 +30,4 @@ case class FileSystemController ( objConfigurator: Configurator ) {
 
 
 }
-//eof class FileSystemController
+//eof class ControllerForPOSIXFiles

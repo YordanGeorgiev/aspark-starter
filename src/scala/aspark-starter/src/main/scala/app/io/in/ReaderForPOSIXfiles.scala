@@ -19,10 +19,10 @@ import org.apache.log4j.{Level, Logger}
 * Purpose: 
 * to demontrate reading of POSIX files with spark
 */
-case class FileReader ( objConfigurator: Configurator ) {
+case class ReaderForPOSIXfiles ( objConfigurator: Configurator ) {
 
   // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
-  val objLogger = LoggerFactory.getLogger(classOf[FileReader])
+  val objLogger = LoggerFactory.getLogger(classOf[ReaderForPOSIXfiles])
 
 
   def doProcessFiles {
@@ -64,4 +64,4 @@ case class FileReader ( objConfigurator: Configurator ) {
 
 
 }
-//eof class FileReader
+//eof class ReaderForPOSIXfiles

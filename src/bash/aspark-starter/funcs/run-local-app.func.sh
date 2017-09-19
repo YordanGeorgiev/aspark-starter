@@ -39,7 +39,8 @@ doRunLocalApp(){
 		--deploy-mode 'client' \
       --driver-class-path "$jars_dir/org.postgresql.postgresql-42.1.1.jar" \
 		--jars "$jars_list" \
-		"$jar_file"
+		"$jar_file" \
+      $scala_actions
 
 	cd -
 	doLog "DEBUG STOP  doRunLocalApp"
