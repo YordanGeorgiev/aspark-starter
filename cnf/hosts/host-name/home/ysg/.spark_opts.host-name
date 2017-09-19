@@ -1,2 +1,5 @@
+# src: https://spark.apache.org/docs/latest/spark-standalone.html#cluster-launch-scripts
 export SPARK_HOME=/usr/lib/spark
 export PATH=$PATH:$SPARK_HOME/bin
+
+# export version=1.0.2

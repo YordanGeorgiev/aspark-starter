@@ -8,16 +8,16 @@ import app.io.in.ReaderForRDBMS
 import app.io.tr.TransformerForDataFrames
 import app.io.out.WriterForPOSIXfiles
 import app.io.out.WriterForHDFS
-
+import app.model._
 import org.apache.log4j.{Level, Logger}
 
 /**
 * Purpose: a controller for the hdfs + rdbms -> join dataframes
 * -> hdfs writee files
 */
-case class ControllerForHDFSandRdbToHDFS ( objConfigurator: Configurator ) {
+case class ControllerForHDFSandRDBMStoHDFS ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[ControllerForHDFSandRdbToHDFS])
+  val objLogger = LoggerFactory.getLogger(classOf[ControllerForHDFSandRDBMStoHDFS])
 
 
   /** 
@@ -34,7 +34,7 @@ case class ControllerForHDFSandRdbToHDFS ( objConfigurator: Configurator ) {
     val objTransformerForDataFrames = new TransformerForDataFrames ( objConfigurator ) 
 
     // val df1 = objReaderForRDBMS.doReadDb( "daily_issues" )
-    // val df2 = objHDFSReader.doReadFile( "daily_issues" )
+    // val df2 = objHDFSReader.doReadFile( "monthly_issues" )
     // val df3 = objTransformerForDataFrames.doInnerJoinByAttribute( df1 , df2, "status" , "09-done")
     // objWriterForHDFS.doWriteFile( df3 , item )
 
@@ -43,4 +43,4 @@ case class ControllerForHDFSandRdbToHDFS ( objConfigurator: Configurator ) {
   }
   
 }
-//eof class ControllerForHDFSandRdbToHDFS
+//eof class ControllerForHDFSandRDBMStoHDFS

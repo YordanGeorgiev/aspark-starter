@@ -23,9 +23,10 @@ object Main extends App {
 	
   // src: http://alvinalexander.com/scala/how-to-use-java-style-logging-slf4j-scala
   val objLogger = LoggerFactory.getLogger(classOf[App])
-  var msg = " START: aspark-starter App"
+  var msg = "# START: aspark-starter App"
   objLogger.info ( msg )
 
+  // walk trough the cmd args and on match choose control flow
   args.foreach {
     x => var action = x;
 
@@ -47,10 +48,9 @@ object Main extends App {
 
       }
     } //eof match
-
   } //eof foreach
 
-  msg = "  STOP: aspark-starter App"
+  msg = "# STOP: aspark-starter App"
   objLogger.info ( msg )
   
   // Thread.sleep(150000)

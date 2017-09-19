@@ -33,6 +33,7 @@ case class ReaderForRDBMS ( objConfigurator: Configurator ) {
       .builder()
       .appName("Spark SQL basic example")
       .config("spark.some.config.option", "some-value")
+      .enableHiveSupport()
       .getOrCreate()
 
     msg = "  STOP: doReadDb"

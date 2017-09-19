@@ -10,7 +10,11 @@ src/scala/aspark-starter/src/main/scala/app/ctrl
 src/scala/aspark-starter/src/main/scala/app/ctrl/ControllerForRDBMStoFS.scala
 src/scala/aspark-starter/src/main/scala/app/ctrl/ControllerForPOSIXFiles.scala
 src/scala/aspark-starter/src/main/scala/app/ctrl/ControllerForRDBMStoHDFS.scala
-src/scala/aspark-starter/src/main/scala/app/ctrl/ControllerForHDFSandRdbToHDFS.scala
+src/scala/aspark-starter/src/main/scala/app/ctrl/ControllerForHDFSandRDBMStoHDFS.scala
+src/scala/aspark-starter/src/main/scala/app/model
+src/scala/aspark-starter/src/main/scala/app/model/DailyIssues.scala
+src/scala/aspark-starter/src/main/scala/app/model/WeeklyIssues.scala
+src/scala/aspark-starter/src/main/scala/app/model/MonthlyIssues.scala
 # ---
 src/scala/aspark-starter/src/main/scala/app/io
 src/scala/aspark-starter/src/main/scala/app/io/in
