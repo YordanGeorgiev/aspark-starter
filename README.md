@@ -139,13 +139,16 @@ Note that the content on the url is updated on project actual status update ( i.
 
 ## 4. ADDITIONAL DOCUMENTATION
 You can find the full installation and operations instructions in the docs/md dir of the project:
+The UserStories:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-user-stories.md
+The Requirements:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-requirements.md
+The DevOps Guide:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-devops-guide.md
+The Features and Functionalities Description:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-features-and-functionalities.md
 
-    The UserStories:
-    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-user-stories.md
-    The Requirements:
-    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-requirements.md
-    The DevOps Guide:
-    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-devops-guide.md
-    The Features and Functionalities Description:
-    https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-features-and-functionalities.md
+The same files could be retrieved in pdf format from the doc/pdf dir of the project.
+
+    
 

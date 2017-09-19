@@ -12,12 +12,12 @@ import com.typesafe.config._
 /**
 * Resposibility: transform rdd objects
 */
-case class DataFrameTransformer ( objConfigurator: Configurator ) {
+case class RDDTransformer ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[DataFrameTransformer])
+  val objLogger = LoggerFactory.getLogger(classOf[RDDTransformer])
 
-
-  // chk: https://stackoverflow.com/a/36011735/65706
+  // add transforming actions defining defs
+  
   def doFilterByAttribute ( df: DataFrame , attr: String) {
     var msg = " START: doFilterByAttribute"
     objLogger.info ( msg )
@@ -32,4 +32,4 @@ case class DataFrameTransformer ( objConfigurator: Configurator ) {
   }
 
 }
-//eof class DataFrameTransformer
+//eof class RDDTransformer

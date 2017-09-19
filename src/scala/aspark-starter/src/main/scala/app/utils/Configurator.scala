@@ -13,7 +13,7 @@ import com.typesafe.config.ConfigFactory
 
 
 /**
- *
+ * Purpose: 
  * Encapsulates the app global configuration logic
  */
 case class Configurator ( scalaProjKickOffDir: String) {

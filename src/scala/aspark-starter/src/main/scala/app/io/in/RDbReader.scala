@@ -11,7 +11,7 @@ import app.utils.Configurator
 import com.typesafe.config._
 
 /**
-* Purpose: the main entry of the console app
+* Purpose: to read Relation Databases data
 */
 case class RDbReader ( objConfigurator: Configurator ) {
 

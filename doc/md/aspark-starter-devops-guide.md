@@ -37,8 +37,8 @@ Table of Contents
       * [3.8.5. Install the dblink extension as follows](#385-install-the-dblink-extension-as-follows)
     * [3.9. Install the perl modules ( optional)](#39-install-the-perl-modules-(-optional))
     * [3.10. Install and configure Hadoop](#310-install-and-configure-hadoop)
-      * [3.10.1. Add the hadoo group](#3101-add-the-hadoo-group)
-      * [3.10.2. Add the hadoo user](#3102-add-the-hadoo-user)
+      * [3.10.1. Add the hadoop group](#3101-add-the-hadoop-group)
+      * [3.10.2. Add the hadoop user](#3102-add-the-hadoop-user)
       * [3.10.3. Configure the ssh keys for the hduser](#3103-configure-the-ssh-keys-for-the-hduser)
       * [3.10.4. Fetch and install hadoop](#3104-fetch-and-install-hadoop)
       * [3.10.5. Edit the hadoop-env.sh file](#3105-edit-the-hadoop-envsh-file)
@@ -48,6 +48,7 @@ Table of Contents
       * [3.10.9. format the hadoop file system](#3109-format-the-hadoop-file-system)
       * [3.10.10. start the single node cluster](#31010-start-the-single-node-cluster)
       * [3.10.11. Verify that the everything is up-and-running](#31011-verify-that-the-everything-is-up-and-running)
+      * [3.10.12. Create the data dir to write to in the hdfs](#31012-create-the-data-dir-to-write-to-in-the-hdfs)
   * [4. OPERATIONS](#4-operations)
   * [5. RUN THE EXAMPLES](#5-run-the-examples)
   * [6. INFORMATION SOURCES](#6-information-sources)
@@ -62,15 +63,29 @@ Table of Contents
      
 
 ### 1.1. Issues handling
-Each proper time spent on time saves 10 times more in execution, thus the tasks and aktivities related to this tool are tracked via the issue-tracker tool:
+Each proper time spent on planning saves 10 times more in execution, thus the tasks and aktivities related to this tool are tracked via the issue-tracker tool:
 https://github.com/YordanGeorgiev/issue-tracker
 and could be found @:
 https://docs.google.com/spreadsheets/d/1-oYPtBM8PG_FUogk40RDmcM_Xzq91Tb81Zlyi0cMwYQ/edit#gid=135774576
+
+the public url for the sheet is :
+https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wo5N32EpubwxBfeFxi6X-eOmXwOPg4WSyA4qBSz1Yu0EyU34jl0xICgWzrFUSeEA_aC4RF7LRqx9/pubhtml
 
     
 
 ### 1.2. Documentation
 The purpose of the tool is to "grasp the concept of apache spark", thus a proper documentation set is created as well.
+This is the documentation set.
+The UserStories:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-user-stories.md
+The Requirements:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-requirements.md
+The DevOps Guide:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-devops-guide.md
+The Features and Functionalities Description:
+https://github.com/YordanGeorgiev/aspark-starter/blob/master/doc/md/aspark-starter-features-and-functionalities.md
+
+The same files could be retrieved in pdf format from the doc/pdf dir of the project.
 
     
 
@@ -327,7 +342,7 @@ http://www.bogotobogo.com/Hadoop/BigData_hadoop_Install_on_ubuntu_16_04_single_n
 
      
 
-#### 3.10.1. Add the hadoo group
+#### 3.10.1. Add the hadoop group
 Add the hadoop Linux group as follows:
 
     export group=hadoop
@@ -335,7 +350,7 @@ Add the hadoop Linux group as follows:
     sudo groupadd -g "$gid" "$group"
     sudo cat /etc/group | grep --color "$group"
 
-#### 3.10.2. Add the hadoo user
+#### 3.10.2. Add the hadoop user
 Add the hduser Linux user as follows:
 
     export user=hduser
@@ -348,6 +363,8 @@ Add the hduser Linux user as follows:
     --comment "$desc"
     sudo cat /etc/passwd | grep --color "$user"
     groups "$user"
+    
+    
 
 #### 3.10.3. Configure the ssh keys for the hduser
 Hadoop requires SSH access to manage its nodes, i.e. remote machines plus this local machine. 
@@ -362,6 +379,8 @@ Hadoop requires SSH access to manage its nodes, i.e. remote machines plus this l
     
     # verify that ssh works
     ssh localhost
+    
+    
 
 #### 3.10.4. Fetch and install hadoop
 Fetch and install hadoop as follows:
@@ -405,6 +424,8 @@ create the hadoop data dir
     sudo mkdir -p "$hadoop_tmp_data_dir"  
     sudo chown -Rv hduser:hadoop $hadoop_tmp_data_dir
     ls -al $hadoop_tmp_data_dir
+    
+    
 
 #### 3.10.7. copy the map-reg.site.template file 
 copy the mapred-site.xml.template file 
@@ -477,6 +498,13 @@ hduser@laptop:/usr/local/hadoop/sbin$
     23006 NameNode
     26543 Jps
     
+
+#### 3.10.12. Create the data dir to write to in the hdfs
+Create the data dir to write to in the hdfs as follows:
+
+    # add also yourself to the hadoop group
+    sudo usermod -a -G hadoop $USER
+    sudo su -l hduser -c "/usr/local/hadoop/hadoop-2.7.4/bin/hadoop fs -chown -R ysg:ysg /var/aspark-starter/dat"
 
 ## 4. OPERATIONS
 

@@ -9,7 +9,7 @@ import app.io.in.FileReader
 
 /**
 * Purpose: 
-* to demontrate reading of POSIX files with spark
+* a controller for the rdbms -> fs file etl action
 */
 case class FileSystemController ( objConfigurator: Configurator ) {
 

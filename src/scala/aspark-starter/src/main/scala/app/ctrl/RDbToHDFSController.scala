@@ -12,7 +12,7 @@ import app.io.out.HDFSWriter
 import org.apache.log4j.{Level, Logger}
 
 /**
-* Purpose: a controller for the rdbms -> file etl action
+* Purpose: a controller for the rdbms -> hdfs file etl action
 */
 case class RDbToHDFSController ( objConfigurator: Configurator ) {
 
