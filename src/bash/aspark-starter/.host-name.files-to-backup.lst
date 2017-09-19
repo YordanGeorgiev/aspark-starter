@@ -10,3 +10,6 @@
 /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/mapred-site.xml
 /usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hdfs-site.xml
 /home/hduser/.hadoop_opts.host-name
+/home/hduser/.bash_opts.host-name
+/home/hduser/.java_opts.host-name
+/home/hduser/.profile_opts.host-name

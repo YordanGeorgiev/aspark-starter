@@ -27,14 +27,14 @@ object Main extends App {
   objLogger.info ( msg )
 
 
-  val objFileSystemController = new FileSystemController ( objConfigurator )
-  objFileSystemController.doProcessData
+  // val objFileSystemController = new FileSystemController ( objConfigurator )
+  // objFileSystemController.doProcessData
 
+  // val objRdbToFSController = new RdbToFSController ( objConfigurator ) 
+  // objRdbToFSController.doProcessData()
+  
   val objRDbToHDFSController = new RDbToHDFSController ( objConfigurator )
   objRDbToHDFSController.doProcessData()
-
-  val objRdbToFSController = new RdbToFSController ( objConfigurator ) 
-  objRdbToFSController.doProcessData()
 
   msg = "  STOP: aspark-starter App"
   objLogger.info ( msg )

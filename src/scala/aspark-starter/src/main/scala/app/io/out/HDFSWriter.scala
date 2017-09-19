@@ -25,6 +25,11 @@ case class HDFSWriter ( objConfigurator: Configurator ) {
 
     var msg = " START: doWriteFile"
     objLogger.info ( msg )
+    
+    val objGlobalAppConf = objConfigurator.doGetGlobalAppConfFile
+    objLogger.debug ( objGlobalAppConf.toString )
+
+    val url = objGlobalAppConf.getString("hdfs.fs.default.name" )
   
     val file = "/var/aspark-starter/dat/" + fileName
     objLogger.info ( "saving to the following file " + file ) 
@@ -33,7 +38,7 @@ case class HDFSWriter ( objConfigurator: Configurator ) {
     df.coalesce(1).write
     .option("header", "true")
     .mode("overwrite")
-    .csv("hdfs://localhost:54310" + file )
+    .csv( url + file )
 
     msg = " STOP : doWriteFile"
     objLogger.info ( msg )
