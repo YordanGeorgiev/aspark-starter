@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory
 
 import app.utils.Configurator
 import app.io.in.RDbReader
+import app.io.tr.DataFrameTransformer
 import app.io.out.FileWriter
 import app.io.out.HDFSWriter
 
@@ -25,12 +26,14 @@ case class RDbToHDFSController ( objConfigurator: Configurator ) {
 
     val objRDbReader = new RDbReader ( objConfigurator ) 
     val objHDFSWriter = new HDFSWriter ( objConfigurator ) 
+    val objDataFrameTransformer = new DataFrameTransformer ( objConfigurator ) 
 
     val arr = Array("daily_issues", "monthly_issues", "weekly_issues")
     arr.foreach{
       x => var item = x; 
       val df = objRDbReader.doReadDb( item )
-      objHDFSWriter.doWriteFile( df , item )
+      val df1 = objDataFrameTransformer.doFilterByAttribute( df , "status" , "09-done")
+      objHDFSWriter.doWriteFile( df1 , item )
     }
 
     msg = "  STOP: doProcessData"

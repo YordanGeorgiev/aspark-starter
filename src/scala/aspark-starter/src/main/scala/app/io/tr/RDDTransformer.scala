@@ -18,17 +18,13 @@ case class RDDTransformer ( objConfigurator: Configurator ) {
 
   // add transforming actions defining defs
   
-  def doFilterByAttribute ( df: DataFrame , attr: String) {
+  def doFilterByAttribute ( df: DataFrame , attr_name: String , attr_val: String):DataFrame = {
     var msg = " START: doFilterByAttribute"
     objLogger.info ( msg )
-  
-    //df.select(*)
-     // .option( "header" , "true")
 
     msg = "  STOP: doFilterByAttribute"
     objLogger.info ( msg )
-
-    
+    df
   }
 
 }

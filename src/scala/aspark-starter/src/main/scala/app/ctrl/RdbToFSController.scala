@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory
 
 import app.utils.Configurator
 import app.io.in.RDbReader
+import app.io.tr.DataFrameTransformer
 import app.io.out.FileWriter
 import app.io.out.HDFSWriter
 
@@ -20,22 +21,29 @@ case class RdbToFSController ( objConfigurator: Configurator ) {
 
 
   def doProcessData () {
+
     var msg = " START: doProcessData"
     objLogger.info ( msg )
 
     val objRDbReader = new RDbReader ( objConfigurator ) 
+    val objDataFrameTransformer = new DataFrameTransformer ( objConfigurator ) 
     val objFileWriter = new FileWriter ( objConfigurator ) 
 
     val arr = Array("daily_issues", "monthly_issues", "weekly_issues")
-    arr.foreach{
+    arr.foreach {
+
       x => var item = x; 
-      val df = objRDbReader.doReadDb( item )
-      objFileWriter.doWriteFile( df , item )
+      val df  = objRDbReader.doReadDb( item )
+      val df1 = objDataFrameTransformer.doFilterByAttribute( df , "status" , "09-done")
+
+      objFileWriter.doWriteFile( df1 , item )
     }
 
     msg = "  STOP: doProcessData"
     objLogger.info ( msg )
   }
+
+
 
 }
 //eof class RdbToFSController

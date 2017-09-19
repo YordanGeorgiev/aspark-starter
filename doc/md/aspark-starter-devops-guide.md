@@ -52,7 +52,8 @@ Table of Contents
   * [4. OPERATIONS](#4-operations)
   * [5. RUN THE EXAMPLES](#5-run-the-examples)
   * [6. INFORMATION SOURCES](#6-information-sources)
-    * [6.1. Overall tutorials](#61-overall-tutorials)
+    * [6.1. The spark v2.2.0 official docs](#61-the-spark-v220-official-docs)
+    * [6.2. Overall tutorials](#62-overall-tutorials)
 
 
     
@@ -542,29 +543,15 @@ This section contains good information sources
 
     
 
-### 6.1. Overall tutorials
-https://www.edureka.co/blog/spark-tutorial/
+### 6.1. The spark v2.2.0 official docs
+The spark v2.2.0 official docs:
+  https://spark.apache.org/docs/2.2.0/
 
-    # check the actions to run
-      cat src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
     
-    # STDUOT
-    # sbt-compile-verbose
-    # sbt-clean-compile
-    # sbt-compile
-    # sbt-stage
-    # sbt-run
+
+### 6.2. Overall tutorials
+The hadoop installation and configuration has been largely replicated and slightly adjusted from this source:
+ https://www.edureka.co/blog/spark-tutorial/
+
     
-    bash src/bash/aspark-starter/test-aspark-starter.sh
-    
-    # now the tool will start producing output
-    
-    # 2017-09-14 08:26:11      START test-aspark-starter test run report
-    # 
-    # result  start-time  stop-time   action-name
-    #    ok    08:26:11 08:26:59 sbt-compile-verbose
-    #    ok    08:27:00 08:27:25 sbt-clean-compile
-    #    ok    08:27:25 08:27:34 sbt-compile
-    #    ok    08:27:35 08:27:49 sbt-stage
-    #    ok    08:27:49 08:27:59 sbt-run
 
