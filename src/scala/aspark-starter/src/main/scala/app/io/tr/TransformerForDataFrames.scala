@@ -14,9 +14,9 @@ import app.utils.Configurator
 /**
 * Resposibility: transform rdd objects
 */
-case class DataFrameTransformer ( objConfigurator: Configurator ) {
+case class TransformerForDataFrames ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[DataFrameTransformer])
+  val objLogger = LoggerFactory.getLogger(classOf[TransformerForDataFrames])
 
 
   // chk: https://stackoverflow.com/a/36011735/65706
@@ -33,4 +33,4 @@ case class DataFrameTransformer ( objConfigurator: Configurator ) {
   }
 
 }
-//eof class DataFrameTransformer
+//eof class TransformerForDataFrames

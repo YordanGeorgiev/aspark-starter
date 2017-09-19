@@ -53,7 +53,8 @@ Table of Contents
   * [5. RUN THE EXAMPLES](#5-run-the-examples)
   * [6. INFORMATION SOURCES](#6-information-sources)
     * [6.1. The spark v2.2.0 official docs](#61-the-spark-v220-official-docs)
-    * [6.2. Overall tutorials](#62-overall-tutorials)
+    * [6.2. Kiril Pavlov's spark blog](#62-kiril-pavlov's-spark-blog)
+    * [6.3. Overall tutorials](#63-overall-tutorials)
 
 
     
@@ -549,7 +550,13 @@ The spark v2.2.0 official docs:
 
     
 
-### 6.2. Overall tutorials
+### 6.2. Kiril Pavlov's spark blog
+Different types of joins :
+http://kirillpavlov.com/blog/2016/04/23/beyond-traditional-join-with-apache-spark/
+
+    
+
+### 6.3. Overall tutorials
 The hadoop installation and configuration has been largely replicated and slightly adjusted from this source:
  https://www.edureka.co/blog/spark-tutorial/
 

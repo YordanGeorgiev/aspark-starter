@@ -11,9 +11,9 @@ import com.typesafe.config._
 /**
 * Purpose: 
 */
-case class HDFSWriter ( objConfigurator: Configurator ) {
+case class WriterForPOSIXfiles ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[HDFSWriter])
+  val objLogger = LoggerFactory.getLogger(classOf[WriterForPOSIXfiles])
 
 
   /**
@@ -25,24 +25,19 @@ case class HDFSWriter ( objConfigurator: Configurator ) {
 
     var msg = " START: doWriteFile"
     objLogger.info ( msg )
-    
-    val objGlobalAppConf = objConfigurator.doGetGlobalAppConfFile
-    objLogger.debug ( objGlobalAppConf.toString )
-
-    val url = objGlobalAppConf.getString("hdfs.fs.default.name" )
   
-    val file = "/var/aspark-starter/dat/" + fileName
+    val file = objConfigurator.getCsvDirOut + "/" + fileName
     objLogger.info ( "saving to the following file " + file ) 
   
     // see: https://stackoverflow.com/a/38323127/65706
     df.coalesce(1).write
     .option("header", "true")
     .mode("overwrite")
-    .csv( url + file )
+    .csv("file://" + file )
 
     msg = " STOP : doWriteFile"
     objLogger.info ( msg )
   }
 
 }
-//eof class RDbReader
+//eof class ReaderForRDBMS

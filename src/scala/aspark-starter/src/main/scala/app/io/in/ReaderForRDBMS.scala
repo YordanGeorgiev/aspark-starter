@@ -13,9 +13,9 @@ import com.typesafe.config._
 /**
 * Purpose: to read Relation Databases data
 */
-case class RDbReader ( objConfigurator: Configurator ) {
+case class ReaderForRDBMS ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[RDbReader])
+  val objLogger = LoggerFactory.getLogger(classOf[ReaderForRDBMS])
 
 
   def doReadDb (table: String) :DataFrame = {
@@ -52,4 +52,4 @@ case class RDbReader ( objConfigurator: Configurator ) {
   }
 
 }
-//eof class RDbReader
+//eof class ReaderForRDBMS

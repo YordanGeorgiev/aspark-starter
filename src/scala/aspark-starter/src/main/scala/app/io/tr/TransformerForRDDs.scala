@@ -12,9 +12,9 @@ import com.typesafe.config._
 /**
 * Resposibility: transform rdd objects
 */
-case class RDDTransformer ( objConfigurator: Configurator ) {
+case class TransformerForRDDs ( objConfigurator: Configurator ) {
 
-  val objLogger = LoggerFactory.getLogger(classOf[RDDTransformer])
+  val objLogger = LoggerFactory.getLogger(classOf[TransformerForRDDs])
 
   // add transforming actions defining defs
   
@@ -28,4 +28,4 @@ case class RDDTransformer ( objConfigurator: Configurator ) {
   }
 
 }
-//eof class RDDTransformer
+//eof class TransformerForRDDs

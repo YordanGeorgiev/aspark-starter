@@ -182,8 +182,8 @@ allowOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.j
 allowOverflow	src/scala/aspark-starter/target/scala-2.11/api/lib/jquery.layout.js	4721;"	property	language:JavaScript	class:Instance
 app	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	32;"	anchor	language:HTML
 app	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	34;"	anchor	language:HTML
-app	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	32;"	anchor	language:HTML
-app	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	32;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	32;"	anchor	language:HTML
+app	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	32;"	anchor	language:HTML
 app	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/package.html	32;"	anchor	language:HTML
 app	src/scala/aspark-starter/target/scala-2.11/api/app/io/in/FileSystemReader.html	32;"	anchor	language:HTML
 app	src/scala/aspark-starter/target/scala-2.11/api/app/io/in/package.html	32;"	anchor	language:HTML
@@ -206,14 +206,14 @@ app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	21;"	
 app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	24;"	anchor	language:HTML
 app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-s.html	18;"	anchor	language:HTML
 app.Main	src/scala/aspark-starter/target/scala-2.11/api/index/index-s.html	21;"	anchor	language:HTML
-app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	34;"	anchor	language:HTML
-app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	34;"	anchor	language:HTML
+app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	34;"	anchor	language:HTML
+app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	34;"	anchor	language:HTML
 app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/index.js	1;"	property	language:JavaScript	class:Index.PACKAGES
 app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/index/index-f.html	18;"	anchor	language:HTML
 app.ctrl	src/scala/aspark-starter/target/scala-2.11/api/index/index-r.html	15;"	anchor	language:HTML
-app.ctrl.FileSystemController	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	42;"	anchor	language:HTML
-app.ctrl.RdbToFSController	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	510;"	anchor	language:HTML
-app.ctrl.RdbToFSController	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	39;"	anchor	language:HTML
+app.ctrl.ControllerForPOSIXFiles	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	42;"	anchor	language:HTML
+app.ctrl.ControllerForRDBMStoFS	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	510;"	anchor	language:HTML
+app.ctrl.ControllerForRDBMStoFS	src/scala/aspark-starter/target/scala-2.11/api/index/index-d.html	39;"	anchor	language:HTML
 app.io	src/scala/aspark-starter/target/scala-2.11/api/index/index-i.html	15;"	anchor	language:HTML
 app.io	src/scala/aspark-starter/target/scala-2.11/api/index/index-o.html	27;"	anchor	language:HTML
 app.io.in	src/scala/aspark-starter/target/scala-2.11/api/app/io/in/FileSystemReader.html	34;"	anchor	language:HTML
@@ -223,12 +223,12 @@ app.io.out	src/scala/aspark-starter/target/scala-2.11/api/index/index-f.html	24;
 app.utils	src/scala/aspark-starter/target/scala-2.11/api/app/utils/Configurator.html	34;"	anchor	language:HTML
 app.utils	src/scala/aspark-starter/target/scala-2.11/api/index/index-c.html	15;"	anchor	language:HTML
 app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	476;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	100;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	359;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	48;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	100;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	359;"	anchor	language:HTML
-app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	48;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	100;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	359;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	48;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	100;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	359;"	anchor	language:HTML
+app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	48;"	anchor	language:HTML
 app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/package.html	78;"	anchor	language:HTML
 app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/package.html	95;"	anchor	language:HTML
 app.utils.Configurator	src/scala/aspark-starter/target/scala-2.11/api/index/index-c.html	18;"	anchor	language:HTML
@@ -797,10 +797,10 @@ is_function_defined	src/scala/aspark-starter/target/universal/stage/bin/aspark-s
 is_tainted	src/perl/aspark_starter/lib/ASparkStarter/App/Utils/Initiator.pm	521;"	subroutine	language:Perl
 java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	207;"	anchor	language:HTML
 java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/Main$.html	298;"	anchor	language:HTML
-java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	201;"	anchor	language:HTML
-java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/FileSystemController.html	258;"	anchor	language:HTML
-java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	201;"	anchor	language:HTML
-java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/RdbToFSController.html	258;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	201;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForPOSIXFiles.html	258;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	201;"	anchor	language:HTML
+java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/ctrl/ControllerForRDBMStoFS.html	258;"	anchor	language:HTML
 java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/io/in/FileSystemReader.html	201;"	anchor	language:HTML
 java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/io/in/FileSystemReader.html	258;"	anchor	language:HTML
 java.lang	src/scala/aspark-starter/target/scala-2.11/api/app/io/out/FileSystemWriter.html	201;"	anchor	language:HTML

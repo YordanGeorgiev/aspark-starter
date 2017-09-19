@@ -5,9 +5,9 @@ import org.slf4j.LoggerFactory
 
 import app.utils.Configurator
 import app.utils.io.FileHandler
-import app.ctrl.FileSystemController
-import app.ctrl.RdbToFSController
-import app.ctrl.RDbToHDFSController
+import app.ctrl.ControllerForPOSIXFiles
+import app.ctrl.ControllerForRDBMStoFS
+import app.ctrl.ControllerForRDBMStoHDFS
 
 
 /**
@@ -26,15 +26,29 @@ object Main extends App {
   var msg = " START: aspark-starter App"
   objLogger.info ( msg )
 
+  args.foreach {
+    x => var action = x;
 
-  // val objFileSystemController = new FileSystemController ( objConfigurator )
-  // objFileSystemController.doProcessData
+    action match {
 
-  // val objRdbToFSController = new RdbToFSController ( objConfigurator ) 
-  // objRdbToFSController.doProcessData()
-  
-  val objRDbToHDFSController = new RDbToHDFSController ( objConfigurator )
-  objRDbToHDFSController.doProcessData()
+      case "read-and-modify-posix-files" => {
+        val objControllerForPOSIXFiles = new ControllerForPOSIXFiles ( objConfigurator )
+        objControllerForPOSIXFiles.doProcessData
+
+      }
+      case "read-rdbms-to-posix-files" => {
+        val objControllerForRDBMStoFS = new ControllerForRDBMStoFS ( objConfigurator ) 
+        objControllerForRDBMStoFS.doProcessData()
+
+      }
+      case "read-rdbms-to-hdfs-files" => {
+        val objControllerForRDBMStoHDFS = new ControllerForRDBMStoHDFS ( objConfigurator )
+        objControllerForRDBMStoHDFS.doProcessData()
+
+      }
+    } //eof match
+
+  } //eof foreach
 
   msg = "  STOP: aspark-starter App"
   objLogger.info ( msg )

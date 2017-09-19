@@ -140,7 +140,7 @@ doInit(){
 doParseCmdArgs(){
 
    # traverse all the possible cmd args
-   while getopts ":a:c:i:t:" opt; do
+   while getopts ":a:c:i:t:s:" opt; do
      case $opt in
       a)
          actions="$actions$OPTARG "
@@ -153,6 +153,9 @@ doParseCmdArgs(){
          ;;
       t)
          export tables="$OPTARG "
+         ;;
+      s)
+         export scala_actions="$scala_actions $OPTARG "
          ;;
       \?)
          doExit 2 "Invalid option: -$OPTARG"
