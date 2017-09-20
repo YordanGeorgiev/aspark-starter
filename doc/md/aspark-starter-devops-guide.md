@@ -53,12 +53,16 @@ Table of Contents
       * [3.11.1. run the setup virtual environment script](#3111-run-the-setup-virtual-environment-script)
     * [3.12. Install docker on Ubuntu 17.04](#312-install-docker-on-ubuntu-1704)
   * [4. OPERATIONS](#4-operations)
-  * [5. RUN THE EXAMPLES](#5-run-the-examples)
-  * [6. INFORMATION SOURCES](#6-information-sources)
-    * [6.1. The spark v2.2.0 official docs](#61-the-spark-v220-official-docs)
-    * [6.2. Mastering Apache Spark](#62-mastering-apache-spark)
-    * [6.3. Kiril Pavlov's spark blog](#63-kiril-pavlov's-spark-blog)
-    * [6.4. Overall tutorials](#64-overall-tutorials)
+    * [4.1. Run the examples](#41-run-the-examples)
+    * [4.2. Docker image building and containers handling](#42-docker-image-building-and-containers-handling)
+      * [4.2.1. Build the docker image](#421-build-the-docker-image)
+      * [4.2.2. List the docker images and attach ](#422-list-the-docker-images-and-attach-)
+      * [4.2.3. Start the docker image](#423-start-the-docker-image)
+  * [5. INFORMATION SOURCES](#5-information-sources)
+    * [5.1. The spark v2.2.0 official docs](#51-the-spark-v220-official-docs)
+    * [5.2. Mastering Apache Spark](#52-mastering-apache-spark)
+    * [5.3. Kiril Pavlov's spark blog](#53-kiril-pavlov's-spark-blog)
+    * [5.4. Overall tutorials](#54-overall-tutorials)
 
 
     
@@ -546,7 +550,7 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 
      
 
-## 5. Run the examples
+### 4.1. Run the examples
 You can run all the examples as follows:
 
     # check the actions to run
@@ -574,29 +578,80 @@ You can run all the examples as follows:
     #   ok    18:25:21 18:26:39 run-local-app
     
 
-## 6. INFORMATION SOURCES
+### 4.2. Docker image building and containers handling
+First some theory :
+An image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. Images are read-only.
+https://docs.docker.com/engine/reference/glossary/#image
+A docker container is an active (or inactive if exited) stateful instantiation of an image.
+
+    
+
+#### 4.2.1. Build the docker image
+Now get the Dockerfile from the senzoit dir of the Futucare google drive.
+Place it into the /opt/futu/senzoit/ dir.
+Build the image by issuing the following commands:
+
+    cd /opt/futu/senzoit
+    test -f Dockerfile || echo "get it from Futucare Gdrive foldder"
+    test -f redis.conf || echo "get it from the Futuccare Gdrive folder"
+    
+    # build the image
+    sudo docker build .
+    
+    # now you should be able to see the newly build image by:
+    sudo docker images
+
+#### 4.2.2. List the docker images and attach 
+List the docker images and attach to an already running image 
+
+    sudo docker images --all 
+
+#### 4.2.3. Start the docker image
+Get the upper most id of the docker images command and run it as follows:
+
+    
+    sudo docker run -i -t 3ad09ddd4f36 /bin/bash
+    sudo docker run --entrypoint docker-entrypoint.sh 3ad09ddd4f36 redis-server
+    
+    
+    # how-to check all the running containers 
+    docker ps -a
+    
+    # how-to attach to a running already container
+    docker exec -t -i f97566aa2317 /bin/bash
+    
+    # how-to remove a container by id
+    sudo docker rm -v f5c767a66979
+    
+    # if the start did not work well
+    # remove all the running containers
+    sudo docker rm $(sudo docker ps -aq)
+    # remove all the images
+    sudo docker rmi $(sudo docker images -q)
+
+## 5. INFORMATION SOURCES
 This section contains good information sources
 
     
 
-### 6.1. The spark v2.2.0 official docs
+### 5.1. The spark v2.2.0 official docs
 The spark v2.2.0 official docs:
   https://spark.apache.org/docs/2.2.0/
 
     
 
-### 6.2. Mastering Apache Spark
+### 5.2. Mastering Apache Spark
 https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/
 
     
 
-### 6.3. Kiril Pavlov's spark blog
+### 5.3. Kiril Pavlov's spark blog
 Different types of joins :
 http://kirillpavlov.com/blog/2016/04/23/beyond-traditional-join-with-apache-spark/
 
     
 
-### 6.4. Overall tutorials
+### 5.4. Overall tutorials
 The hadoop installation and configuration has been largely replicated and slightly adjusted from this source:
  https://www.edureka.co/blog/spark-tutorial/
 

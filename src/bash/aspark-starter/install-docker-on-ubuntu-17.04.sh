@@ -64,5 +64,8 @@ sudo apt-get install -y docker-ce
 echo the docker binary is installed in
 which docker
 
+echo enable docker without sudo 
+sudo usermod -aG docker ysg
+
 echo DONE !!!
 # eof file src/bash/aspark-starter/install-docker-on-ubuntu-17.04.sh

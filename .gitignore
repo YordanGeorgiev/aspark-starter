@@ -21,3 +21,4 @@ dat/out/**
 src/scala/aspark-starter/metastore_db/**
 lib/python/**
 **/*.pyc
+src/docker/aspark-handler/dev/ubuntu-zesty-core-cloudimg-amd64-root.tar.gz

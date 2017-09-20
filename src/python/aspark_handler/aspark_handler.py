@@ -15,6 +15,7 @@ from pprint import pprint
 from utils.Configurator import Configurator
 from ctrl.list.ListExecutorFactory import ListExecutorFactory
 from ctrl.start.StartExecutorFactory import StartExecutorFactory
+from ctrl.build.BuildExecutorFactory import BuildExecutorFactory
 
 # this is the main entry point of the tool
 def main():
@@ -33,20 +34,44 @@ def main():
    objArgumentParser = argparse.ArgumentParser()
 
    objArgumentParser.add_argument("-l" , "--list", required=False , 
-      help="lists resources your aws account has access to")
+      help="lists resources ")
    objArgumentParser.add_argument("-s" , "--start", required=False , 
-      help="starts resources your aws account has access to")
+      help="starts resources ")
+   objArgumentParser.add_argument("-b" , "--build", required=False , 
+      help="builds resources ")
    args = objArgumentParser.parse_args()
 
-   # objListExecutor = ListExecutorFactory.createListExecutor(args.list)
-   objStartExecutor = StartExecutorFactory.createStartExecutor(args.start)
-   warnings.simplefilter("ignore", ResourceWarning)
-   # objListExecutor.doListResources(objConfigurator)
-   objStartExecutor.doStartResources(objConfigurator)
+   flg_found=0
+   ret=0
+   for k in args.__dict__:
 
-   ret = 0
-   objLogger.info ( "STOP  ::: " + product_name )
-   exit ( ret )
+      if args.build != None:
+        objBuildExecutor = BuildExecutorFactory.createBuildExecutor(args.build)
+        objBuildExecutor.doBuildResources(objConfigurator)
+        flg_found = flg_found + 1
+
+      elif args.start != None:
+        objStartExecutor = StartExecutorFactory.createStartExecutor(args.start)
+        objStartExecutor.doStartResources(objConfigurator)
+        flg_found = flg_found + 1
+
+      elif args.list != None:
+        objListExecutor = ListExecutorFactory.createListExecutor(args.list)
+        objListExecutor.doListResources(objConfigurator)
+        flg_found = flg_found + 1
+
+      else:
+        if flg_found > 0:
+            ret = 0
+            objLogger.info ( "STOP  ::: " + product_name )
+        else:
+            ret = 1
+            objLogger.fatal( "STOP  ::: " + product_name )
+            exit ( ret )
+
+      exit ( ret )
+      warnings.simplefilter("ignore", ResourceWarning)
+
 #eof main
 
 
