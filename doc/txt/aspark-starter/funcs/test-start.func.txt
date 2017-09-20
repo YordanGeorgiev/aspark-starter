@@ -1,0 +1,34 @@
+# doc/txt/aspark-starter/func/test-start.func.txt
+
+	doTestStart
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test the different type of starting commands 
+
+	# Prequisites
+	# ------------------------------------------------------
+	python 3.6 , bash
+
+	# Installation
+	# ------------------------------------------------------
+   see prerequisite 
+
+	# Interdependancies
+	# ------------------------------------------------------
+   see prerequisite 
+
+	# Usage:
+	# ------------------------------------------------------
+   bash src/bash/aspark-starter/aspark-starter.sh -a test-start
+
+	# Developent
+	# ------------------------------------------------------
+   todo - implement feature	
+
+	# Caveats:
+	# ------------------------------------------------------
+   none knows so far ... 	
+
+
+# eof file: doc/txt/aspark-starter/func/test-start.func.txt

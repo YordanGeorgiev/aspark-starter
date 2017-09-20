@@ -1,0 +1,38 @@
+# doc/txt/aspark-starter/test/test-start.test.txt
+
+	doTestTestStart
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test the test-start func
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doTestTestStart function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doTestTestStart function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doTestTestStart function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+   echo test-start >> src/bash/aspark-starter/tests/run-aspark-starter-tests.lst
+   bash src/bash/aspark-starter/test-aspark-starter.sh
+	
+
+	# Developent
+	# ------------------------------------------------------
+	
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doTestTestStart functions
+
+
+# eof file: doc/txt/aspark-starter/test/test-start.test.txt

@@ -52,6 +52,8 @@ sub doCheckUbuntuOSPackages {
    curl
    libwww-curl-perl
 	libpq-dev
+   python3
+   python3-pip
   );
 
   my $cmd = 'sudo apt-get update' ; 

@@ -14,7 +14,10 @@ cnf/hosts/host-name/home/ysg/.profile_opts.host-name.*
 cnf/hosts/host-name/home/ysg/.java_opts.host-name.*
 cnf/hosts/host-name/home/ysg/.bash_opts.host-name.*
 cnf/hosts/host-name/home/ysg/.hadoop_opts.host-name.*
+cnf/hosts/host-name/home/ysg/.python_opts.host-name.*
 cnf/hosts/host-name/usr/local/hadoop/hadoop-2.7.4/etc/hadoop/hadoop-env.sh.
 metastore_db/**
 dat/out/**
 src/scala/aspark-starter/metastore_db/**
+lib/python/**
+**/*.pyc
