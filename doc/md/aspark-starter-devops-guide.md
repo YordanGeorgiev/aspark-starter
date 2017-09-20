@@ -49,12 +49,16 @@ Table of Contents
       * [3.10.10. start the single node cluster](#31010-start-the-single-node-cluster)
       * [3.10.11. Verify that the everything is up-and-running](#31011-verify-that-the-everything-is-up-and-running)
       * [3.10.12. Create the data dir to write to in the hdfs](#31012-create-the-data-dir-to-write-to-in-the-hdfs)
+    * [3.11. Install python and pip v3.6](#311-install-python-and-pip-v36)
+      * [3.11.1. run the setup virtual environment script](#3111-run-the-setup-virtual-environment-script)
+    * [3.12. Install docker on Ubuntu 17.04](#312-install-docker-on-ubuntu-1704)
   * [4. OPERATIONS](#4-operations)
   * [5. RUN THE EXAMPLES](#5-run-the-examples)
   * [6. INFORMATION SOURCES](#6-information-sources)
     * [6.1. The spark v2.2.0 official docs](#61-the-spark-v220-official-docs)
-    * [6.2. Kiril Pavlov's spark blog](#62-kiril-pavlov's-spark-blog)
-    * [6.3. Overall tutorials](#63-overall-tutorials)
+    * [6.2. Mastering Apache Spark](#62-mastering-apache-spark)
+    * [6.3. Kiril Pavlov's spark blog](#63-kiril-pavlov's-spark-blog)
+    * [6.4. Overall tutorials](#64-overall-tutorials)
 
 
     
@@ -508,6 +512,35 @@ Create the data dir to write to in the hdfs as follows:
     sudo usermod -a -G hadoop $USER
     sudo su -l hduser -c "/usr/local/hadoop/hadoop-2.7.4/bin/hadoop fs -chown -R ysg:ysg /var/aspark-starter/dat"
 
+### 3.11. Install python and pip v3.6
+Install python and pip v3.5 as follows:
+
+    # this package will aslso be installed automatically if you run the ubuntu preq packages installer script
+    bash src/bash/aspark-starter/install-prerequisites-for-aspark-starter-on-ubuntu.sh
+    
+    # OR 
+    sudo apt-get install -y python-3
+    sudo apt-get install -y pip3
+    sudo apt-get install -y python3-venv
+
+#### 3.11.1. run the setup virtual environment script
+run the setup virtual environment script as follows:
+
+    # this package will aslso be installed automatically if you run the ubuntu preq packages installer script
+    bash src/bash/aspark-starter/install-prerequisites-for-aspark-starter-on-ubuntu.sh
+    
+    # OR 
+    sudo apt-get install -y python-3
+    sudo apt-get install -y pip3
+    sudo apt-get install -y python3-venv
+
+### 3.12. Install docker on Ubuntu 17.04
+The docker installation on Ubuntu 17.04 has its own install script ( Should your OS be a different one ) , follow the install instructions on the following page:
+https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
+
+    # install the docker-ce package by running the install-script
+    bash src/bash/aspark-starter/install-docker-on-ubuntu-17.04.sh
+
 ## 4. OPERATIONS
 
 
@@ -533,11 +566,13 @@ You can run all the examples as follows:
     # 2017-09-14 08:26:11      START test-aspark-starter test run report
     # 
     # result  start-time  stop-time   action-name
-    #    ok    08:26:11 08:26:59 sbt-compile-verbose
-    #    ok    08:27:00 08:27:25 sbt-clean-compile
-    #    ok    08:27:25 08:27:34 sbt-compile
-    #    ok    08:27:35 08:27:49 sbt-stage
-    #    ok    08:27:49 08:27:59 sbt-run
+    result  start-time  stop-time   action-name
+    #   ok    18:22:41 18:24:01 sbt-compile-verbose
+    #   ok    18:24:02 18:24:50 sbt-clean-compile
+    #   ok    18:24:50 18:25:00 sbt-compile
+    #   ok    18:25:00 18:25:20 sbt-stage
+    #   ok    18:25:21 18:26:39 run-local-app
+    
 
 ## 6. INFORMATION SOURCES
 This section contains good information sources
@@ -550,13 +585,18 @@ The spark v2.2.0 official docs:
 
     
 
-### 6.2. Kiril Pavlov's spark blog
+### 6.2. Mastering Apache Spark
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/
+
+    
+
+### 6.3. Kiril Pavlov's spark blog
 Different types of joins :
 http://kirillpavlov.com/blog/2016/04/23/beyond-traditional-join-with-apache-spark/
 
     
 
-### 6.3. Overall tutorials
+### 6.4. Overall tutorials
 The hadoop installation and configuration has been largely replicated and slightly adjusted from this source:
  https://www.edureka.co/blog/spark-tutorial/
 

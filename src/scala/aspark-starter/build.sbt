@@ -7,7 +7,7 @@ organization := "com.csitea"
 name := "aspark-starter" 
 
 // the version of this proj
-version := "0.1.1"
+version := "0.1.2"
 
 scalaVersion := "2.11.8"
 

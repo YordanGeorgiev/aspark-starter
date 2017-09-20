@@ -1,5 +1,6 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo|\#---$
 # ---
+src/docker/aspark-handler/tpl/Dockerfile.tpl
 src/
 src/scala/aspark-starter
 src/scala/aspark-starter/conf/application.conf
@@ -461,6 +462,7 @@ src/bash/aspark-starter/helps/db-to-xls.help.sh
 src/bash/aspark-starter/bootstrap-aspark-starter.sh
 src/bash/aspark-starter/install-prerequisites-for-aspark-starter-on-ubuntu.sh
 src/bash/aspark-starter/install-hadoop-on-ubuntu.sh
+src/bash/aspark-starter/install-docker-on-ubuntu-17.04.sh
 src/perl/aspark_starter/script/aspark_starter_preq_checker.pl
 src/bash/aspark-starter/init-postgres.sh
 src/bash/aspark-starter/specs/db-to-xls.spec.sh
@@ -580,6 +582,7 @@ src/bash/aspark-starter/tests/test-start.test.sh
 src/python
 src/python/aspark_handler
 src/python/aspark_handler/aspark_handler.py
+cnf/aspark-starter.logger.cnf
 src/python/aspark_handler/ctrl
 src/python/aspark_handler/ctrl/__init__.py
 src/python/aspark_handler/ctrl/io
