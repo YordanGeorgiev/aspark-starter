@@ -4,7 +4,6 @@
 [ "$USER" = "root" ] || exec sudo "$0" "$@"
 
 echo "=== $BASH_SOURCE on $(hostname -f) at $(date)" >&2
-sudo passwd postgres
 
 echo start the postgres 
 sudo /etc/init.d/postgresql start
@@ -31,6 +30,7 @@ SELECT 'INSTALL EXTENSIONS' ;
 
 SELECT 'on which port the postgres server is listening' ;
 SELECT * FROM pg_settings WHERE name = 'port';
+ALTER USER \"postgres\" WITH PASSWORD 'secret';
 __END__
 "
 

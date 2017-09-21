@@ -1,5 +1,5 @@
-sbt-compile-verbose
-sbt-clean-compile
-sbt-compile
-sbt-stage
+#sbt-compile-verbose
+#sbt-clean-compile
+#sbt-compile
+#sbt-stage
 run-local-app

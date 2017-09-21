@@ -63,7 +63,7 @@ doPrintHelp(){
       #------------------------------------------------------------------------------
 
 		Installation is as simple as unzip -o <<full_package>> -d <<desired_base_dir>>
-		where <<full_package>> should look like: aspark-starter.0.0.2.prd.20160702_181412.ysg-host-name.zip
+		where <<full_package>> should look like: aspark-starter.0.0.2.prd.20160702_181412.ysg-057230ffe0aa.zip
 		and <<disired_base_dir>> could be /tmp , /opt/ , /var , /even/longer/path
 		The required binaries for the $run_unit are:
 		- perl

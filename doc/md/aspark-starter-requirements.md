@@ -4,7 +4,7 @@
 Table of Contents
 
   * [1. STACK FUNCTIONALITIES](#1-stack-functionalities)
-    * [1.1. Apache Spark](#11-apache-spark)
+    * [1.1. Apache Spark with Scala](#11-apache-spark-with-scala)
       * [1.1.1. Code examples for read operations](#111-code-examples-for-read-operations)
           * [1.1.1.1. Reading from files](#1111-reading-from-files)
           * [1.1.1.2. Reading of RDBMS into DataFrames](#1112-reading-of-rdbms-into-dataframes)
@@ -32,13 +32,13 @@ The demo must have the following Stack components
 
     
 
-### 1.1. Apache Spark
+### 1.1. Apache Spark with Scala
 The Apache Spark engine must be installed, configurable and fully operational. 
 
     
 
 #### 1.1.1. Code examples for read operations
-
+The tool must contain a simple example of reading db data
 
     
 
@@ -124,7 +124,7 @@ The app should demonstrate scalability to deployment.
     
 
 ### 4.2. Feature scalabiity
-The app should be written so that new features could be added easily. 
+The app should be written so that new features and code examples could be added easily and efficiently. 
 
     
 

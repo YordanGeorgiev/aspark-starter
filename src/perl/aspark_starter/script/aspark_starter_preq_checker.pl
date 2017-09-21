@@ -93,7 +93,6 @@ sub doCheckRequiredModules {
   for (@modules) {
     eval "use $_";
     if ($@) {
-
       #flush the screen
       print "\033[2J";
       print "\033[0;0H";

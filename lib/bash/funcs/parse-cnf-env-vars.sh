@@ -2,7 +2,7 @@
 # ---------------------------------------------------------
 # source this lib function by:
 # source ./lib/bash/funcs/parse-cnf-env-vars.sh
-# call by: doParseCnfEnvVars cnf/aspark-starter.dev.host-name.cnf
+# call by: doParseCnfEnvVars cnf/aspark-starter.dev.057230ffe0aa.cnf
 # verify by: 
 # echo $aspark_starter_project 
 # should echo:

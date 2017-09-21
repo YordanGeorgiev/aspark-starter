@@ -2,7 +2,8 @@
 " everything after a double quote is a comment.
 " enable syntax hightlighting
 
-
+set lines=38
+set columns=150
 
 " adjust the backspace behaviour 
 set backspace=indent,eol,start
@@ -197,7 +198,7 @@ filetype plugin on
 "
 " Purpose:
 " ---------------------------------------------------------
-" provide the defaults for the vim on a host-name
+" provide the defaults for the vim on a 057230ffe0aa
 " credits and sources : 
 " http://phuzz.org/vimrc.html
 " http://dougblack.io/words/a-good-vimrc.html#search

@@ -8,7 +8,7 @@ Table of Contents
   * [1. DEVELOPER PERSPECTIVE](#1-developer-perspective)
     * [1.1. Easy and quick initial deployment](#11-easy-and-quick-initial-deployment)
     * [1.2. Single shell entry point for full tests execution](#12-single-shell-entry-point-for-full-tests-execution)
-    * [1.3. Easy project building](#13-easy-project-building)
+    * [1.3. Easy environment setup](#13-easy-environment-setup)
 
 
     
@@ -51,10 +51,10 @@ I wanto to be able to have a single entry shell entry point coverring all the te
 
     bash src/bash/aspark-starter/test-aspark-starter.sh
 
-### 1.3. Easy project building
+### 1.3. Easy environment setup
 As a Developer
-In order to be able to build the project quickly
-I wanto to be able to have a single shell entry point for project building. 
+In order to be able to build the whole environment quickly
+I wanto to be able to execute a single shell command which will load 
 
     bash src/bash/aspark-starter/aspark-starter.sh -a sbt-compile
 

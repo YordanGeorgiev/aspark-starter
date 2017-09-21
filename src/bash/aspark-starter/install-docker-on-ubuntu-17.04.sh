@@ -27,7 +27,8 @@ apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
-    software-properties-common
+    software-properties-common \
+    debootstrap
 
 
 echo Add Docker’s official GPG key:

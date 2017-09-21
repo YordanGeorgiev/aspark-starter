@@ -55,9 +55,11 @@ Table of Contents
   * [4. OPERATIONS](#4-operations)
     * [4.1. Run the examples](#41-run-the-examples)
     * [4.2. Docker image building and containers handling](#42-docker-image-building-and-containers-handling)
-      * [4.2.1. Build the docker image](#421-build-the-docker-image)
-      * [4.2.2. List the docker images and attach ](#422-list-the-docker-images-and-attach-)
-      * [4.2.3. Start the docker image](#423-start-the-docker-image)
+      * [4.2.1. Create a base image](#421-create-a-base-image)
+      * [4.2.2. Push a basic image to the docker cloud](#422-push-a-basic-image-to-the-docker-cloud)
+      * [4.2.3. Build the docker image](#423-build-the-docker-image)
+      * [4.2.4. List the docker images and attach ](#424-list-the-docker-images-and-attach-)
+      * [4.2.5. Start the docker image](#425-start-the-docker-image)
   * [5. INFORMATION SOURCES](#5-information-sources)
     * [5.1. The spark v2.2.0 official docs](#51-the-spark-v220-official-docs)
     * [5.2. Mastering Apache Spark](#52-mastering-apache-spark)
@@ -586,14 +588,46 @@ A docker container is an active (or inactive if exited) stateful instantiation o
 
     
 
-#### 4.2.1. Build the docker image
-Now get the Dockerfile from the senzoit dir of the Futucare google drive.
-Place it into the /opt/futu/senzoit/ dir.
+#### 4.2.1. Create a base image
+Use the following sr ( adapt for zesty ):
+https://docs.docker.com/engine/userguide/eng-image/baseimages/#create-a-full-image-using-tar
+Chk also: 
+https://linux.die.net/man/8/debootstrap
+
+    sudo debootstrap zesty zesty > /dev/null
+    sudo tar -C zesty -c . | docker import - zesty
+    # sha256:f4b12ba0096b89a2d591a855778a071420e171852bc4809ec680bfcdeb0532b7
+    
+    docker run zesty cat /etc/lsb-release
+    # DISTRIB_ID=Ubuntu
+    # DISTRIB_RELEASE=17.04
+    # DISTRIB_CODENAME=zesty
+    # DISTRIB_DESCRIPTION="Ubuntu 17.04"
+
+#### 4.2.2. Push a basic image to the docker cloud
+
+
+    docker commit -m "Added latest zesty" -a "NAME" 50942fd04f50 298fd226fcbc40d0b2a3a39258abc/aspark-starter:latest
+    # STDOUT
+    # sha256:fa2c3cede57001bf5632017919ee62648432ad9101a1cedc1bbaef45b531e6d7
+    
+    # login to the docker cloud
+    docker login
+    
+    # username:
+    # 298fd226fcbc40d0b2a3a39258abc
+    # type pw
+    # should see Login Succeeded
+    
+    docker push 298fd226fcbc40d0b2a3a39258abc/aspark-starter:latest
+    55b61fb42e68: Pushed
+    latest: digest: sha256:da1f258b69f49ed0a05cfe1cf66494b96e7d556828b19b28a4303836c33c1056 size: 530
+
+#### 4.2.3. Build the docker image
+Go to the Dockerfile of the current environment. 
 Build the image by issuing the following commands:
 
-    cd /opt/futu/senzoit
-    test -f Dockerfile || echo "get it from Futucare Gdrive foldder"
-    test -f redis.conf || echo "get it from the Futuccare Gdrive folder"
+    cd src/docker/aspark-handler/dev
     
     # build the image
     sudo docker build .
@@ -601,12 +635,12 @@ Build the image by issuing the following commands:
     # now you should be able to see the newly build image by:
     sudo docker images
 
-#### 4.2.2. List the docker images and attach 
+#### 4.2.4. List the docker images and attach 
 List the docker images and attach to an already running image 
 
     sudo docker images --all 
 
-#### 4.2.3. Start the docker image
+#### 4.2.5. Start the docker image
 Get the upper most id of the docker images command and run it as follows:
 
     

@@ -26,7 +26,7 @@
 		apt-get install -y mutt
 
 		# copy the example cnfiguration file .muttrc to your user profile 
-		cp -v cnf/hosts/ysg-host-name/home/usraspark-starter/.muttrc /home/usraspark-starter/.muttrc
+		cp -v cnf/hosts/ysg-057230ffe0aa/home/usraspark-starter/.muttrc /home/usraspark-starter/.muttrc
 
 		# should a mutt cal fail troubleshoot by calling it with debugging :
 		mutt -n -d 3
