@@ -202,14 +202,15 @@ http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
 #### 3.4.1. Download the latest stable Apache Spak package
 Download the spak package with curl as follows:
 
-    export dir=/vagrant/pckgs/apache
-    mkdir -p $dir ; cd $dir
-    curl -O https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+    export dir=/var/pckgs/
+    sudo mkdir -p $dir ; sudo chown -R ysg:ysg $dir; cd $dir
     
+    curl -O https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz -o /var/pckgs/spark-2.2.0-bin-hadoop2.7.tgz
 
 #### 3.4.2. Unpack and deploy
-Download the spak package with curl as follows:
+Uncompress the package and deploy it as follows:
 
+     tar -zxvf /var/pckgs/spark-2.2.0-bin-hadoop2.7.tgz
     mv -v spark-2.2.0-bin-hadoop2.7/ spark
     mv -v spark /usr/lib/
     sudo mv -v spark /usr/lib/
